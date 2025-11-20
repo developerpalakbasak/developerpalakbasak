@@ -54,7 +54,7 @@ const Navbar = () => {
 
             <div className="flex items-center justify-center gap-1 sm:gap-4 text-xl relative">
               <a
-                href="https://drive.google.com/uc?export=download&id=1YFg6U21P_nxZfeIcVmaAF6YPcV6aWQJW"
+                href="https://drive.google.com/uc?export=download&id=13kMTQeRUVSXwaytDyc0TfLz80aE4M8Ad"
                 className="px-3 py-2 border-green-600 border-2 rounded-full dark:text-green-600 text-black hover:text-white font-bold hover:bg-green-600 transition-colors text-xs sm:text-sm"
               >
                 Download CV
