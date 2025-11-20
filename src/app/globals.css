@@ -1,0 +1,88 @@
+/* global.css */
+@import "tailwindcss";
+
+:root {
+  --background: #f9fafb;
+  --foreground: #171717;
+  --text: #6e7583;
+  --logo: #067b56;
+  --logo-hover: #ffffff;
+  --navbar: #f4f4f4;
+  --section: #ededed;
+}
+
+.dark {
+  --background: #161616;
+  --foreground: #ededed;
+  --text: #ffffff;
+  --logo: #ffffff;
+  --logo-hover: #067b56;
+  --navbar: #000000;
+  --section: #111111;
+  
+  
+}
+@theme {
+  --color-primary: #067b56;
+  --color-logo: var(--logo);
+  --color-logo-hover: var(--logo-hover);
+  --color-navbar: var(--navbar);
+  --color-text: var(--text);
+  --color-section: var(--section);
+}
+
+html {
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: "Space Grotesk", sans-serif;
+}
+
+
+.octagon {
+  width: 200px;
+  aspect-ratio: 1;
+  --o:calc(50%*tan(-22.5deg));
+  clip-path: polygon(
+    var(--o) 50%,
+    50% var(--o),
+    calc(100% - var(--o)) 50%,
+    50% calc(100% - var(--o))
+  );
+  background: #3B8686;
+}
+
+.heptagon {
+  width: 400px;
+  aspect-ratio: 1;
+  clip-path: polygon(
+    50% 0%, 
+    90% 20%, 
+    100% 60%, 
+    75% 100%, 
+    25% 100%, 
+    0% 60%, 
+    10% 20%
+  );
+  overflow: hidden;
+  background: #3B8686; /* optional fallback */
+}
+
+
+@keyframes pulse-glow {
+  0%, 100% {
+    box-shadow: 0 0 40px 15px rgba(6, 123, 86, 0.6); /* Green glow */
+  }
+  50% {
+    box-shadow: 0 0 60px 25px rgba(6, 123, 86, 0.9); /* Brighter green */
+  }
+}
+
+.animate-pulse-glow {
+  animation: pulse-glow 2s infinite ease-in-out;
+}
+
+
