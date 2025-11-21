@@ -61,6 +61,7 @@ const Contact = () => {
                     initial={{ y: 100, opacity: 0 }}
                     whileInView={{ y: 0, opacity: 1 }}
                     transition={{ duration: 0.4 }}
+                    viewport={{ once: true, amount: 0.3 }}
                 >
                     <a href="mailto:devpalakbasak@gmail.com?subject=Contact%20from%20portfolio%20website&body=I%20want%20to%20contact%20you.">
                         <IoMdMailOpen size={50} /></a>
@@ -69,6 +70,7 @@ const Contact = () => {
                     initial={{ y: 100, opacity: 0 }}
                     whileInView={{ y: 0, opacity: 1 }}
                     transition={{ duration: 0.4 }}
+                    viewport={{ once: true, amount: 0.3 }}
                 >
                     <a
                         href="https://wa.me/8801761791388?text=Hello!%20I%20found%20you%20through%20your%20portfolio%20website."
