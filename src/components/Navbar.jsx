@@ -95,6 +95,7 @@ const scrollToSection = (id) => {
                 links={links}
                 mounted={mounted}
                 theme={theme}
+                scrollToSection={scrollToSection}
                 toggleTheme={() => setTheme(theme === "dark" ? "light" : "dark")}
               />
             </div>

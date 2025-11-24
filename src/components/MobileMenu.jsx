@@ -4,7 +4,7 @@ import React, { useEffect, useRef, useState } from 'react'
 import { FaMoon, FaSun } from 'react-icons/fa'
 import { HiOutlineBars3 } from 'react-icons/hi2'
 
-const MobileMenu = ({ links, toggleTheme, theme }) => {
+const MobileMenu = ({ links, toggleTheme, theme, scrollToSection }) => {
 
     const [mobileMenuToggle, setMobileMenuToggle] = useState(false);
     const mobileMenuRef = useRef(null);
@@ -41,11 +41,11 @@ const MobileMenu = ({ links, toggleTheme, theme }) => {
             {mobileMenuToggle && (
                 <div className="flex flex-col gap-3 absolute top-12 sm:top-14 -right-4 bg-white dark:bg-navbar p-4 rounded-lg shadow-lg z-50 border-1 border-primary">
                     {links.map((item) => (
-                        <Link key={item.name} href={item.link}
-                            onClick={() => console.log("Link clicked")}
+                        <button key={item.name} 
+                            onClick={() => scrollToSection(item.link)}
                             className="hover:underline text-base">
                             {item.name}
-                        </Link>
+                        </button>
                     ))}
                     <button
                         onClick={toggleTheme}
