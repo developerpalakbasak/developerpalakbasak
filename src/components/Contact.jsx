@@ -30,7 +30,9 @@ const Contact = () => {
 
     return (
 
-        <div className="max-w-6xl mx-auto mt-5 py-5 p-6 bg-section rounded">
+        <div
+        id='contact'
+         className="max-w-6xl mx-auto mt-5 py-5 p-6 bg-section rounded">
 
             <div className='flex flex-col items-center justify-center gap-3'
             >

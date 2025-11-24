@@ -1,13 +1,11 @@
 "use client";
 
-import Link from "next/link";
 import React, { useEffect, useState } from "react";
-import { FaLinkedin, FaGithub, FaSun, FaMoon } from "react-icons/fa";
-import { FaSquareUpwork } from "react-icons/fa6";
+import { FaSun, FaMoon } from "react-icons/fa";
 import { IoMdCode } from "react-icons/io";
 import MobileMenu from "./MobileMenu";
 import { useTheme } from "next-themes";
-import { motion } from "framer-motion";
+import { animate, motion } from "framer-motion";
 
 const Navbar = () => {
   const { theme, setTheme } = useTheme();
@@ -18,10 +16,24 @@ const Navbar = () => {
   }, []);
 
   const links = [
-    { name: "About Me", link: "#" },
-    { name: "Resume", link: "#" },
-    { name: "Contacts", link: "#" },
+    { name: "Services", link: "services" },
+    { name: "Projects", link: "projects" },
+    { name: "Contact", link: "contact" },
   ];
+
+
+
+const scrollToSection = (id) => {
+  const target = document.getElementById(id);
+  const top = target.offsetTop;
+
+  animate(window.scrollY, top, {
+    duration: 0.1,
+    ease: "easeInOut",
+    onUpdate: (v) => window.scrollTo(0, v),
+  });
+};
+
 
   return (
 
@@ -46,9 +58,11 @@ const Navbar = () => {
 
             <nav className="hidden md:flex gap-6">
               {links.map((item) => (
-                <Link key={item.name} href={item.link} className="hover:underline">
+                <button key={item.name} 
+                onClick={()=> scrollToSection(item.link)}
+                className="hover:underline">
                   {item.name}
-                </Link>
+                </button>
               ))}
             </nav>
 

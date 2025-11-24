@@ -7,12 +7,29 @@ import { SiSocketdotio } from "react-icons/si";
 import { GrOptimize } from "react-icons/gr";
 import { FaShoppingCart } from "react-icons/fa";
 import { GoDotFill } from "react-icons/go";
-import Link from 'next/link';
-import { motion } from 'framer-motion';
+import { animate, motion } from 'framer-motion';
 
 
 
 const Offer = () => {
+
+
+const scrollToSection = (id) => {
+  const target = document.getElementById(id);
+  const top = target.offsetTop;
+
+  animate(window.scrollY, top, {
+    duration: 0.1,
+    ease: "easeInOut",
+    onUpdate: (v) => window.scrollTo(0, v),
+  });
+};
+
+
+
+
+
+
 
     const offerItems = [
         {
@@ -51,6 +68,7 @@ const Offer = () => {
 
     return (
         <div
+            id='services'
             className="max-w-6xl mx-auto mt-5 py-5 p-6 bg-section rounded">
 
 
@@ -60,7 +78,7 @@ const Offer = () => {
                     initial={{ y: 100, opacity: 0 }}
                     whileInView={{ y: 0, opacity: 1 }}
                     transition={{ duration: 0.25 }}
-                    viewport={{ once: true }} 
+                    viewport={{ once: true }}
                     className='text-primary flex gap-0.5 justify-center items-center'
                 >
                     <GoDotFill /> What do I offer
@@ -109,7 +127,9 @@ const Offer = () => {
                 whileInView={{ y: 0, opacity: 1 }}
                 transition={{ duration: 0.4 }}
                 viewport={{ once: true, amount: 0.2 }}
-                className='text-center mt-4'> Lets chat about your idea's. <Link href="/" className='text-primary'>Reach Out</Link>
+                className='text-center mt-4'> Lets chat about your idea's. <button
+                onClick={()=> scrollToSection("contact")} 
+                 className='text-primary cursor-pointer hover:underline'>Reach Out</button>
             </motion.p>
         </div>
 

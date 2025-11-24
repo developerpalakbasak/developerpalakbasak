@@ -88,7 +88,7 @@ const Skills = () => {
                 <motion.h3
                     initial={{ y: 100, opacity: 0 }}
                     whileInView={{ y: 0, opacity: 1 }}
-                    transition={{ duration: 0.35 }}
+                    transition={{ duration: 0.30 }}
                     viewport={{ once: true, amount: 0.3 }}
                     className='text-3xl'>
                     Mastered
@@ -108,53 +108,60 @@ const Skills = () => {
             <div className="max-w-6xl mx-auto mt-5 py-5 px-4 rounded bg-section flex gap-5 flex-col md:flex-row">
                 {/* Left */}
 
-                <motion.div
-                    initial={{ x: -100, opacity: 0 }}
-                    animate={{ x: 0, opacity: 1 }}
-                    transition={{ duration: 0.6 }}
-                    viewport={{ once: true, amount: 0.3 }}
+                <div
                     className="w-full md:w-[40%] flex items-center justify-center">
                     <div className="">
                         <div className="mt-6 flex flex-col items-center md:items-baseline justify-center md:justify-start">
                             <div className="flex gap-4 flex-wrap">
                                 {primaryIcons.map((item, index) => (
-                                    <div
+                                    <motion.span
+                                        initial={{ y: 100, opacity: 0 }}
+                                        whileInView={{ y: 0, opacity: 1 }}
+                                        transition={{ duration: 0.50 + index * 0.05 }}
+                                        viewport={{ once: true, amount: 0 }}
                                         key={index}
-                                        className={`p-1 select-none flex justify-center items-center rounded ${item.bg} ${item.text} h-12 w-12`}
+                                        className={`p-1 flex justify-center items-center rounded ${item.bg} ${item.text} h-12 w-12`}
                                     >
                                         {!item.customIcon && item.icon}
                                         {item.customIcon && <span className="text-2xl font-extrabold tracking-wider">{item.customIcon}</span>}
-                                    </div>
+                                    </motion.span>
                                 ))}
                             </div>
 
                             <div className="flex gap-4 flex-wrap mt-4">
                                 {secondryIcons.map((item, index) => (
-                                    <div
+                                    <motion.span
+                                        initial={{ y: 100, opacity: 0 }}
+                                        whileInView={{ y: 0, opacity: 1 }}
+                                        transition={{ duration: 0.50 + index * 0.05 }}
+                                        viewport={{ once: true, amount: 0 }}
                                         key={index}
                                         className={`p-1 flex justify-center items-center rounded ${item.bg} ${item.text} h-12 w-12`}
                                     >
                                         {item.icon}
-                                    </div>
+                                    </motion.span>
                                 ))}
                             </div>
                         </div>
                     </div>
-                </motion.div>
+                </div>
 
                 {/* Right */}
-                <motion.div
-                    initial={{ x: 100, opacity: 0 }}
-                    animate={{ x: 0, opacity: 1 }}
-                    transition={{ duration: 0.7 }}
-                    viewport={{ once: true, amount: 0.3 }}
+                <div
                     className="w-full md:w-[60%] flex flex-col justify-center gap-5 ">
 
                     <div className='border-2 border-gray-600 px-3 py-4 md:px-5 md:py-6 rounded flex flex-col gap-3'>
 
                         {Skills.map((skill, index) => (
 
-                            <span key={index} className='flex gap-2items-center text-base border-b-2 border-gray-600 pb-2 border-dashed last:border-b-0'>
+                            <motion.span
+                                initial={{ y: 100, opacity: 0 }}
+                                whileInView={{ y: 0, opacity: 1 }}
+                                transition={{ duration: 0.60 + index * 0.05 }}
+                                viewport={{ once: true, amount: 0 }}
+                                key={index}
+
+                                className='flex gap-2items-center text-base border-b-2 border-gray-600 pb-2 border-dashed last:border-b-0'>
                                 <span className='flex gap-4'>
                                     <p className='flex justify-center items-center font-bold  '>
                                         {/* <GoDotFill color='green' /> */}
@@ -162,11 +169,11 @@ const Skills = () => {
                                     </p>
                                     <p className='text-slate-400'>{skill.description}</p>
                                 </span>
-                            </span>
+                            </motion.span>
                         ))}
 
                     </div>
-                </motion.div>
+                </div>
             </div>
 
 
