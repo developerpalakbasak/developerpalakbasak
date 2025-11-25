@@ -31,8 +31,8 @@ const Contact = () => {
     return (
 
         <div
-        id='contact'
-         className="max-w-6xl mx-auto mt-5 py-5 p-6 bg-section rounded">
+            id='contact'
+            className="max-w-6xl mx-auto mt-5 py-5 p-6 bg-section rounded">
 
             <div className='flex flex-col items-center justify-center gap-3'
             >
@@ -89,22 +89,27 @@ const Contact = () => {
                 <motion.div
                     initial={{ y: 100, opacity: 0 }}
                     whileInView={{ y: 0, opacity: 1 }}
-                    transition={{ duration: 0.45 }}
-                    viewport={{ once: true, amount: 0.3 }}
+                    transition={{ duration: 1.0 }}
+                    viewport={{ once: true, amount: 0 }}
                     className="w-full max-w-2xl flex flex-col justify-center gap-5 "
                 >
                     <div className='border-2 border-gray-600 px-3 py-4 md:px-5 md:py-6 rounded flex flex-col gap-3'>
 
-                        {contactInfo.map((item) => (
+                        {contactInfo.map((item, index) => (
 
-                            <span key={item.title} className='flex gap-2items-center text-base border-b-2 border-gray-600 pb-2 border-dashed last:border-b-0'>
+                            <motion.span
+                                initial={{ y: 100, opacity: 0 }}
+                                whileInView={{ y: 0, opacity: 1 }}
+                                transition={{ duration: 0.60 + index * 0.05 }}
+                                viewport={{ once: true, amount: 0 }}
+                                key={item.title} className='flex gap-2items-center text-base border-b-2 border-gray-600 pb-2 border-dashed last:border-b-0'>
                                 <span className='flex w-full gap-4'>
                                     <p className='flex w-[30%] md:w-[20%] justify-center items-center font-bold  '>
                                         {item.title}:
                                     </p>
                                     <p className='text-slate-400 w-[70%] md:w-[80%]'>{item.description}</p>
                                 </span>
-                            </span>
+                            </motion.span>
                         ))}
 
                     </div>

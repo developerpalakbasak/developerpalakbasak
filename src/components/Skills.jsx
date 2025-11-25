@@ -100,11 +100,6 @@ const Skills = () => {
 
 
 
-
-
-            <div></div>
-
-
             <div className="max-w-6xl mx-auto mt-5 py-5 px-4 rounded bg-section flex gap-5 flex-col md:flex-row">
                 {/* Left */}
 
@@ -147,7 +142,12 @@ const Skills = () => {
                 </div>
 
                 {/* Right */}
-                <div
+                <motion.div
+                    initial={{ y: 100, opacity: 0 }}
+                    whileInView={{ y: 0, opacity: 1 }}
+                    transition={{ duration: 0.60 }}
+                    viewport={{ once: true, amount: 0 }}
+
                     className="w-full md:w-[60%] flex flex-col justify-center gap-5 ">
 
                     <div className='border-2 border-gray-600 px-3 py-4 md:px-5 md:py-6 rounded flex flex-col gap-3'>
@@ -159,7 +159,7 @@ const Skills = () => {
                                 whileInView={{ y: 0, opacity: 1 }}
                                 transition={{ duration: 0.60 + index * 0.05 }}
                                 viewport={{ once: true, amount: 0 }}
-                                key={index}
+                                key={skill.title}
 
                                 className='flex gap-2items-center text-base border-b-2 border-gray-600 pb-2 border-dashed last:border-b-0'>
                                 <span className='flex gap-4'>
@@ -173,7 +173,7 @@ const Skills = () => {
                         ))}
 
                     </div>
-                </div>
+                </motion.div>
             </div>
 
 
