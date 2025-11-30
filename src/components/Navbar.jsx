@@ -67,10 +67,11 @@ const Navbar = () => {
 
 <a
   href="https://drive.google.com/uc?export=download&id=1YFg6U21P_nxZfeIcVmaAF6YPcV6aWQJW"
-  className="px-3 py-2 border-green-600 border-2 rounded-full text-black dark:!text-green-600 hover:text-white font-bold hover:bg-green-600 transition-colors text-xs sm:text-sm"
+  className="text-black-important dark:text-green-600 px-3 py-2 border-green-600 border-2 rounded-full hover:text-white font-bold hover:bg-green-600 transition-colors text-xs sm:text-sm"
 >
   Download CV
 </a>
+
               
 
               {/* Theme toggle */}
