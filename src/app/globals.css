@@ -1,6 +1,6 @@
-/* global.css */
 @import "tailwindcss";
 
+/* Default light theme variables */
 :root {
   --background: #f9fafb;
   --foreground: #171717;
@@ -10,10 +10,8 @@
   --navbar: #f4f4f4;
   --section: #ededed;
 }
-html {
-  scroll-behavior: smooth;
-}
 
+/* Dark theme variables */
 .dark {
   --background: #161616;
   --foreground: #ededed;
@@ -22,9 +20,12 @@ html {
   --logo-hover: #067b56;
   --navbar: #000000;
   --section: #111111;
-  
-  
 }
+
+html {
+  scroll-behavior: smooth;
+}
+
 @theme {
   --color-primary: #067b56;
   --color-logo: var(--logo);
@@ -34,10 +35,15 @@ html {
   --color-section: var(--section);
 }
 
+/* ONLY set background on body, remove color so Tailwind works */
 body {
   background: var(--background);
-  color: var(--foreground);
   font-family: "Space Grotesk", sans-serif;
+}
+
+/* Force black in light mode for specific elements (like link) */
+.text-black-important {
+  color: #000 !important;
 }
 
 
