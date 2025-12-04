@@ -39,7 +39,7 @@ const MobileMenu = ({ links, toggleTheme, theme, scrollToSection }) => {
 
             {/* Dropdown Menu */}
             {mobileMenuToggle && (
-                <div className="flex flex-col gap-3 absolute top-12 sm:top-14 -right-4 bg-white dark:bg-navbar p-4 rounded-lg shadow-lg z-50 border-1 border-primary">
+                <div className="flex flex-col gap-3 absolute top-12 sm:top-14 -right-4 bg-navbar p-4 rounded-lg shadow-lg z-50 border-1 border-primary">
                     {links.map((item) => (
                         <button key={item.name} 
                             onClick={() => scrollToSection(item.link)}
