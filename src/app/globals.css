@@ -46,37 +46,6 @@ body {
   color: #000 !important;
 }
 
-
-.octagon {
-  width: 200px;
-  aspect-ratio: 1;
-  --o:calc(50%*tan(-22.5deg));
-  clip-path: polygon(
-    var(--o) 50%,
-    50% var(--o),
-    calc(100% - var(--o)) 50%,
-    50% calc(100% - var(--o))
-  );
-  background: #3B8686;
-}
-
-.heptagon {
-  width: 400px;
-  aspect-ratio: 1;
-  clip-path: polygon(
-    50% 0%, 
-    90% 20%, 
-    100% 60%, 
-    75% 100%, 
-    25% 100%, 
-    0% 60%, 
-    10% 20%
-  );
-  overflow: hidden;
-  background: #3B8686; /* optional fallback */
-}
-
-
 @keyframes pulse-glow {
   0%, 100% {
     box-shadow: 0 0 40px 15px rgba(6, 123, 86, 0.6); /* Green glow */
