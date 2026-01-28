@@ -6,6 +6,7 @@ import { GoDotFill } from 'react-icons/go'
 import { SiExpress, SiMongodb, SiTailwindcss } from 'react-icons/si';
 import { TbBrandNextjs, TbBrandTypescript } from 'react-icons/tb';
 import { motion } from 'framer-motion';
+import Spiner from './Spiner';
 
 const Skills = () => {
 
@@ -76,26 +77,26 @@ const Skills = () => {
 
 
             <div className='flex flex-col items-center justify-center gap-3'>
-                <motion.p
-                    initial={{ y: 100, opacity: 0 }}
-                    whileInView={{ y: 0, opacity: 1 }}
-                    transition={{ duration: 0.25 }}
-                    viewport={{ once: true }}
+                <p
+                    // initial={{ y: 100, opacity: 0 }}
+                    // whileInView={{ y: 0, opacity: 1 }}
+                    // transition={{ duration: 0.25 }}
+                    // viewport={{ once: true }}
                     className='text-primary flex gap-0.5 justify-center items-center'
                 >
                     <GoDotFill /> Skills
-                </motion.p>
-                <motion.h3
-                    initial={{ y: 100, opacity: 0 }}
-                    whileInView={{ y: 0, opacity: 1 }}
-                    transition={{ duration: 0.30 }}
-                    viewport={{ once: true, amount: 0.3 }}
+                </p>
+                <h3
+                    // initial={{ y: 100, opacity: 0 }}
+                    // whileInView={{ y: 0, opacity: 1 }}
+                    // transition={{ duration: 0.30 }}
+                    // viewport={{ once: true, amount: 0.3 }}
                     className='text-3xl'>
                     Mastered
                     <span className='text-slate-500'>
                         {" "} Skills
                     </span>
-                </motion.h3>
+                </h3>
             </div>
 
 
@@ -105,48 +106,15 @@ const Skills = () => {
 
                 <div
                     className="w-full md:w-[40%] flex items-center justify-center">
-                    <div className="">
-                        <div className="mt-6 flex flex-col items-center md:items-baseline justify-center md:justify-start">
-                            <div className="flex gap-4 flex-wrap">
-                                {primaryIcons.map((item, index) => (
-                                    <motion.span
-                                        initial={{ y: 100, opacity: 0 }}
-                                        whileInView={{ y: 0, opacity: 1 }}
-                                        transition={{ duration: 0.50 + index * 0.05 }}
-                                        viewport={{ once: true, amount: 0 }}
-                                        key={index}
-                                        className={`p-1 flex justify-center items-center rounded ${item.bg} ${item.text} h-12 w-12`}
-                                    >
-                                        {!item.customIcon && item.icon}
-                                        {item.customIcon && <span className="text-2xl font-extrabold tracking-wider">{item.customIcon}</span>}
-                                    </motion.span>
-                                ))}
-                            </div>
-
-                            <div className="flex gap-4 flex-wrap mt-4">
-                                {secondryIcons.map((item, index) => (
-                                    <motion.span
-                                        initial={{ y: 100, opacity: 0 }}
-                                        whileInView={{ y: 0, opacity: 1 }}
-                                        transition={{ duration: 0.50 + index * 0.05 }}
-                                        viewport={{ once: true, amount: 0 }}
-                                        key={index}
-                                        className={`p-1 flex justify-center items-center rounded ${item.bg} ${item.text} h-12 w-12`}
-                                    >
-                                        {item.icon}
-                                    </motion.span>
-                                ))}
-                            </div>
-                        </div>
-                    </div>
+                    <Spiner/>
                 </div>
 
                 {/* Right */}
-                <motion.div
-                    initial={{ y: 100, opacity: 0 }}
-                    whileInView={{ y: 0, opacity: 1 }}
-                    transition={{ duration: 0.60 }}
-                    viewport={{ once: true, amount: 0 }}
+                <div
+                    // initial={{ y: 100, opacity: 0 }}
+                    // whileInView={{ y: 0, opacity: 1 }}
+                    // transition={{ duration: 0.60 }}
+                    // viewport={{ once: true, amount: 0 }}
 
                     className="w-full md:w-[60%] flex flex-col justify-center gap-5 ">
 
@@ -154,11 +122,11 @@ const Skills = () => {
 
                         {Skills.map((skill, index) => (
 
-                            <motion.span
-                                initial={{ y: 100, opacity: 0 }}
-                                whileInView={{ y: 0, opacity: 1 }}
-                                transition={{ duration: 0.60 + index * 0.05 }}
-                                viewport={{ once: true, amount: 0 }}
+                            <span
+                                // initial={{ y: 100, opacity: 0 }}
+                                // whileInView={{ y: 0, opacity: 1 }}
+                                // transition={{ duration: 0.60 + index * 0.05 }}
+                                // viewport={{ once: true, amount: 0 }}
                                 key={skill.title}
 
                                 className='flex gap-2items-center text-base border-b-2 border-gray-600 pb-2 border-dashed last:border-b-0'>
@@ -169,11 +137,11 @@ const Skills = () => {
                                     </p>
                                     <p className='text-slate-400'>{skill.description}</p>
                                 </span>
-                            </motion.span>
+                            </span>
                         ))}
 
                     </div>
-                </motion.div>
+                </div>
             </div>
 
 

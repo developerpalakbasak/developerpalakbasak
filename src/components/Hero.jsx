@@ -46,7 +46,7 @@ const Hero = () => {
         className="w-full md:w-1/2 flex flex-col items-center justify-center"
       >
         {/* Profile with glow */}
-        <div className="relative w-[298px] h-[298px] md:w-[400px] md:h-[400px] rounded-full">
+        <div className="relative w-[298] h-[298] md:w-[350] md:h-[350] lg:w-[400] lg:h-[400] rounded-full">
           {/* Image */}
           <img
             src={imageSrc}

@@ -1,15 +1,15 @@
 "use client";
 import React from 'react'
-import { motion } from 'framer-motion';
+// import { motion } from 'framer-motion';
 
 const SingleProject = ({ project, index, islast }) => {
 
     return (
-        <motion.section
-            initial={{ y: 100, opacity: 0 }}
-            whileInView={{ y: 0, opacity: 1 }}
-            transition={{ duration: 0.6 }}
-            viewport={{ once: true, amount: 0.3 }}
+        <section
+            // initial={{ y: 100, opacity: 0 }}
+            // whileInView={{ y: 0, opacity: 1 }}
+            // transition={{ duration: 0.6 }}
+            // viewport={{ once: true, amount: 0.3 }}
             className={`${!islast && "border-b-2"} border-gray-600 pb-5`}>
 
 
@@ -20,7 +20,7 @@ const SingleProject = ({ project, index, islast }) => {
                     <img
                         src={project.imageSrc}
                         alt="developerpalak"
-                        className="w-full   md:w-full h-[350px] rounded-2xl object-cover"
+                        className="w-full  h-[200] md:h-[300] rounded-2xl object-cover"
                     />
                 </div>
 
@@ -58,7 +58,7 @@ const SingleProject = ({ project, index, islast }) => {
                 </div>
 
             </div>
-        </motion.section>
+        </section>
 
     )
 }

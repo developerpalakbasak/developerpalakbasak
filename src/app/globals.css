@@ -46,17 +46,28 @@ body {
   color: #000 !important;
 }
 
-@keyframes pulse-glow {
-  0%, 100% {
-    box-shadow: 0 0 40px 15px rgba(6, 123, 86, 0.6); /* Green glow */
-  }
-  50% {
-    box-shadow: 0 0 60px 25px rgba(6, 123, 86, 0.9); /* Brighter green */
-  }
+
+
+
+
+
+
+
+
+@keyframes rotateCircle {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
 }
 
-.animate-pulse-glow {
-  animation: pulse-glow 2s infinite ease-in-out;
+@keyframes counterRotate {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(-360deg); }
 }
 
+.spiner {
+  animation: rotateCircle 40s linear infinite;
+}
 
+.spiner > div > div {
+  animation: counterRotate 40s linear infinite;
+}

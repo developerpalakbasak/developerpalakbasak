@@ -3,7 +3,6 @@ import React from 'react'
 import { GoDotFill } from "react-icons/go";
 import SingleProject from './SingleProject';
 import { motion } from 'framer-motion';
-import Link from 'next/link';
 
 
 const Projects = () => {
@@ -74,26 +73,26 @@ const Projects = () => {
 
 
             <div className='flex flex-col items-center justify-center gap-3'>
-                <motion.p
-                    initial={{ y: 100, opacity: 0 }}
-                    whileInView={{ y: 0, opacity: 1 }}
-                    transition={{ duration: 0.25 }}
-                    viewport={{ once: true }} 
+                <p
+                    // initial={{ y: 100, opacity: 0 }}
+                    // whileInView={{ y: 0, opacity: 1 }}
+                    // transition={{ duration: 0.25 }}
+                    // viewport={{ once: true }} 
                     className='text-primary flex gap-0.5 justify-center items-center'
                 >
                     <GoDotFill /> Projects
-                </motion.p>
-                <motion.h3
-                    initial={{ y: 100, opacity: 0 }}
-                    whileInView={{ y: 0, opacity: 1 }}
-                    transition={{ duration: 0.35 }}
-                    viewport={{ once: true, amount: 0.3 }}
+                </p>
+                <h3
+                    // initial={{ y: 100, opacity: 0 }}
+                    // whileInView={{ y: 0, opacity: 1 }}
+                    // transition={{ duration: 0.35 }}
+                    // viewport={{ once: true, amount: 0.3 }}
                     className='text-3xl'>
                     My Recent{" "}
                     <span className='text-slate-500'>
                         Works
                     </span>
-                </motion.h3>
+                </h3>
             </div>
 
 
@@ -109,17 +108,17 @@ const Projects = () => {
 
             ))}
 
-            <motion.span
-                initial={{ y: 100, opacity: 0 }}
-                whileInView={{ y: 0, opacity: 1 }}
-                transition={{ duration: 0.5 }}
-                viewport={{ once: true, amount: 0.3 }}
+            <span
+                // initial={{ y: 100, opacity: 0 }}
+                // whileInView={{ y: 0, opacity: 1 }}
+                // transition={{ duration: 0.5 }}
+                // viewport={{ once: true, amount: 0.3 }}
                 className='flex justify-center items-center'
             >
 
 
 
-            </motion.span>
+            </span>
         </div>
     )
 }

@@ -7,7 +7,7 @@ import { SiSocketdotio } from "react-icons/si";
 import { GrOptimize } from "react-icons/gr";
 import { FaShoppingCart } from "react-icons/fa";
 import { GoDotFill } from "react-icons/go";
-import { animate, motion } from 'framer-motion';
+import { animate } from 'framer-motion';
 
 
 
@@ -74,26 +74,26 @@ const scrollToSection = (id) => {
 
 
             <div className='flex flex-col items-center justify-center gap-3'>
-                <motion.p
-                    initial={{ y: 100, opacity: 0 }}
-                    whileInView={{ y: 0, opacity: 1 }}
-                    transition={{ duration: 0.25 }}
-                    viewport={{ once: true }}
+                <p
+                    // initial={{ y: 100, opacity: 0 }}
+                    // whileInView={{ y: 0, opacity: 1 }}
+                    // transition={{ duration: 0.25 }}
+                    // viewport={{ once: true }}
                     className='text-primary flex gap-0.5 justify-center items-center'
                 >
                     <GoDotFill /> What do I offer
-                </motion.p>
-                <motion.h3
-                    initial={{ y: 100, opacity: 0 }}
-                    whileInView={{ y: 0, opacity: 1 }}
-                    transition={{ duration: 0.35 }}
-                    viewport={{ once: true, amount: 0.3 }}
+                </p>
+                <h3
+                    // initial={{ y: 100, opacity: 0 }}
+                    // whileInView={{ y: 0, opacity: 1 }}
+                    // transition={{ duration: 0.35 }}
+                    // viewport={{ once: true, amount: 0.3 }}
                     className='text-3xl'>
                     Designing Solutions{" "}
                     <span className='text-slate-500'>
                         Customized to Meet Your Requirments
                     </span>
-                </motion.h3>
+                </h3>
             </div>
 
 
@@ -108,29 +108,29 @@ const scrollToSection = (id) => {
 
                 className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 mt-5'>
                 {offerItems.map((item, index) => (
-                    <motion.div
-                        initial={{ y: 100, opacity: 0 }}
-                        whileInView={{ y: 0, opacity: 1 }}
-                        transition={{ duration: 0.40 }}
-                        viewport={{ once: true, amount: 0.2 }}
+                    <div
+                        // initial={{ y: 100, opacity: 0 }}
+                        // whileInView={{ y: 0, opacity: 1 }}
+                        // transition={{ duration: 0.40 }}
+                        // viewport={{ once: true, amount: 0.2 }}
 
                         key={index} className='rounded border p-5 mt-5 flex flex-col gap-3'>
                         <span>{item.icon}</span>
                         <h4 className='text-2xl'>{item.title}</h4>
                         <p className='text-slate-500'>{item.description}</p>
-                    </motion.div>
+                    </div>
                 ))}
 
             </div>
-            <motion.p
-                initial={{ y: 100, opacity: 0 }}
-                whileInView={{ y: 0, opacity: 1 }}
-                transition={{ duration: 0.4 }}
-                viewport={{ once: true, amount: 0.2 }}
+            <p
+                // initial={{ y: 100, opacity: 0 }}
+                // whileInView={{ y: 0, opacity: 1 }}
+                // transition={{ duration: 0.4 }}
+                // viewport={{ once: true, amount: 0.2 }}
                 className='text-center mt-4'> Lets chat about your idea's. <button
                 onClick={()=> scrollToSection("contact")} 
                  className='text-primary cursor-pointer hover:underline'>Reach Out</button>
-            </motion.p>
+            </p>
         </div>
 
     )
