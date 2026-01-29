@@ -31,7 +31,7 @@ const Spiner = () => {
 
         {/* Spinner circle */}
         <div
-          className="absolute top-1/2 left-1/2 h-[90%] w-[90%] border border-slate-400 rounded-full animate-rotateCircle
+          className="absolute top-1/2 left-1/2 h-[85%] w-[85%] border border-slate-400 rounded-full animate-rotateCircle
                   -translate-x-1/2 -translate-y-1/2"
         >
 
