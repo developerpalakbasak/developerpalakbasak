@@ -70,7 +70,7 @@ const Spiner = () => {
                 }}
               >
                 <div
-                  className="w-[50px] h-[50px] p-2 rounded-2xl bg-[linear-gradient(rgb(84,84,84)_20%,rgb(0,0,0)_100%)]          drop-shadow-[0_0_20px_rgba(0,0,0,0.6)]          hover:scale-110 transition-transform duration-300          animate-counterRotate          flex items-center justify-center"
+                  className="w-[50] h-[50] p-2 rounded-2xl bg-[linear-gradient(rgb(84,84,84)_20%,rgb(0,0,0)_100%)]          drop-shadow-[0_0_20px_rgba(0,0,0,0.6)]          hover:scale-110 transition-transform duration-300          animate-counterRotate          flex items-center justify-center"
                 >
                   {item.icon}
                 </div>

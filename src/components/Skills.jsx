@@ -101,7 +101,7 @@ const Skills = () => {
 
 
 
-            <div className="max-w-6xl mx-auto mt-5 py-5 px-4 rounded bg-section flex gap-5 flex-col md:flex-row">
+            <div className="max-w-6xl mx-auto mt-5 py-5 md:px-4 rounded bg-section flex gap-5 flex-col md:flex-row">
                 {/* Left */}
 
                 <div

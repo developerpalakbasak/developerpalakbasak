@@ -9,7 +9,7 @@ import Skills from "@/components/Skills";
 
 export default function Home() {
   return (
-    <div className="relative">
+    <div className="relative overflow-hidden">
 
       <Navbar />
       <Hero />
