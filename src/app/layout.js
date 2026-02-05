@@ -40,6 +40,7 @@ export default function RootLayout({ children }) {
       </head>
 
       <body className={`${spaceGrotesk.variable} font-sans antialiased pt-5 pb-5 sm:px-5 bg-background text-foreground`}>
+        
         <Providers>{children}</Providers>
       </body>
     </html>

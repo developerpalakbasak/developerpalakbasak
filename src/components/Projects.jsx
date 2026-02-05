@@ -78,7 +78,7 @@ const Projects = () => {
                     // whileInView={{ y: 0, opacity: 1 }}
                     // transition={{ duration: 0.25 }}
                     // viewport={{ once: true }} 
-                    className='text-primary flex gap-0.5 justify-center items-center'
+                    className='text-primary flex gap-0.5 justify-center items-center text-sm sm:text-base'
                 >
                     <GoDotFill /> Projects
                 </p>
@@ -87,7 +87,7 @@ const Projects = () => {
                     // whileInView={{ y: 0, opacity: 1 }}
                     // transition={{ duration: 0.35 }}
                     // viewport={{ once: true, amount: 0.3 }}
-                    className='text-3xl'>
+                    className='text-xl sm:text-2xl md:text-3xl '>
                     My Recent{" "}
                     <span className='text-slate-500'>
                         Works

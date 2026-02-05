@@ -35,7 +35,7 @@ const Spiner = () => {
   const radius = containerSize / 2 - iconWrapperSize / 2; // distance from center to icon center
 
   return (
-    <div className="relative flex justify-center items-center my-8 bg-section">
+    <div className="relative flex justify-center items-center my-8 ">
       <div className="relative w-[300px] h-[300px]">
         {/* Spinner circle */}
         <div
