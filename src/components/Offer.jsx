@@ -29,31 +29,31 @@ const Offer = () => {
         "I specialize in building robust and scalable web applications using the MERN stack, ensuring a seamless user experience from front-end to back-end.",
     },
     {
-      icon: <FaDatabase className="text-2xl sm:text-3xl md:text-4xl"  />,
+      icon: <FaDatabase className="text-2xl sm:text-3xl md:text-4xl" />,
       title: "Database Management",
       description:
         "I specialize in building robust and scalable web applications using the MERN stack, ensuring a seamless user experience from front-end to back-end.",
     },
     {
-      icon: <MdApi className="text-2xl sm:text-3xl md:text-4xl"  />,
+      icon: <MdApi className="text-2xl sm:text-3xl md:text-4xl" />,
       title: "API Development",
       description:
         "I specialize in building robust and scalable web applications using the MERN stack, ensuring a seamless user experience from front-end to back-end.",
     },
     {
-      icon: <SiSocketdotio className="text-2xl sm:text-3xl md:text-4xl"  />,
+      icon: <SiSocketdotio className="text-2xl sm:text-3xl md:text-4xl" />,
       title: "Real-time Applications",
       description:
         "I specialize in building robust and scalable web applications using the MERN stack, ensuring a seamless user experience from front-end to back-end.",
     },
     {
-      icon: <GrOptimize className="text-2xl sm:text-3xl md:text-4xl"  />,
+      icon: <GrOptimize className="text-2xl sm:text-3xl md:text-4xl" />,
       title: "Performance Optimization",
       description:
         "I specialize in building robust and scalable web applications using the MERN stack, ensuring a seamless user experience from front-end to back-end.",
     },
     {
-      icon: <FaShoppingCart className="text-2xl sm:text-3xl md:text-4xl"  />,
+      icon: <FaShoppingCart className="text-2xl sm:text-3xl md:text-4xl" />,
       title: "E-commerce Solutions",
       description:
         "I specialize in building robust and scalable web applications using the MERN stack, ensuring a seamless user experience from front-end to back-end.",
@@ -67,13 +67,13 @@ const Offer = () => {
     >
       <div className="flex flex-col items-center justify-center gap-3">
         <p
-        
+
           className="text-primary flex gap-0.5 justify-center items-center text-sm sm:text-base"
         >
           <GoDotFill /> What do I offer
         </p>
         <h3
-        
+
           className="text-xl sm:text-2xl md:text-3xl text-center"
         >
           Designing Solutions{" "}
@@ -95,7 +95,7 @@ const Offer = () => {
               delay: index * 0.05,
               ease: "easeOut",
             }}
-           
+
             className="rounded border p-5 mt-5 flex flex-col gap-3"
           >
             <div className="text-primary">{item.icon}</div>

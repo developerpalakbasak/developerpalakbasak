@@ -16,6 +16,8 @@ import {
 } from "react-icons/si";
 import { TbBrandNextjs } from "react-icons/tb";
 import { motion } from "framer-motion";
+import { Suspense, useEffect } from "react";
+import Spline from "@splinetool/react-spline";
 
 const Hero = () => {
   const icons = [
@@ -102,7 +104,7 @@ const Hero = () => {
   return (
     <div className="max-w-6xl mx-auto mt-5 py-5 px-4 rounded bg-section flex gap-10 flex-col md:flex-row overflow-hidden">
       {/* Left */}
-      
+
 
       {/* <div className="absolute inset-0 rounded-full shadow-[0_0_40px_15px_rgba(6,123,86,0.8)] animate-pulse-glow"></div> */}
 
@@ -120,13 +122,28 @@ const Hero = () => {
         {/* Profile with glow */}
         <div className="relative w-[298] h-[298] md:w-[350] md:h-[350] lg:w-[400] lg:h-[400] rounded-full">
           {/* Image */}
-          <img
+          {/* <img
             src={imageSrc}
             width={400}
             height={400}
             alt="developerpalak"
             className="w-full h-full rounded-full object-cover relative z-10"
-          />
+          /> */}
+          <Suspense
+            fallback={
+              <div className="w-full h-full flex items-center justify-center">
+                <div className="w-20 h-20 rounded-full border-2 border-violet-500/30 border-t-violet-500 animate-spin" />
+              </div>
+            }
+          >
+            <Spline
+              scene="/scene.splinecode"
+              style={{ width: "100%", height: "100%" }}
+              onLoad={() => {
+                window.dispatchEvent(new CustomEvent("spline-loaded"));
+              }}
+            />
+          </Suspense>
         </div>
 
         {/* Social Icons */}

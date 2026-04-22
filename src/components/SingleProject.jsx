@@ -6,15 +6,15 @@ const SingleProject = ({ project, index, islast }) => {
 
     return (
         <motion.section
-            
-            
+
+
             initial={{ opacity: 0, scale: 0.95 }}
             whileInView={{ opacity: 1, scale: 1 }}
             viewport={{ once: true, amount: 0.3 }}
             transition={{
-              duration: 0.4,
-              delay: index * 0.05,
-              ease: "easeOut",
+                duration: 0.4,
+                delay: index * 0.05,
+                ease: "easeOut",
             }}
             className={`${!islast && "border-b-2"} border-gray-600 pb-5`}>
 

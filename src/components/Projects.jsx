@@ -68,7 +68,7 @@ const Projects = () => {
 
     return (
         <div
-        id='projects'
+            id='projects'
             className="max-w-6xl mx-auto mt-5 py-5 p-6 bg-section rounded">
 
 
