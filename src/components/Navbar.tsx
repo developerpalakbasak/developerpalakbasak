@@ -32,8 +32,8 @@ const Navbar = () => {
   ];
 
   return (
-    <div className="sticky top-0 z-50 w-full px-2 pt-4">
-      <div className="w-[95%] md:w-full max-w-6xl lg:max-w-7xl xl:max-w-[1200px] 2xl:max-w-[1600px] mx-auto">
+    <div className="sticky top-0 z-50 w-full px-2 pt-1">
+      <div className="w-full md:w-full max-w-6xl lg:max-w-7xl xl:max-w-[1200px] 2xl:max-w-[1600px] mx-auto">
         <header className="w-full px-3 sm:px-4 py-2 sm:py-3 bg-card border border-card-border rounded-3xl shadow-xl backdrop-blur-md">
           <div className="flex items-center justify-between">
             {/* Logo and Brand Name */}
@@ -50,9 +50,8 @@ const Navbar = () => {
                 <Link
                   key={item.name}
                   href={item.link}
-                  className={`text-xs sm:text-sm font-bold transition-all duration-300 hover:text-primary ${
-                    pathname === item.link ? "text-primary border-b-2 border-primary" : "text-muted-foreground"
-                  }`}
+                  className={`text-xs sm:text-sm font-bold transition-all duration-300 hover:text-primary ${pathname === item.link ? "text-primary border-b-2 border-primary" : "text-muted-foreground"
+                    }`}
                 >
                   {item.name}
                 </Link>

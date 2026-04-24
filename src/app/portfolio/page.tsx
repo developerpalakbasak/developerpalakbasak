@@ -1,5 +1,4 @@
 import Projects from "@/components/Projects";
-import Stars from "@/components/Stars";
 
 /**
  * Portfolio Page Component
@@ -8,12 +7,9 @@ import Stars from "@/components/Stars";
 export default function Portfolio() {
   return (
     <div className="page-fade-in space-y-8 pb-12">
-      {/* Background Animated Stars Effect */}
-      <Stars />
-      
       {/* Header Section: Statement of quality and impact */}
       <div className="max-w-4xl mx-auto px-6 pt-12">
-        <h1 className="text-4xl font-bold mb-6 italic border-b-4 border-primary inline-block text-center">
+        <h1 className="text-4xl font-bold mb-6 italic border-b-4 border-primary inline-block text-center text-gradient">
           My Portfolio
         </h1>
         <p className="text-xl text-muted-foreground leading-relaxed">

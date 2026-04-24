@@ -1,6 +1,6 @@
-"use client";
 import Link from 'next/link';
 import React, { useEffect, useRef, useState } from 'react';
+import { createPortal } from 'react-dom';
 import { FaMoon, FaSun } from 'react-icons/fa';
 import { HiOutlineBars3 } from 'react-icons/hi2';
 
@@ -12,11 +12,15 @@ import { HiOutlineBars3 } from 'react-icons/hi2';
 const MobileMenu = ({ links, toggleTheme, theme, pathname, mounted }: any) => {
     const [mobileMenuToggle, setMobileMenuToggle] = useState(false);
     const mobileMenuRef = useRef<HTMLDivElement>(null);
+    const dropdownRef = useRef<HTMLDivElement>(null);
 
     // Effect to close the menu when clicking outside or scrolling
     useEffect(() => {
         const handleOutsideClick = (e: any) => {
-            if (mobileMenuRef.current && !mobileMenuRef.current.contains(e.target)) {
+            if (
+                mobileMenuRef.current && !mobileMenuRef.current.contains(e.target) &&
+                dropdownRef.current && !dropdownRef.current.contains(e.target)
+            ) {
                 setMobileMenuToggle(false);
             }
         };
@@ -38,33 +42,32 @@ const MobileMenu = ({ links, toggleTheme, theme, pathname, mounted }: any) => {
                 <HiOutlineBars3 size={30} />
             </button>
 
-            {/* Dropdown Menu & Overlay */}
-            {mobileMenuToggle && (
-                <>
+            {/* Dropdown Menu & Overlay - Using Portal to fix the blur clipping issue */}
+            {mobileMenuToggle && mounted && typeof document !== "undefined" && createPortal(
+                <div className="fixed inset-0 z-[9999]">
                     {/* Backdrop: Darkens the background and provides an extra close trigger */}
-                    <div 
-                        className="fixed inset-0 bg-black/20 backdrop-blur-sm z-40 transition-opacity"
+                    <div
+                        className="fixed inset-0 bg-black/20 backdrop-blur-sm transition-opacity"
                         onClick={() => setMobileMenuToggle(false)}
                     />
-                    
-                    {/* Menu Content: Absolute positioned container with navigation links */}
-                    <div className="flex flex-col gap-5 absolute top-14 right-0 w-[240px] sm:w-[280px] bg-background/95 backdrop-blur-md border border-card-border p-6 rounded-2xl shadow-2xl z-50 animate-in fade-in zoom-in duration-200 origin-top-right">
+
+                    {/* Menu Content: Positioned relative to the viewport to match original layout */}
+                    <div ref={dropdownRef} className="flex flex-col gap-5 fixed top-[4.5rem] right-4 sm:right-10 w-[240px] sm:w-[280px] bg-card border border-card-border p-6 rounded-2xl shadow-2xl z-[10000] animate-in fade-in zoom-in duration-200 origin-top-right">
                         <div className="flex flex-col gap-4">
                             {links.map((item: any) => (
-                                <Link key={item.name} 
+                                <Link key={item.name}
                                     href={item.link}
                                     onClick={() => setMobileMenuToggle(false)}
-                                    className={`text-lg sm:text-xl font-bold transition-all duration-300 hover:text-primary hover:translate-x-1 ${
-                                        pathname === item.link ? "text-primary flex items-center gap-2" : "text-foreground/80"
-                                    }`}>
+                                    className={`text-lg sm:text-xl font-bold transition-all duration-300 hover:text-primary hover:translate-x-1 ${pathname === item.link ? "text-primary flex items-center gap-2" : "text-foreground/80"
+                                        }`}>
                                     {pathname === item.link && <span className="w-2 h-2 rounded-full bg-primary" />}
                                     {item.name}
                                 </Link>
                             ))}
                         </div>
-                        
+
                         <div className="h-[1px] bg-card-border my-1" />
-                        
+
                         {/* Theme Toggle Section within Mobile Menu */}
                         <div className="flex items-center justify-between">
                             <span className="text-sm font-bold text-foreground/60 uppercase tracking-tighter">Theme</span>
@@ -79,7 +82,8 @@ const MobileMenu = ({ links, toggleTheme, theme, pathname, mounted }: any) => {
                             </button>
                         </div>
                     </div>
-                </>
+                </div>,
+                document.body
             )}
         </div>
     );

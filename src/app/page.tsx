@@ -1,5 +1,4 @@
 import Hero from "@/components/Hero";
-import Stars from "@/components/Stars";
 import ProfileCard from "@/components/ProfileCard";
 import SectionIntro from "@/components/SectionIntro";
 import UnifiedSkills from "@/components/UnifiedSkills";
@@ -12,13 +11,10 @@ import FAQ from "@/components/FAQ";
 export default function Home() {
   return (
     <div className="page-fade-in">
-      {/* Background Animated Stars Effect */}
-      <Stars />
-      
-      <div className="w-[95%] md:w-full max-w-6xl lg:max-w-7xl xl:max-w-[1200px] 2xl:max-w-[1600px] mx-auto flex flex-col gap-6 py-6">
+      <div className="w-[95%] md:w-full max-w-6xl lg:max-w-7xl xl:max-w-[1200px] 2xl:max-w-[1600px] mx-auto flex flex-col gap-6 py-1">
         {/* Hero Section: Main value proposition and 3D Spline scene */}
         <Hero />
-        
+
         {/* Section Intro: Detailed professional summary */}
         <SectionIntro
           title="I Don't Just Write Code — I Build Products That Matter"

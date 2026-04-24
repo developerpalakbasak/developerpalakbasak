@@ -4,6 +4,7 @@ import "./globals.css";
 import { Providers } from "@/components/theme";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import Stars from "@/components/Stars";
 
 // Configure the primary font for the application
 const spaceGrotesk = Space_Grotesk({
@@ -55,11 +56,14 @@ export default function RootLayout({ children }) {
         className={`${spaceGrotesk.variable} font-sans antialiased bg-background text-foreground transition-colors duration-300`}
       >
         <Providers>
+          {/* Background Animated Stars Effect (Global) */}
+          <Stars />
+          
           {/* Main Navigation Header */}
           <Navbar />
           
           {/* Page Content with horizontal margin for global layout */}
-          <main className="mx-10">{children}</main>
+          <main className="px-3">{children}</main>
           
           {/* Global Site Footer */}
           <Footer />

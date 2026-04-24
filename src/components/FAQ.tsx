@@ -42,20 +42,20 @@ const FAQ = () => {
   };
 
   return (
-    <section className="w-[95%] md:w-full max-w-6xl lg:max-w-7xl xl:max-w-[1200px] 2xl:max-w-[1600px] mx-auto mt-10 mb-10 py-12 p-6 bg-card/50 backdrop-blur-sm border border-card-border rounded-[2.5rem] relative overflow-hidden">
+    <section className="w-[98%] md:w-full max-w-6xl lg:max-w-7xl xl:max-w-[1200px] 2xl:max-w-[1600px] mx-auto mt-4 mb-4 sm:mt-10 sm:mb-10 py-2 px-4  sm:p-6 bg-card/50 backdrop-blur-sm border border-card-border rounded-xl sm:rounded-2xl lg:rounded-3xl relative overflow-hidden">
       {/* Visual background element: Decorative Glow */}
       <div className="absolute top-0 left-0 w-64 h-64 bg-primary/5 blur-[100px] rounded-full pointer-events-none" />
       
       {/* Header Section: Component context and visual title */}
-      <div className="relative z-10 flex flex-col items-center mb-12">
-        <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 border border-primary/20 mb-6">
+      <div className="relative z-10 flex flex-col items-center mb-6 sm:mb-12">
+        <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 border border-primary/20 mb-4 sm:mb-6">
           <GoDotFill className="text-primary animate-pulse" />
           <span className="text-xs font-bold tracking-widest uppercase text-primary">Got Questions?</span>
         </div>
-        <h2 className="text-3xl md:text-5xl font-black text-center mb-4">
+        <h2 className="text-2xl md:text-5xl font-black text-center mb-4">
           Frequently Asked <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-emerald-400">Questions</span>
         </h2>
-        <p className="text-slate-500 dark:text-slate-400 text-center max-w-2xl text-lg">
+        <p className="text-slate-500 dark:text-slate-400 text-center max-w-2xl text-sm sm:text-lg">
           Everything you need to know about working with me and the development process.
         </p>
       </div>
@@ -72,15 +72,15 @@ const FAQ = () => {
             {/* Question Trigger: Handles click to toggle expansion */}
             <button
               onClick={() => toggleFAQ(index)}
-              className="w-full flex items-center justify-between p-6 md:p-8 text-left transition-colors"
+              className="w-full flex items-center justify-between p-4 sm:p-6 md:p-8 text-left transition-colors"
             >
-              <div className="flex items-center gap-4">
-                <div className={`w-10 h-10 flex items-center justify-center rounded-xl border border-card-border transition-all duration-300 ${
+              <div className="flex items-start gap-3 sm:gap-4">
+                <div className={`w-8 h-8 sm:w-10 sm:h-10 shrink-0 flex items-center justify-center rounded-lg sm:rounded-xl border border-card-border mt-0.5 transition-all duration-300 ${
                   openIndex === index ? "bg-primary text-white scale-110 shadow-lg shadow-primary/20" : "bg-card-secondary text-primary"
                 }`}>
-                  <FaQuestionCircle className="text-xl" />
+                  <FaQuestionCircle className="text-base sm:text-xl" />
                 </div>
-                <span className={`text-lg md:text-xl font-bold transition-colors ${
+                <span className={`text-base md:text-xl font-bold transition-colors ${
                   openIndex === index ? "text-slate-900 dark:text-white" : "text-slate-600 dark:text-slate-300 group-hover:text-slate-900 dark:group-hover:text-white"
                 }`}>
                   {faq.question}
@@ -97,9 +97,9 @@ const FAQ = () => {
                 openIndex === index ? "max-h-[500px] opacity-100" : "max-h-0 opacity-0"
               }`}
             >
-              <div className="px-6 md:px-8 pb-8 pt-2">
-                <div className="h-[1px] w-full bg-card-border mb-6" />
-                <p className="text-slate-600 dark:text-slate-400 text-lg leading-relaxed md:pl-14">
+              <div className="px-5 sm:px-8 pb-6 sm:pb-8 pt-2">
+                <div className="h-[1px] w-full bg-card-border mb-4 sm:mb-6" />
+                <p className="text-slate-600 dark:text-slate-400 text-sm sm:text-lg leading-relaxed md:pl-14">
                   {faq.answer}
                 </p>
               </div>

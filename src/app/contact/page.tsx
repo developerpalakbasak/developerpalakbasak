@@ -1,5 +1,4 @@
 import Contact from "@/components/Contact";
-import Stars from "@/components/Stars";
 
 /**
  * Contact Page Component
@@ -8,12 +7,9 @@ import Stars from "@/components/Stars";
 export default function ContactPage() {
   return (
     <div className="page-fade-in space-y-8 pb-12">
-      {/* Background Animated Stars Effect */}
-      <Stars />
-      
       <div className="max-w-4xl mx-auto px-6 pt-12">
         {/* Header Section: Encouragement for outreach */}
-        <h1 className="text-4xl font-bold mb-6 italic border-b-4 border-primary inline-block text-center">Get In Touch</h1>
+        <h1 className="text-4xl font-bold mb-6 italic border-b-4 border-primary inline-block text-center text-gradient">Get In Touch</h1>
         <p className="text-xl text-muted-foreground">
           Ready to start your next project? Fill out the form below or reach out via email.
           I typically respond within 24 hours.

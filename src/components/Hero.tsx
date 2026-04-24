@@ -44,8 +44,8 @@ const Hero = () => {
       to: "https://www.linkedin.com/in/palak-basak-a05510208/",
       label: "LinkedIn",
     },
-    { 
-      icon: <SiRefinedgithub />, 
+    {
+      icon: <SiRefinedgithub />,
       to: "https://github.com/developerpalakbasak",
       label: "GitHub",
     },
@@ -77,14 +77,14 @@ const Hero = () => {
   const quotes = ["Web Apps", "Android Apps", "iOS Apps", "Desktop Apps"];
 
   return (
-    <div className="w-full py-10 px-8 bg-card/80 border border-card-border rounded-3xl flex gap-12 flex-col md:flex-row items-center overflow-hidden shadow-2xl relative">
+    <div className="w-full py-8 px-6 sm:py-10 sm:px-12 bg-card/80 border border-card-border rounded-xl sm:rounded-2xl lg:rounded-3xl flex gap-8 md:gap-12 flex-col md:flex-row items-center overflow-hidden shadow-2xl relative">
       {/* Decorative Glow Elements */}
       <div className="absolute -top-20 -left-20 w-64 h-64 bg-primary/10 rounded-full blur-[100px] pointer-events-none" />
       <div className="absolute -bottom-20 -right-20 w-64 h-64 bg-emerald-500/10 rounded-full blur-[100px] pointer-events-none" />
 
       {/* Left Column: Interactive 3D Spline scene and Social Links */}
       <div className="w-full md:w-1/2 flex flex-col items-center justify-center relative z-10">
-        <div className="relative w-full max-w-[400px] aspect-square rounded-3xl overflow-hidden">
+        <div className="relative w-full max-w-[280px] sm:max-w-[400px] aspect-square rounded-3xl overflow-hidden">
           {!isSplineLoaded && (
             <div className="absolute inset-0 z-20 bg-background/50 backdrop-blur-md flex items-center justify-center">
               <SplineLoader />
@@ -93,7 +93,7 @@ const Hero = () => {
           <Suspense fallback={<SplineLoader />}>
             <Spline
               scene="/scene.splinecode"
-              className="w-full h-full"
+              className="w-full h-full ml-6"
               onLoad={() => {
                 setIsSplineLoaded(true);
                 window.dispatchEvent(new CustomEvent("spline-loaded"));
@@ -110,7 +110,7 @@ const Hero = () => {
               href={item.to}
               target="_blank"
               rel="noopener noreferrer"
-              className="p-3 border-2 border-primary text-primary hover:text-white hover:bg-primary rounded-full transition-all duration-300 hover:scale-110 shadow-lg shadow-primary/10"
+              className="p-2 sm:p-3 border-2 border-primary text-primary hover:text-white hover:bg-primary rounded-full transition-all duration-300 hover:scale-110 shadow-lg shadow-primary/10"
               aria-label={item.label}
             >
               {item.icon}
@@ -121,27 +121,27 @@ const Hero = () => {
 
       {/* Right Column: Introduction and Professional Identity */}
       <div className="w-full md:w-1/2 flex flex-col justify-center relative z-10">
-        <p className="text-sm sm:text-base lg:text-lg font-bold tracking-widest text-primary uppercase mb-2">
+        <p className="text-xs sm:text-base lg:text-lg font-bold tracking-widest text-primary uppercase mb-2">
           👋 Welcome to my universe
         </p>
 
         <div>
-          <h1 className="text-3xl sm:text-4xl md:text-4xl lg:text-5xl xl:text-6xl leading-tight font-black mt-1">
-            I'm <span className="text-primary">Palak Basak</span>
+          <h1 className="text-xl sm:text-4xl md:text-5xl lg:text-5xl xl:text-6xl font-black mt-1 leading-tight">
+            I'm <span className="text-gradient">Palak Basak</span>
             <br />
-            <span className="text-slate-500 dark:text-slate-400">Digital Architect.</span>
+            <span className="text-gradient">Digital Architect.</span>
           </h1>
 
           <div className="relative mt-2">
             {/* Visual connector for the typewriter effect */}
             <div className="absolute left-0 top-0 bottom-0 w-1 rounded-full hidden md:block opacity-90 animate-glow-cycle" />
             <span className="flex md:ml-6">
-              <Typewriter quotes={quotes} className={"text-xl sm:text-3xl text-primary font-black uppercase tracking-widest"} />
+              <Typewriter quotes={quotes} className={"text-base sm:text-3xl text-primary font-black uppercase tracking-widest"} />
             </span>
           </div>
         </div>
 
-        <p className="mt-6 text-sm sm:text-base lg:text-lg leading-relaxed text-slate-500 dark:text-slate-400 max-w-xl">
+        <p className="mt-4 sm:mt-6 text-xs sm:text-base lg:text-lg leading-relaxed text-slate-500 dark:text-slate-400 max-w-xl font-medium sm:font-normal">
           Engineering <span className="text-primary font-bold">high-performance ecosystems</span> where design meets functionality. I specialize in building scalable web and mobile solutions for Android & iOS.
         </p>
 

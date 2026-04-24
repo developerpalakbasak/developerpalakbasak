@@ -5,7 +5,7 @@ export default function Stars() {
     const [stars, setStars] = useState<any[]>([]);
 
     useEffect(() => {
-        const generatedStars = Array.from({ length: 30 }, () => ({
+        const generatedStars = Array.from({ length: 12 }, () => ({
             top: Math.random() * 100,
             left: Math.random() * 100,
             duration: Math.random() * 3 + 5,

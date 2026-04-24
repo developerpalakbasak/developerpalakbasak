@@ -22,7 +22,7 @@ const Skills = () => {
     },
     {
       title: "Mobile",
-      description: "React Native, Android (Java/Kotlin), iOS (Swift), Expo",
+      description: "React Native, Expo",
       icon: <GoDotFill className="text-cyan-500" />,
     },
     {

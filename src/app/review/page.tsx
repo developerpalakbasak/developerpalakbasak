@@ -1,6 +1,5 @@
 "use client";
 import React from "react";
-import Stars from "@/components/Stars";
 import { FaQuoteLeft, FaStar } from "react-icons/fa";
 
 /**
@@ -70,12 +69,9 @@ const reviews = [
 const ReviewPage = () => {
   return (
     <div className="page-fade-in space-y-8 min-h-screen pb-20">
-      {/* Background Animated Stars Effect */}
-      <Stars />
-      
       {/* Header Section: Standardized across all top-level pages */}
       <div className="max-w-4xl mx-auto px-6 pt-12">
-        <h1 className="text-4xl font-bold mb-6 italic border-b-4 border-primary inline-block text-center">
+        <h1 className="text-4xl font-bold mb-6 italic border-b-4 border-primary inline-block text-center text-gradient">
           Client Reviews
         </h1>
         <p className="text-xl text-muted-foreground">

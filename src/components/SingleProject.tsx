@@ -11,7 +11,7 @@ const SingleProject = ({ project, index, islast }) => {
     <section>
       {/* Container: Alternates direction based on index for visual variety */}
       <div className={`w-[95%] md:w-full max-w-6xl lg:max-w-7xl xl:max-w-[1200px] 2xl:max-w-[1600px] mx-auto mt-5 py-8 px-4 bg-card/30 border border-card-border rounded-3xl flex gap-8 flex-col ${index % 2 === 0 ? "md:flex-row-reverse" : "md:flex-row"}`}>
-        
+
         {/* Project Visual Showcase */}
         <div className="w-full md:w-[40%] flex items-center justify-center">
           <img
@@ -23,10 +23,10 @@ const SingleProject = ({ project, index, islast }) => {
 
         {/* Project Content & Details */}
         <div className="w-full md:w-[60%] flex flex-col justify-center">
-          <h2 className="text-xl sm:text-2xl md:text-2xl lg:text-3xl xl:text-3xl 2xl:text-4xl font-bold leading-tight">
+          <h2 className="text-lg sm:text-2xl md:text-2xl lg:text-3xl xl:text-3xl 2xl:text-4xl font-bold leading-tight">
             {project.title}{" - "} <span className="text-primary">{project.titleQute}</span>
           </h2>
-          <p className="my-4 text-sm sm:text-base lg:text-base xl:text-base 2xl:text-lg text-slate-500 dark:text-slate-400 leading-relaxed font-medium">
+          <p className="my-4 text-xs sm:text-base lg:text-base xl:text-base 2xl:text-lg text-slate-500 dark:text-slate-400 leading-relaxed font-medium">
             {project.description}
           </p>
 
@@ -48,9 +48,9 @@ const SingleProject = ({ project, index, islast }) => {
           {/* Action Links: Demo and Repository */}
           <div className="flex gap-6 mt-6 text-sm sm:text-base font-bold">
             {project.liveDemo && (
-              <a 
-                href={project.liveDemo} 
-                target="_blank" 
+              <a
+                href={project.liveDemo}
+                target="_blank"
                 rel="noopener noreferrer"
                 className="text-primary hover:underline underline-offset-4 flex items-center gap-1"
               >
@@ -58,9 +58,9 @@ const SingleProject = ({ project, index, islast }) => {
               </a>
             )}
             {project.github && (
-              <a 
-                href={project.github} 
-                target="_blank" 
+              <a
+                href={project.github}
+                target="_blank"
                 rel="noopener noreferrer"
                 className="text-slate-600 dark:text-slate-300 hover:underline underline-offset-4"
               >

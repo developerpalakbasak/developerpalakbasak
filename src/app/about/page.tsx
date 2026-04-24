@@ -1,6 +1,5 @@
 import Skills from "@/components/Skills";
 import Progress from "@/components/Progress";
-import Stars from "@/components/Stars";
 
 /**
  * About Page Component
@@ -10,12 +9,9 @@ import Stars from "@/components/Stars";
 export default function About() {
   return (
     <div className="page-fade-in space-y-8 pb-12">
-      {/* Background Animated Stars Effect */}
-      <Stars />
-      
       <div className="max-w-4xl mx-auto px-6 pt-12">
         {/* Header Section: Professional summary and intent */}
-        <h1 className="text-4xl font-bold mb-6 italic border-b-4 border-primary inline-block text-center">About Me</h1>
+        <h1 className="text-4xl font-bold mb-6 italic border-b-4 border-primary inline-block text-center text-gradient">About Me</h1>
         <p className="text-xl text-muted-foreground mb-8 leading-relaxed">
           A dedicated Full-Stack Developer with a passion for building seamless digital experiences. 
           I combine technical excellence with creative problem-solving to deliver high-impact results.
