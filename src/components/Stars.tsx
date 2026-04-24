@@ -2,7 +2,7 @@
 import { useEffect, useState } from "react";
 
 export default function Stars() {
-    const [stars, setStars] = useState([]);
+    const [stars, setStars] = useState<any[]>([]);
 
     useEffect(() => {
         const generatedStars = Array.from({ length: 30 }, () => ({
@@ -16,7 +16,7 @@ export default function Stars() {
     }, []);
 
     return (
-        <div className="star-section fixed opacity-20 top-0 left-0 w-full h-full overflow-hidden">
+        <div className="star-section fixed opacity-20 top-0 left-0 w-full h-full overflow-hidden -z-10">
             {stars.map((star, i) => (
                 <span
                     key={i}
