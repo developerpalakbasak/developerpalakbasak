@@ -54,6 +54,7 @@ export default function RootLayout({ children }) {
 
       <body
         className={`${spaceGrotesk.variable} font-sans antialiased bg-background text-foreground`}
+
       >
         <Providers>
           {/* Background Animated Stars Effect (Global) */}

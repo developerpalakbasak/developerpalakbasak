@@ -35,7 +35,6 @@
   --color-navbar: var(--navbar);
   --color-text: var(--text);
   --color-section: var(--section);
-  --color-card: var(--card);
   --color-card-border: var(--card-border);
 }
 
@@ -52,6 +51,7 @@ body {
 }
 
 /* ─── Components & Utilities ─────────────────────────────── */
+
 
 .glass-button-yellow {
   background: #facc15;

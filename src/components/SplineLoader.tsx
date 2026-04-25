@@ -22,6 +22,11 @@ const SplineLoader = () => {
           </span>
         </div>
       </div>
+      {/* Loading Text Hint */}
+      <p className="mt-6 text-xs font-bold uppercase tracking-[0.3em] text-muted-foreground animate-pulse">
+        Initializing 3D World
+      </p>
+
     </div>
   );
 };

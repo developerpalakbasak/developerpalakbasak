@@ -35,6 +35,7 @@ const Navbar = () => {
     <div className="sticky top-0 z-50 w-full px-2 pt-1">
       <div className="w-full md:w-full max-w-6xl lg:max-w-7xl xl:max-w-[1200px] 2xl:max-w-[1600px] mx-auto">
         <header className="w-full px-3 sm:px-4 py-2 sm:py-3 bg-card border border-card-border rounded-3xl shadow-xl backdrop-blur-none sm:backdrop-blur-md">
+
           <div className="flex items-center justify-between">
             {/* Logo and Brand Name */}
             <Link href="/" className="text-xl select-none cursor-pointer font-bold flex gap-1 items-center justify-center">

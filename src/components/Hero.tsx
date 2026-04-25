@@ -27,7 +27,6 @@ import Typewriter from "./TypeWriter";
  * Designed with a high-end, futuristic aesthetic using glassmorphism and dynamic animations.
  */
 const Hero = () => {
-
   // Social media links and icons for professional outreach
   const socialLinks = [
     {
@@ -213,7 +212,7 @@ const Hero = () => {
 
       {/* Right Column: Interactive 3D Spline scene and Social Links */}
       <div className="hidden md:flex md:min-w-1/2 relative z-10 flex-col md:flex-row items-center justify-center gap-4">
-        <SplineScene />
+        {isDesktop && <SplineScene />}
 
         {/* Social Icons Strip: Professional network access - Hidden on mobile/tablet */}
         <div className="hidden lg:flex flex-col gap-4 text-xl absolute right-5 top-1/2 -translate-y-1/2">
@@ -231,7 +230,6 @@ const Hero = () => {
           ))}
         </div>
       </div>
-
     </div>
   );
 };

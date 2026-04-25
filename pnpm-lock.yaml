@@ -10,10 +10,17 @@ importers:
     dependencies:
       '@splinetool/react-spline':
         specifier: ^4.1.0
+<<<<<<< HEAD
         version: 4.1.0(@splinetool/runtime@1.12.88)(next@16.2.4(@babel/core@7.29.0)(react-dom@19.2.4(react@19.2.4))(react@19.2.4))(react-dom@19.2.4(react@19.2.4))(react@19.2.4)
       '@splinetool/runtime':
         specifier: ^1.12.88
         version: 1.12.88
+=======
+        version: 4.1.0(@splinetool/runtime@1.12.87)(next@16.2.4(@babel/core@7.29.0)(react-dom@19.2.4(react@19.2.4))(react@19.2.4))(react-dom@19.2.4(react@19.2.4))(react@19.2.4)
+      '@splinetool/runtime':
+        specifier: ^1.12.87
+        version: 1.12.87
+>>>>>>> e6549fd2b77a8fbdea1e985782fd1abbaf8305d9
       next:
         specifier: 16.2.4
         version: 16.2.4(@babel/core@7.29.0)(react-dom@19.2.4(react@19.2.4))(react@19.2.4)
@@ -2309,6 +2316,62 @@ snapshots:
       '@jridgewell/sourcemap-codec': 1.5.5
 
   '@napi-rs/wasm-runtime@0.2.12':
+<<<<<<< HEAD
+=======
+    dependencies:
+      '@emnapi/core': 1.10.0
+      '@emnapi/runtime': 1.10.0
+      '@tybys/wasm-util': 0.10.1
+    optional: true
+
+  '@next/env@16.2.4': {}
+
+  '@next/eslint-plugin-next@16.2.4':
+    dependencies:
+      fast-glob: 3.3.1
+
+  '@next/swc-darwin-arm64@16.2.4':
+    optional: true
+
+  '@next/swc-darwin-x64@16.2.4':
+    optional: true
+
+  '@next/swc-linux-arm64-gnu@16.2.4':
+    optional: true
+
+  '@next/swc-linux-arm64-musl@16.2.4':
+    optional: true
+
+  '@next/swc-linux-x64-gnu@16.2.4':
+    optional: true
+
+  '@next/swc-linux-x64-musl@16.2.4':
+    optional: true
+
+  '@next/swc-win32-arm64-msvc@16.2.4':
+    optional: true
+
+  '@next/swc-win32-x64-msvc@16.2.4':
+    optional: true
+
+  '@nodelib/fs.scandir@2.1.5':
+    dependencies:
+      '@nodelib/fs.stat': 2.0.5
+      run-parallel: 1.2.0
+
+  '@nodelib/fs.stat@2.0.5': {}
+
+  '@nodelib/fs.walk@1.2.8':
+    dependencies:
+      '@nodelib/fs.scandir': 2.1.5
+      fastq: 1.20.1
+
+  '@nolyfill/is-core-module@1.0.39': {}
+
+  '@rtsao/scc@1.1.0': {}
+
+  '@splinetool/react-spline@4.1.0(@splinetool/runtime@1.12.87)(next@16.2.4(@babel/core@7.29.0)(react-dom@19.2.4(react@19.2.4))(react@19.2.4))(react-dom@19.2.4(react@19.2.4))(react@19.2.4)':
+>>>>>>> e6549fd2b77a8fbdea1e985782fd1abbaf8305d9
     dependencies:
       '@emnapi/core': 1.10.0
       '@emnapi/runtime': 1.10.0

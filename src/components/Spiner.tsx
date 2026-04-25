@@ -64,6 +64,7 @@ const Spiner = () => {
           <div className="absolute -top-10 -right-10 w-24 h-24 sm:w-40 sm:h-40 rounded-full bg-emerald-500 blur-[30px] sm:blur-[80px] opacity-10" />
           <div className="absolute -bottom-10 -left-10 w-24 h-24 sm:w-40 sm:h-40 rounded-full bg-pink-500 blur-[30px] sm:blur-[80px] opacity-10" />
           <div className="absolute -bottom-10 -right-10 w-24 h-24 sm:w-40 sm:h-40 rounded-full bg-yellow-500 blur-[30px] sm:blur-[80px] opacity-10" />
+
         </div>
 
         {/* Orbiting Icons Container: Animated via 'spiner' class in globals.css */}

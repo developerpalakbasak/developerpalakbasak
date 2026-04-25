@@ -33,6 +33,7 @@ export default function ProfileCard() {
 
         {/* Left Column: Interactive Technical Orbit (Spiner) - Hidden on mobile for performance */}
         <div className="hidden md:flex w-full md:w-1/2 items-center justify-center scale-[0.4] sm:scale-75 md:scale-80 lg:scale-90 xl:scale-100 h-[180px] sm:h-auto">
+
           <Spiner />
         </div>
 
