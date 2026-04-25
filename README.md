@@ -1,54 +1,36 @@
-# 👋 Hi, I’m Palak Basak
+This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
-I’m a **Senior Full‑Stack Developer** specializing in building robust, scalable, and user‑friendly web applications.  
-With 5+ years of experience and 50+ completed projects, I love turning ideas into real, production‑ready software.  
+## Getting Started
 
----
+First, run the development server:
 
-## 🛠 What I Do — My Tech Stack
+```bash
+npm run dev
+# or
+yarn dev
+# or
+pnpm dev
+# or
+bun dev
+```
 
-### Front‑End  
-HTML · CSS · JavaScript · TypeScript · React · Next.js · React‑Native  
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-### Back‑End  
-Node.js · Express.js · PostgreSQL · MongoDB · REST / GraphQL APIs  
+You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
-### DevOps & Others  
-Docker · Linux CLI · Nginx · Authentication (OAuth / JWT / NextAuth) · Cloudinary / Cloud Storage  
+This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
----
+## Learn More
 
-## 🚀 What I Build / Recent Projects
+To learn more about Next.js, take a look at the following resources:
 
-- **Full‑Stack E‑commerce Platform** — Created with Next.js, MongoDB, Tailwind CSS, NextAuth & Cloudinary.  
-- **Social Media App** — Built using MERN stack with real‑time features.  
-- **Personal Blog / Portfolio Website** — Responsive, SEO‑optimized using Next.js and Tailwind CSS.  
-- **Web‑based Cloud IDE** — Full‑stack project with Docker, Express, MongoDB, Socket.IO.  
-- *...and many more custom web apps, APIs, and real‑time features.*
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-You can check out my projects and live demos on my [portfolio website](https://developerpalakbasak.vercel.app/).
+You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
 
----
+## Deploy on Vercel
 
-## ✅ What I’m Looking For
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-- Front‑end / Full‑stack remote opportunities (React / Next.js / Node.js).  
-- Collaborations on MERN / PostgreSQL / Docker‑based projects.  
-- Contributing to open-source or working on challenging, scalable web apps.
-
----
-
-## 📫 Contact & Connect with Me
-
-- 🌐 Portfolio: [developerpalakbasak.vercel.app](https://developerpalakbasak.vercel.app/)  
-- 🔗 LinkedIn: https://www.linkedin.com/in/developerpalakbasak/
-- ✉️ Email: [developerpalakbasak@gmail.com]  
-
----
-
-## 💡 Fun Facts & Interests  
-
-- I enjoy optimizing performance and building real‑time applications (chat, video call).  
-- Always learning new tools — recently exploring advanced TS + Docker + Cloud‑native workflows.  
-- Passionate about clean code, scalability, and developer‑friendly UX / backend design.
-
+Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.

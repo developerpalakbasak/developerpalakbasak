@@ -1,29 +1,31 @@
 @import "tailwindcss";
 
+/* ─── Custom Variants & Theme ────────────────────────────── */
+
+@custom-variant dark (&:where(.dark, .dark *));
+
 /* Default light theme variables */
 :root {
-  --background: #f9fafb;
-  --foreground: #171717;
-  --text: #6e7583;
+  --background: #ffffff;
+  --foreground: #000000;
+  --text: #374151;
   --logo: #067b56;
-  --logo-hover: #ffffff;
-  --navbar: #f4f4f4;
-  --section: #ededed;
+  --logo-hover: #046345;
+  --navbar: #ffffff;
+  --card: #ffffff;
+  --card-border: #e5e7eb;
 }
 
 /* Dark theme variables */
 .dark {
-  --background: #161616;
-  --foreground: #ededed;
-  --text: #ffffff;
-  --logo: #ffffff;
-  --logo-hover: #067b56;
+  --background: #000000;
+  --foreground: #ffffff;
+  --text: #d1d5db;
+  --logo: #10b981;
+  --logo-hover: #059669;
   --navbar: #000000;
-  --section: #000000;
-}
-
-html {
-  scroll-behavior: smooth;
+  --card: #050505;
+  --card-border: #262626;
 }
 
 @theme {
@@ -33,49 +35,86 @@ html {
   --color-navbar: var(--navbar);
   --color-text: var(--text);
   --color-section: var(--section);
+  --color-card: var(--card);
+  --color-card-border: var(--card-border);
 }
 
-/* ONLY set background on body, remove color so Tailwind works */
+/* ─── Global Base Styles ──────────────────────────────────── */
+
+html {
+  /* Removed smooth scroll - can conflict with native momentum and cause lag on mobile */
+}
+
 body {
   background: var(--background);
   font-family: "Space Grotesk", sans-serif;
+  /* Removed transition on background/color — causes repaint on every page */
 }
 
-/* Force black in light mode for specific elements (like link) */
+/* ─── Components & Utilities ─────────────────────────────── */
+
+.glass-button-yellow {
+  background: #facc15;
+  border: 1px solid #eab308;
+  color: #000000;
+  font-weight: 700;
+  transition: transform 0.2s ease, background 0.2s ease;
+  /* Removed transition: all — only animate what's needed */
+}
+
+.dark .glass-button-yellow {
+  background: #facc15;
+  color: #000000;
+}
+
+.glass-button-yellow:hover {
+  background: #eab308;
+  transform: scale(1.02);
+}
+
 .text-black-important {
   color: #000 !important;
 }
 
+/* ─── Animations ─────────────────────────────────────────── */
 
+/* Global Fade In */
+.page-fade-in {
+  animation: fadeIn 0.3s ease-in-out forwards;
+}
 
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
 
-
-
-
-
+/* ─── Spinner ─────────────────────────────────────────────── */
+/* rotate is 100% GPU composited — no changes needed here */
 
 @keyframes rotateCircle {
-  0% { transform: rotate(0deg); }
+  0%   { transform: rotate(0deg); }
   100% { transform: rotate(360deg); }
 }
 
 @keyframes counterRotate {
-  0% { transform: rotate(0deg); }
+  0%   { transform: rotate(0deg); }
   100% { transform: rotate(-360deg); }
 }
 
 .spiner {
   animation: rotateCircle 40s linear infinite;
+  will-change: transform;
 }
 
 .spiner > div > div {
   animation: counterRotate 40s linear infinite;
+  will-change: transform;
 }
-
 
 .spiner-icon-bg {
   background-image: linear-gradient(to bottom, #ffffff, #9b9b9b);
 }
+
 .custom-icon-color {
   color: #000;
 }
@@ -83,62 +122,82 @@ body {
 .dark .spiner-icon-bg {
   background-image: linear-gradient(to bottom, #545454, #000000);
 }
+
 .dark .custom-icon-color {
   color: #ffffff;
 }
 
+/* ─── Falling Stars ───────────────────────────────────────── */
+/*
+  KEY FIXES:
+  - Reduced box-shadow blur from 20px → 6px (massive repaint saving)
+  - Removed the large 300px ::before tail → now 80px
+  - Added will-change: transform so browser promotes to own layer
+  - Animate opacity at end instead of abrupt cut
+*/
 
-
-/* falling stars  */
-.star-section>span {
+.star-section > span {
   box-shadow:
-    0 0 0 4px rgba(255, 255, 255, 0.1),
-    0 0 0 8px rgba(255, 255, 255, 0.1),
-    0 0 20px rgb(255, 255, 255);
-
+    0 0 0 2px rgba(255, 255, 255, 0.06),
+    0 0 6px rgba(255, 255, 255, 0.35);
+  will-change: transform, opacity;
   animation: animateStar linear infinite;
 }
 
-.star-section>span::before {
+.star-section > span::before {
   content: "";
   position: absolute;
   top: 50%;
-  width: 300px;
-  height: 2px;
+  width: 80px;
+  height: 1px;
   transform: translateY(-50%);
-  background: linear-gradient(90deg, #ffffff, transparent);
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0.5), transparent);
 }
 
 @keyframes animateStar {
-  0% {
-    transform: rotate(90deg) translateX(0);
-  }
+  0%   { transform: rotate(90deg) translateX(0);      opacity: 1; }
+  85%  { opacity: 1; }
+  100% { transform: rotate(90deg) translateX(-100vw); opacity: 0; }
+}
 
-  100% {
-    transform: rotate(90deg) translateX(-1000px);
+/* ─── Glow Cycle ──────────────────────────────────────────── */
+/*
+  KEY FIX:
+  - Removed animating box-shadow (causes repaint every frame)
+  - Now only animates background-color + opacity (GPU friendly)
+  - If you need glow effect, use a ::after pseudo with opacity animation
+*/
+
+@keyframes glowCycle {
+  0%, 100% {
+    background-color: var(--logo);
+    opacity: 1;
+  }
+  50% {
+    background-color: #06b6d4;
+    opacity: 0.85;
   }
 }
 
-
-
-
-
-@keyframes rotateCircle {
-  from {
-    transform: rotate(0deg);
-  }
-
-  to {
-    transform: rotate(360deg);
-  }
+.animate-glow-cycle {
+  animation: glowCycle 4s infinite ease-in-out;
+  will-change: background-color, opacity;
 }
 
-@keyframes counterRotate {
-  from {
-    transform: rotate(0deg);
-  }
-
-  to {
-    transform: rotate(-360deg);
-  }
+/* Optional: add glow back via a non-repainting layer */
+.animate-glow-cycle::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  background: inherit;
+  filter: blur(10px);
+  opacity: 0.5;
+  z-index: -1;
+  animation: glowCycle 4s infinite ease-in-out;
+  will-change: opacity;
 }
+
+.text-gradient {
+  @apply text-transparent bg-clip-text bg-gradient-to-r from-primary via-blue-500 to-emerald-400;
+}
