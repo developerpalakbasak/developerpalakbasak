@@ -159,7 +159,7 @@ const Offer = () => {
   return (
     <section
       id="services"
-      className="w-[95%] md:w-full max-w-6xl lg:max-w-7xl xl:max-w-[1200px] 2xl:max-w-[1600px] mx-auto mt-5 py-8 md:py-10 p-6 bg-card border border-card-border rounded-3xl relative overflow-hidden shadow-sm"
+      className="w-full max-w-6xl lg:max-w-7xl xl:max-w-[1200px] 2xl:max-w-[1600px] mx-auto mt-5 py-8 md:py-10 p-6 bg-card border border-card-border rounded-xl sm:rounded-2xl lg:rounded-3xl relative overflow-hidden shadow-sm"
     >
       {/* Ambient background glows: Dynamic color switching per active tab */}
       <div

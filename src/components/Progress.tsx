@@ -35,7 +35,7 @@ const Progress = () => {
   ];
 
   return (
-    <section className="w-[95%] md:w-full max-w-6xl lg:max-w-7xl xl:max-w-[1200px] 2xl:max-w-[1600px] mx-auto mt-5 py-5 p-6 bg-card border border-card-border rounded-3xl flex gap-5 flex-col items-baseline md:justify-between md:flex-row">
+    <section className="w-full max-w-6xl lg:max-w-7xl xl:max-w-[1200px] 2xl:max-w-[1600px] mx-auto mt-5 py-5 p-6 bg-card border border-card-border rounded-xl sm:rounded-2xl lg:rounded-3xl flex gap-5 flex-col items-baseline md:justify-between md:flex-row">
       {progressItem.map((item, index) => (
         <div key={index} className="flex items-center gap-3">
           <div className="flex flex-col gap-2">

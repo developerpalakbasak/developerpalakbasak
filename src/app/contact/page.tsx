@@ -22,14 +22,14 @@ export default function ContactPage() {
       {/* Additional Information Grid: Availability and quick FAQs */}
       <div className="max-w-4xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-8 mt-12">
         {/* Working Hours Card */}
-        <div className="bg-card border border-card-border p-8 rounded-3xl">
+        <div className="bg-card border border-card-border p-8 rounded-xl sm:rounded-2xl lg:rounded-3xl">
           <h3 className="text-xl font-bold mb-4 text-primary">Working Hours</h3>
           <p className="text-muted-foreground">Monday - Friday: 9 AM - 6 PM EST</p>
           <p className="text-muted-foreground">Available for urgent consultations on weekends.</p>
         </div>
 
         {/* Quick FAQ Card: Project logistics at a glance */}
-        <div className="bg-card border border-card-border p-8 rounded-3xl">
+        <div className="bg-card border border-card-border p-8 rounded-xl sm:rounded-2xl lg:rounded-3xl">
           <h3 className="text-xl font-bold mb-4 text-primary">Collaboration FAQ</h3>
           <p className="text-sm text-muted-foreground mb-2"><strong>Project Timeline:</strong> 1-2 weeks for landing pages, 4-8 weeks for full-scale apps.</p>
           <p className="text-sm text-muted-foreground"><strong>Pricing:</strong> Hourly or fixed-price based on project scope.</p>

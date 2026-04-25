@@ -42,7 +42,7 @@ const FAQ = () => {
   };
 
   return (
-    <section className="w-[98%] md:w-full max-w-6xl lg:max-w-7xl xl:max-w-[1200px] 2xl:max-w-[1600px] mx-auto mt-4 mb-4 sm:mt-10 sm:mb-10 py-2 px-4  sm:p-6 bg-card/50 backdrop-blur-sm border border-card-border rounded-xl sm:rounded-2xl lg:rounded-3xl relative overflow-hidden">
+    <section className="w-full max-w-6xl lg:max-w-7xl xl:max-w-[1200px] 2xl:max-w-[1600px] mx-auto mt-4 mb-4 sm:mt-10 sm:mb-10 py-2 px-4  sm:p-6 bg-card/80 backdrop-blur-sm border border-card-border rounded-xl sm:rounded-2xl lg:rounded-3xl relative overflow-hidden">
       {/* Visual background element: Decorative Glow: Optimized for mobile */}
       <div className="absolute top-0 left-0 w-40 h-40 sm:w-64 sm:h-64 bg-primary/5 blur-[40px] sm:blur-[100px] rounded-full pointer-events-none" />
       
@@ -75,7 +75,7 @@ const FAQ = () => {
               className="w-full flex items-center justify-between p-2 sm:p-4 md:p-8 text-left transition-colors"
             >
               <div className="flex items-start gap-3 sm:gap-4">
-                <div className={`w-8 h-8 sm:w-10 sm:h-10 shrink-0 flex items-center justify-center rounded-lg sm:rounded-xl border border-card-border mt-0.5 transition-all duration-300 ${
+                <div className={`w-8 h-8 sm:w-10 sm:h-10 shrink-0 flex items-center justify-center rounded-xl sm:rounded-2xl lg:rounded-3xl border border-card-border mt-0.5 transition-all duration-300 ${
                   openIndex === index ? "bg-primary text-white scale-110 shadow-lg shadow-primary/20" : "bg-card-secondary text-primary"
                 }`}>
                   <FaQuestionCircle className="text-base sm:text-xl" />
@@ -109,7 +109,7 @@ const FAQ = () => {
       </div>
 
       {/* Bottom CTA: Link to contact page for further inquiries */}
-      <div className="mt-16 text-center">
+      <div className="mt-6 sm:mt-10 text-center">
         <p className="text-slate-500 dark:text-slate-400 mb-4">Still have questions?</p>
         <a 
           href="/contact" 

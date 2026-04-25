@@ -29,7 +29,7 @@ const Contact = () => {
   return (
     <div
       id="contact"
-      className="w-[95%] md:w-full max-w-6xl lg:max-w-7xl xl:max-w-[1200px] 2xl:max-w-[1600px] mx-auto mt-5 py-6 md:py-8 lg:py-10 2xl:py-14 p-6 bg-card border border-card-border rounded-3xl"
+      className="w-full max-w-6xl lg:max-w-7xl xl:max-w-[1200px] 2xl:max-w-[1600px] mx-auto mt-5 py-6 md:py-8 lg:py-10 2xl:py-14 p-6 bg-card border border-card-border rounded-xl sm:rounded-2xl lg:rounded-3xl"
     >
       {/* Header: Call to action for building projects */}
       <div className="flex flex-col items-center justify-center gap-3">
@@ -65,8 +65,8 @@ const Contact = () => {
       </div>
 
       {/* Location Information Card */}
-      <div className="w-full max-w-2xl mx-auto mt-10 p-1 rounded-3xl">
-        <div className="border border-card-border bg-card/50 backdrop-blur-sm px-6 py-8 rounded-3xl flex flex-col gap-4">
+      <div className="w-full max-w-2xl mx-auto mt-10 p-1 rounded-xl sm:rounded-2xl lg:rounded-3xl">
+        <div className="border border-card-border bg-card/50 backdrop-blur-sm px-6 py-8 rounded-xl sm:rounded-2xl lg:rounded-3xl flex flex-col gap-4">
           {contactInfo.map((item) => (
             <div
               key={item.title}

@@ -85,7 +85,7 @@ const Projects = () => {
     return (
         <div
             id='projects'
-            className="w-[95%] md:w-full max-w-6xl lg:max-w-7xl xl:max-w-[1200px] 2xl:max-w-[1600px] mx-auto mt-5 py-5 p-6 bg-card border border-card-border rounded-xl sm:rounded-2xl lg:rounded-3xl"
+            className="w-full max-w-6xl lg:max-w-7xl xl:max-w-[1200px] 2xl:max-w-[1600px] mx-auto mt-5 py-5 p-6 bg-card border border-card-border rounded-xl sm:rounded-2xl lg:rounded-3xl"
         >
             {/* Section Header: Context for the project showcase */}
             <div className='flex flex-col items-center justify-center gap-3'>

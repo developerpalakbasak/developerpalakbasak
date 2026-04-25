@@ -43,7 +43,7 @@ const Skills = () => {
   ];
 
   return (
-    <div className="w-[95%] md:w-full max-w-6xl lg:max-w-7xl xl:max-w-[1200px] 2xl:max-w-[1600px] mx-auto mt-5 py-6 md:py-8 lg:py-10 2xl:py-14 p-6 bg-card border border-card-border rounded-3xl shadow-sm">
+    <div className="w-full max-w-6xl lg:max-w-7xl xl:max-w-[1200px] 2xl:max-w-[1600px] mx-auto mt-5 py-6 md:py-8 lg:py-10 2xl:py-14 p-6 bg-card border border-card-border rounded-xl sm:rounded-2xl lg:rounded-3xl shadow-sm">
       {/* Header: Skill context and value proposition */}
       <div className="flex flex-col items-center justify-center gap-3">
         <p className="text-primary flex gap-0.5 justify-center items-center text-xs sm:text-sm md:text-base font-bold">
@@ -58,7 +58,7 @@ const Skills = () => {
       </div>
 
       {/* Skills Container: List of categorized skills with detailed descriptions */}
-      <div className="w-full max-w-2xl mx-auto mt-10 py-5 px-4 rounded-3xl bg-card/50 backdrop-blur-sm border border-card-border flex flex-col gap-5">
+      <div className="w-full max-w-2xl mx-auto mt-10 py-5 px-4 rounded-xl sm:rounded-2xl lg:rounded-3xl bg-card/50 backdrop-blur-sm border border-card-border flex flex-col gap-5">
         <div className="w-full flex flex-col justify-center gap-4">
           {SkillsData.map((skill) => (
             <div

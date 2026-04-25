@@ -10,7 +10,7 @@ const SingleProject = ({ project, index, islast }) => {
   return (
     <section>
       {/* Container: Alternates direction based on index for visual variety */}
-      <div className={`w-[95%] md:w-full max-w-6xl lg:max-w-7xl xl:max-w-[1200px] 2xl:max-w-[1600px] mx-auto mt-5 py-8 px-4 bg-card/30 border border-card-border rounded-3xl flex gap-8 flex-col ${index % 2 === 0 ? "md:flex-row-reverse" : "md:flex-row"}`}>
+      <div className={`w-full max-w-6xl lg:max-w-7xl xl:max-w-[1200px] 2xl:max-w-[1600px] mx-auto mt-5 py-8 px-4 bg-card/30 border border-card-border rounded-xl sm:rounded-2xl lg:rounded-3xl flex gap-8 flex-col ${index % 2 === 0 ? "md:flex-row-reverse" : "md:flex-row"}`}>
 
         {/* Project Visual Showcase */}
         <div className="w-full md:w-[40%] flex items-center justify-center">

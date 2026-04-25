@@ -85,7 +85,7 @@ const ReviewPage = () => {
         {reviews.map((review) => (
           <div 
             key={review.id} 
-            className="group relative bg-card border border-card-border p-8 rounded-[2.5rem] hover:border-primary/40 transition-all duration-500 hover:-translate-y-2 hover:shadow-2xl hover:shadow-primary/5 flex flex-col justify-between overflow-hidden shadow-sm"
+            className="group relative bg-card border border-card-border p-8 rounded-xl sm:rounded-2xl lg:rounded-3xl hover:border-primary/40 transition-all duration-500 hover:-translate-y-2 hover:shadow-2xl hover:shadow-primary/5 flex flex-col justify-between overflow-hidden shadow-sm"
           >
             {/* Visual background accent for depth */}
             <div className="absolute -top-10 -right-10 w-32 h-32 bg-primary/5 rounded-full blur-3xl group-hover:bg-primary/10 transition-colors" />
@@ -122,7 +122,7 @@ const ReviewPage = () => {
 
       {/* Trust Badge Section: Conversion-focused call to action */}
       <div className="max-w-4xl mx-auto px-6 mt-24 text-center">
-        <div className="p-10 rounded-[3rem] bg-card border border-card-border relative overflow-hidden shadow-sm">
+        <div className="p-10 rounded-xl sm:rounded-2xl lg:rounded-3xl bg-card border border-card-border relative overflow-hidden shadow-sm">
           <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-transparent pointer-events-none" />
           <h3 className="text-2xl md:text-3xl font-bold mb-4">Ready to start your next project?</h3>
           <p className="text-slate-600 dark:text-slate-400 mb-8">Join these satisfied clients and let's build something extraordinary together.</p>

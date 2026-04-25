@@ -13,7 +13,10 @@
   --logo-hover: #046345;
   --navbar: #ffffff;
   --card: #ffffff;
+  --card-secondary: #f9fafb;
   --card-border: #e5e7eb;
+  --primary: #067b56;
+  --primary-rgb: 6, 123, 86;
 }
 
 /* Dark theme variables */
@@ -25,16 +28,20 @@
   --logo-hover: #059669;
   --navbar: #000000;
   --card: #050505;
+  --card-secondary: #0a0a0a;
   --card-border: #262626;
+  --primary: #10b981;
+  --primary-rgb: 16, 185, 129;
 }
 
 @theme {
-  --color-primary: #067b56;
+  --color-primary: var(--primary);
   --color-logo: var(--logo);
   --color-logo-hover: var(--logo-hover);
   --color-navbar: var(--navbar);
   --color-text: var(--text);
-  --color-section: var(--section);
+  --color-card: var(--card);
+  --color-card-secondary: var(--card-secondary);
   --color-card-border: var(--card-border);
 }
 

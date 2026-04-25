@@ -53,11 +53,11 @@ export default function ProfileCard() {
 
               {/* Profile Portrait with interactive glow effect */}
               <div className="relative group w-full max-w-[180px] sm:max-w-full md:ml-10">
-                <div className="absolute -inset-2 bg-gradient-to-r from-primary to-cyan-500 rounded-[1.5rem] sm:rounded-[2.5rem] blur-xl opacity-20 group-hover:opacity-50 transition duration-700" />
+                <div className="absolute -inset-2 bg-gradient-to-r from-primary to-cyan-500 rounded-xl sm:rounded-2xl lg:rounded-3xl blur-xl opacity-20 group-hover:opacity-50 transition duration-700" />
                 <img
                   src="/palakbasak.webp"
                   alt="Palak Basak"
-                  className="relative w-full aspect-square sm:aspect-auto object-cover rounded-[1.5rem] sm:rounded-[2.5rem] shadow-2xl border-4 border-primary/10 transition-transform duration-500 group-hover:scale-[1.02]"
+                  className="relative w-full aspect-square sm:aspect-auto object-cover rounded-xl sm:rounded-2xl lg:rounded-3xl shadow-2xl border-4 border-primary/10 transition-transform duration-500 group-hover:scale-[1.02]"
                 />
               </div>
             </div>

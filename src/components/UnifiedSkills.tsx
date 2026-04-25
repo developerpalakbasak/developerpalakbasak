@@ -70,7 +70,7 @@ const UnifiedSkills = () => {
   const [activeTab, setActiveTab] = useState("web");
 
   return (
-    <section className="w-[95%] md:w-full max-w-6xl lg:max-w-7xl xl:max-w-[1200px] 2xl:max-w-[1600px] mx-auto mt-10 py-4 sm:py-2 lg:py-4 p-4 sm:p-2 lg:p-2 bg-card/80 backdrop-blur-none sm:backdrop-blur-xl border border-card-border rounded-xl sm:rounded-2xl lg:rounded-3xl relative overflow-hidden shadow-2xl transition-all duration-500 hover:shadow-primary/10">
+    <section className="w-full max-w-6xl lg:max-w-7xl xl:max-w-[1200px] 2xl:max-w-[1600px] mx-auto py-4 sm:py-2 lg:py-4 p-4 sm:p-2 lg:p-2 bg-card/80 backdrop-blur-none sm:backdrop-blur-xl border border-card-border rounded-xl sm:rounded-2xl lg:rounded-3xl relative overflow-hidden shadow-2xl transition-all duration-500 hover:shadow-primary/10">
       {/* Dynamic Background Gradients: Optimized for mobile performance */}
       <div className="absolute -top-24 -right-24 w-64 h-64 sm:w-[500px] sm:h-[500px] bg-primary/10 blur-[50px] sm:blur-[120px] rounded-full pointer-events-none" />
       <div className="absolute -bottom-24 -left-24 w-64 h-64 sm:w-[500px] sm:h-[500px] bg-blue-600/10 blur-[50px] sm:blur-[120px] rounded-full pointer-events-none" />
@@ -128,9 +128,9 @@ const UnifiedSkills = () => {
                 {cat.skills.map((skill, i) => (
                   <div
                     key={i}
-                    className="flex items-center gap-4 p-2 sm:p-5 rounded-xl sm:rounded-2xl bg-card border border-card-border hover:border-primary/50 hover:bg-primary/5 transition-all duration-300 group shadow-sm hover:shadow-primary/5"
+                    className="flex items-center gap-4 p-2 sm:p-5 rounded-xl sm:rounded-2xl lg:rounded-3xl bg-card border border-card-border hover:border-primary/50 hover:bg-primary/5 transition-all duration-300 group shadow-sm hover:shadow-primary/5"
                   >
-                    <div className="w-12 h-12 flex items-center justify-center rounded-2xl bg-card-secondary border border-card-border text-2xl text-primary group-hover:scale-110 group-hover:rotate-6 transition-all duration-300 shadow-inner">
+                    <div className="w-12 h-12 flex items-center justify-center rounded-xl sm:rounded-2xl lg:rounded-3xl bg-card-secondary border border-card-border text-2xl text-primary group-hover:scale-110 group-hover:rotate-6 transition-all duration-300 shadow-inner">
                       {skill.icon}
                     </div>
                     <span className="font-bold text-slate-800 dark:text-slate-200">{skill.name}</span>
@@ -195,7 +195,7 @@ const UnifiedSkills = () => {
         <div className="flex flex-col sm:flex-row items-center gap-4 sm:gap-6">
           <div className="flex items-center gap-3 sm:gap-4">
             {[FaGlobe, FaMobileAlt, FaDesktop].map((Icon, i) => (
-              <div key={i} className="w-10 h-10 sm:w-12 sm:h-12 md:w-14 md:h-14 rounded-xl sm:rounded-2xl bg-card-secondary border border-card-border flex items-center justify-center text-xl sm:text-2xl text-primary shadow-lg hover:-translate-y-1 transition-transform duration-300">
+              <div key={i} className="w-10 h-10 sm:w-12 sm:h-12 md:w-14 md:h-14 rounded-xl sm:rounded-2xl lg:rounded-3xl bg-card-secondary border border-card-border flex items-center justify-center text-xl sm:text-2xl text-primary shadow-lg hover:-translate-y-1 transition-transform duration-300">
                 <Icon />
               </div>
             ))}

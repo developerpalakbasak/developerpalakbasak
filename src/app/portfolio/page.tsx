@@ -23,10 +23,10 @@ export default function Portfolio() {
       <Projects />
 
       {/* Expertise Summary Grid: Highlights specific development niches and value propositions */}
-      <div className="w-[95%] md:w-full max-w-6xl lg:max-w-7xl xl:max-w-[1200px] 2xl:max-w-[1600px] mx-auto px-6 py-12 grid grid-cols-1 md:grid-cols-2 gap-8 mt-12">
+      <div className="w-full max-w-6xl lg:max-w-7xl xl:max-w-[1200px] 2xl:max-w-[1600px] mx-auto px-6 py-12 grid grid-cols-1 md:grid-cols-2 gap-8 mt-12">
         
         {/* Expertise: SaaS architectures for high-traffic systems */}
-        <div className="bg-card border border-card-border p-8 rounded-3xl shadow-sm hover:shadow-xl transition-shadow duration-300">
+        <div className="bg-card border border-card-border p-8 rounded-xl sm:rounded-2xl lg:rounded-3xl shadow-sm hover:shadow-xl transition-shadow duration-300">
           <h3 className="text-2xl font-bold mb-3 text-primary">
             Scalable SaaS Architectures
           </h3>
@@ -38,7 +38,7 @@ export default function Portfolio() {
         </div>
 
         {/* Expertise: Cross-platform Mobile development focus */}
-        <div className="bg-card border border-card-border p-8 rounded-3xl shadow-sm hover:shadow-xl transition-shadow duration-300">
+        <div className="bg-card border border-card-border p-8 rounded-xl sm:rounded-2xl lg:rounded-3xl shadow-sm hover:shadow-xl transition-shadow duration-300">
           <h3 className="text-2xl font-bold mb-3 text-primary">
             Mobile App Projects
           </h3>
@@ -50,7 +50,7 @@ export default function Portfolio() {
         </div>
 
         {/* Expertise: Conversion-focused E-commerce solutions */}
-        <div className="bg-card border border-card-border p-8 rounded-3xl shadow-sm hover:shadow-xl transition-shadow duration-300">
+        <div className="bg-card border border-card-border p-8 rounded-xl sm:rounded-2xl lg:rounded-3xl shadow-sm hover:shadow-xl transition-shadow duration-300">
           <h3 className="text-2xl font-bold mb-3 text-primary">
             Modern E-commerce Platforms
           </h3>
@@ -62,7 +62,7 @@ export default function Portfolio() {
         </div>
 
         {/* Expertise: Specialized Real-time and Cloud-native applications */}
-        <div className="bg-card border border-card-border p-8 rounded-3xl shadow-sm hover:shadow-xl transition-shadow duration-300">
+        <div className="bg-card border border-card-border p-8 rounded-xl sm:rounded-2xl lg:rounded-3xl shadow-sm hover:shadow-xl transition-shadow duration-300">
           <h3 className="text-2xl font-bold mb-3 text-primary">
             Real-time &amp; Cloud Apps
           </h3>
