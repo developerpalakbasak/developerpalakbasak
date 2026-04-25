@@ -10,13 +10,8 @@ import FAQ from "@/components/FAQ";
  */
 export default function Home() {
   return (
-<<<<<<< HEAD
-    <div>
-      <div className="w-full md:w-[95%] max-w-6xl lg:max-w-7xl xl:max-w-[1200px] 2xl:max-w-[1600px] mx-auto flex flex-col gap-6 py-1">
-=======
     <div className="page-fade-in">
       <div className="w-[95%] md:w-full max-w-6xl lg:max-w-7xl xl:max-w-[1200px] 2xl:max-w-[1600px] mx-auto flex flex-col gap-6 py-1">
->>>>>>> e6549fd2b77a8fbdea1e985782fd1abbaf8305d9
         {/* Hero Section: Main value proposition and 3D Spline scene */}
         <Hero />
 
