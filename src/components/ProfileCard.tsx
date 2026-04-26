@@ -11,19 +11,19 @@ export default function ProfileCard() {
     <section className="w-full flex flex-col items-center gap-10">
       {/* Section Header: Styled exactly like the UnifiedSkills section */}
       <div className="relative z-10 flex flex-col items-center text-center">
-        <h2 className="text-3xl md:text-5xl font-black mb-6 leading-tight max-w-3xl">
+        <h2 className="text-3xl md:text-5xl 2xl:text-6xl font-black mb-6 2xl:mb-10 leading-tight max-w-3xl 2xl:max-w-5xl">
           Mastering the <span className="text-gradient">Digital Realm</span>
         </h2>
 
-        <p className="text-slate-500 dark:text-slate-400 max-w-2xl text-sm sm:text-lg leading-relaxed">
+        <p className="text-slate-500 dark:text-slate-400 max-w-2xl 2xl:max-w-4xl text-sm sm:text-lg 2xl:text-2xl leading-relaxed 2xl:leading-loose">
           From the core of the server to the palm of your hand, I build integrated ecosystems that are fast, secure, and beautiful across every device.
         </p>
       </div>
-      <div className="w-full py-4 sm:py-4 bg-card/80 border border-card-border rounded-xl sm:rounded-2xl lg:rounded-3xl flex flex-col items-center gap-2 sm:gap-4 overflow-hidden shadow-2xl relative">
+      <div className="w-full py-4 sm:py-4 2xl:py-12 bg-card/80 border border-card-border rounded-xl sm:rounded-2xl lg:rounded-3xl 2xl:rounded-[2.5rem] flex flex-col items-center gap-2 sm:gap-4 2xl:gap-8 overflow-hidden shadow-2xl relative">
         {/* Top Badge: Featured identity label */}
         <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 border border-primary/20 group cursor-default">
           <GoDotFill className="text-primary animate-pulse group-hover:scale-125 transition-transform" />
-          <span className="text-xs font-bold tracking-[0.2em] uppercase text-primary">Full-Stack Identity</span>
+          <span className="text-xs 2xl:text-base font-bold tracking-[0.2em] uppercase text-primary">Full-Stack Identity</span>
         </div>
 
         {/* Content Container: Wraps the interactive orbit and the bio section */}
@@ -32,18 +32,18 @@ export default function ProfileCard() {
         <div className="absolute top-0 right-0 w-40 h-40 sm:w-64 sm:h-64 bg-primary/5 rounded-full blur-[40px] sm:blur-[120px] pointer-events-none" />
 
         {/* Left Column: Interactive Technical Orbit (Spiner) - Hidden on mobile for performance */}
-        <div className="hidden md:flex w-full md:w-1/2 items-center justify-center scale-[0.4] sm:scale-75 md:scale-80 lg:scale-90 xl:scale-100 h-[180px] sm:h-auto">
+        <div className="hidden md:flex w-full md:w-1/2 items-center justify-center scale-[0.4] sm:scale-75 md:scale-80 lg:scale-90 xl:scale-100 2xl:scale-[1.35] h-[180px] sm:h-auto">
 
           <Spiner />
         </div>
 
         {/* Right Column: Identity, Portrait, and Core Focus Areas */}
         <div className="w-full md:w-1/2 flex flex-col items-center md:items-start text-center md:text-left gap-4 relative z-10">
-          <div className="w-full max-w-[240px] sm:max-w-[250px] md:max-w-[260px] lg:max-w-[280px] xl:max-w-[300px] space-y-4 flex flex-col items-center md:items-start md:pl-10">
+          <div className="w-full max-w-[240px] sm:max-w-[250px] md:max-w-[260px] lg:max-w-[280px] xl:max-w-[300px] 2xl:max-w-[400px] space-y-4 2xl:space-y-8 flex flex-col items-center md:items-start md:pl-10">
 
 
             {/* Identity Title with high-contrast gradient text */}
-            <h1 className="text-xl sm:text-4xl lg:text-4xl xl:text-5xl 2xl:text-6xl font-black tracking-tighter text-gradient drop-shadow-md py-1 whitespace-nowrap">
+            <h1 className="text-xl sm:text-4xl lg:text-4xl xl:text-5xl 2xl:text-7xl font-black tracking-tighter text-gradient drop-shadow-md py-1 whitespace-nowrap">
               Palak Basak
             </h1>
 
@@ -64,14 +64,14 @@ export default function ProfileCard() {
 
             {/* Professional Credentials & Platform Badges */}
             <div className="space-y-3 sm:space-y-4 w-full pt-2">
-              <p className="text-xs sm:text-lg lg:text-xl font-black text-foreground/80 tracking-widest uppercase pl-2">
+              <p className="text-xs sm:text-lg lg:text-xl 2xl:text-3xl font-black text-foreground/80 tracking-widest uppercase pl-2">
                 Senior Developer
               </p>
               <div className="flex flex-wrap gap-1.5 sm:gap-2 pl-2">
-                <span className="text-[9px] sm:text-xs font-bold uppercase tracking-widest px-2.5 py-1 rounded-full bg-primary/10 text-primary border border-primary/20">Web</span>
-                <span className="text-[9px] sm:text-xs font-bold uppercase tracking-widest px-2.5 py-1 rounded-full bg-cyan-500/10 text-cyan-400 border border-cyan-500/20">Android</span>
-                <span className="text-[9px] sm:text-xs font-bold uppercase tracking-widest px-2.5 py-1 rounded-full bg-slate-500/10 text-slate-300 border border-slate-500/20">iOS</span>
-                <span className="text-[9px] sm:text-xs font-bold uppercase tracking-widest px-2.5 py-1 rounded-full bg-amber-400/10 text-amber-400 border border-amber-400/20">React Native</span>
+                <span className="text-[9px] sm:text-xs 2xl:text-base font-bold uppercase tracking-widest px-2.5 py-1 2xl:px-4 2xl:py-2 rounded-full bg-primary/10 text-primary border border-primary/20">Web</span>
+                <span className="text-[9px] sm:text-xs 2xl:text-base font-bold uppercase tracking-widest px-2.5 py-1 2xl:px-4 2xl:py-2 rounded-full bg-cyan-500/10 text-cyan-400 border border-cyan-500/20">Android</span>
+                <span className="text-[9px] sm:text-xs 2xl:text-base font-bold uppercase tracking-widest px-2.5 py-1 2xl:px-4 2xl:py-2 rounded-full bg-slate-500/10 text-slate-300 border border-slate-500/20">iOS</span>
+                <span className="text-[9px] sm:text-xs 2xl:text-base font-bold uppercase tracking-widest px-2.5 py-1 2xl:px-4 2xl:py-2 rounded-full bg-amber-400/10 text-amber-400 border border-amber-400/20">React Native</span>
               </div>
             </div>
           </div>

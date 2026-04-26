@@ -82,10 +82,10 @@ const UnifiedSkills = () => {
           <GoDotFill className="text-primary animate-pulse group-hover:scale-125 transition-transform" />
           <span className="text-xs font-bold tracking-[0.2em] uppercase text-primary">Comprehensive Tech Stack</span>
         </div>
-        <h2 className="text-4xl md:text-6xl font-black text-center mb-6 leading-tight">
+        <h2 className="text-4xl md:text-6xl 2xl:text-7xl font-black text-center mb-6 2xl:mb-10 leading-tight">
           Mastering the <span className="text-gradient">Digital Realm</span>
         </h2>
-        <p className="text-slate-600 dark:text-slate-400 text-center max-w-3xl text-lg md:text-xl leading-relaxed">
+        <p className="text-slate-600 dark:text-slate-400 text-center max-w-3xl 2xl:max-w-5xl text-lg md:text-xl 2xl:text-2xl 2xl:leading-loose leading-relaxed">
           From the core of the server to the palm of your hand, I build integrated
           ecosystems that are fast, secure, and beautiful across every device.
         </p>
@@ -97,13 +97,13 @@ const UnifiedSkills = () => {
           <button
             key={cat.id}
             onClick={() => setActiveTab(cat.id)}
-            className={`flex-1 sm:flex-initial flex items-center justify-center gap-2 md:gap-3 px-4 md:px-10 py-2.5 md:py-4 rounded-full font-extrabold text-xs md:text-base transition-all duration-500 ${
+            className={`flex-1 sm:flex-initial flex items-center justify-center gap-2 md:gap-3 2xl:gap-5 px-4 md:px-10 2xl:px-16 py-2.5 md:py-4 2xl:py-6 rounded-full font-extrabold text-xs md:text-base 2xl:text-2xl transition-all duration-500 ${
               activeTab === cat.id 
                 ? "bg-primary text-white shadow-[0_8px_20px_rgba(var(--primary-rgb),0.3)] scale-105" 
                 : "text-slate-500 dark:text-slate-400 hover:text-slate-900 dark:hover:text-slate-200 hover:bg-white/5"
             }`}
           >
-            <span className="text-xl sm:text-2xl">{cat.icon}</span>
+            <span className="text-xl sm:text-2xl 2xl:text-4xl">{cat.icon}</span>
             <span className="hidden sm:inline">{cat.title}</span>
           </button>
         ))}
@@ -117,8 +117,8 @@ const UnifiedSkills = () => {
             <div key={cat.id} className="space-y-8">
               <div className="space-y-4">
                 <div className="h-1.5 w-20 bg-gradient-to-r from-primary to-blue-500 rounded-full" />
-                <h3 className="text-xl sm:text-3xl lg:text-4xl xl:text-4xl 2xl:text-5xl font-black tracking-tight text-slate-900 dark:text-white leading-tight">{cat.subtitle}</h3>
-                <p className="text-xs sm:text-base lg:text-lg xl:text-lg 2xl:text-xl text-slate-600 dark:text-slate-400 leading-relaxed font-medium">
+                <h3 className="text-xl sm:text-3xl lg:text-4xl xl:text-4xl 2xl:text-6xl font-black tracking-tight text-slate-900 dark:text-white leading-tight">{cat.subtitle}</h3>
+                <p className="text-xs sm:text-base lg:text-lg xl:text-lg 2xl:text-2xl 2xl:leading-loose text-slate-600 dark:text-slate-400 leading-relaxed font-medium">
                   {cat.description}
                 </p>
               </div>
@@ -128,26 +128,26 @@ const UnifiedSkills = () => {
                 {cat.skills.map((skill, i) => (
                   <div
                     key={i}
-                    className="flex items-center gap-4 p-2 sm:p-5 rounded-xl sm:rounded-2xl lg:rounded-3xl bg-card border border-card-border hover:border-primary/50 hover:bg-primary/5 transition-all duration-300 group shadow-sm hover:shadow-primary/5"
+                    className="flex items-center gap-4 2xl:gap-8 p-2 sm:p-5 2xl:p-8 rounded-xl sm:rounded-2xl lg:rounded-3xl 2xl:rounded-[2.5rem] bg-card border border-card-border hover:border-primary/50 hover:bg-primary/5 transition-all duration-300 group shadow-sm hover:shadow-primary/5"
                   >
-                    <div className="w-12 h-12 flex items-center justify-center rounded-xl sm:rounded-2xl lg:rounded-3xl bg-card-secondary border border-card-border text-2xl text-primary group-hover:scale-110 group-hover:rotate-6 transition-all duration-300 shadow-inner">
+                    <div className="w-12 h-12 2xl:w-20 2xl:h-20 flex items-center justify-center rounded-xl sm:rounded-2xl lg:rounded-3xl 2xl:rounded-[2rem] bg-card-secondary border border-card-border text-2xl 2xl:text-4xl text-primary group-hover:scale-110 group-hover:rotate-6 transition-all duration-300 shadow-inner">
                       {skill.icon}
                     </div>
-                    <span className="font-bold text-slate-800 dark:text-slate-200">{skill.name}</span>
+                    <span className="font-bold 2xl:text-2xl text-slate-800 dark:text-slate-200">{skill.name}</span>
                   </div>
                 ))}
               </div>
 
               {/* Capabilities Checklist: Key value adds for the category */}
-              <div className="p-6 rounded-xl sm:rounded-2xl lg:rounded-3xl bg-primary/5 border border-primary/10 space-y-4">
-                <h4 className="font-bold text-primary flex items-center gap-2 uppercase tracking-widest text-xs">
+              <div className="p-6 2xl:p-10 rounded-xl sm:rounded-2xl lg:rounded-3xl 2xl:rounded-[2.5rem] bg-primary/5 border border-primary/10 space-y-4 2xl:space-y-8">
+                <h4 className="font-bold text-primary flex items-center gap-2 uppercase tracking-widest text-xs 2xl:text-xl">
                   <FaCode className="text-lg" /> Core Capabilities
                 </h4>
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-y-3 gap-x-6">
                   {cat.features.map((f, i) => (
                     <div key={i} className="flex items-center gap-3 text-slate-700 dark:text-slate-300 group cursor-default">
                       <div className="w-2 h-2 rounded-full bg-primary/40 group-hover:bg-primary transition-colors" />
-                      <span className="text-sm md:text-base font-medium">{f}</span>
+                      <span className="text-sm md:text-base 2xl:text-xl font-medium">{f}</span>
                     </div>
                   ))}
                 </div>
@@ -171,16 +171,16 @@ const UnifiedSkills = () => {
             <div className="absolute bottom-10 right-0 w-2 h-2 rounded-full bg-blue-500/40 blur-[1px] animate-pulse delay-700" />
 
             {/* Central Icon Portal: High-contrast focus area */}
-            <div className="relative z-10 w-44 h-44 sm:w-60 sm:h-60 rounded-full bg-card border-2 border-card-border flex flex-col items-center justify-center group hover:border-primary/40 transition-all duration-700 shadow-2xl overflow-hidden">
+            <div className="relative z-10 w-44 h-44 sm:w-60 sm:h-60 2xl:w-80 2xl:h-80 rounded-full bg-card border-2 border-card-border flex flex-col items-center justify-center group hover:border-primary/40 transition-all duration-700 shadow-2xl overflow-hidden">
               {/* Inner glow pulse */}
               <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-700" />
               
-              <div className="text-6xl sm:text-8xl text-primary mb-3 transition-all duration-700 group-hover:scale-110 group-hover:rotate-3">
+              <div className="text-6xl sm:text-8xl 2xl:text-[10rem] text-primary mb-3 2xl:mb-6 transition-all duration-700 group-hover:scale-110 group-hover:rotate-3">
                 {skillCategories.find(c => c.id === activeTab)?.icon}
               </div>
 
               <div className="text-center relative z-10">
-                <p className="font-black text-xl sm:text-2xl uppercase tracking-[0.3em] text-slate-900 dark:text-white group-hover:tracking-[0.4em] transition-all duration-700">
+                <p className="font-black text-xl sm:text-2xl 2xl:text-4xl uppercase tracking-[0.3em] text-slate-900 dark:text-white group-hover:tracking-[0.4em] transition-all duration-700">
                   {activeTab}
                 </p>
                 <div className="h-0.5 w-8 bg-primary mx-auto mt-2 rounded-full scale-x-0 group-hover:scale-x-100 transition-transform duration-700" />
@@ -195,21 +195,21 @@ const UnifiedSkills = () => {
         <div className="flex flex-col sm:flex-row items-center gap-4 sm:gap-6">
           <div className="flex items-center gap-3 sm:gap-4">
             {[FaGlobe, FaMobileAlt, FaDesktop].map((Icon, i) => (
-              <div key={i} className="w-10 h-10 sm:w-12 sm:h-12 md:w-14 md:h-14 rounded-xl sm:rounded-2xl lg:rounded-3xl bg-card-secondary border border-card-border flex items-center justify-center text-xl sm:text-2xl text-primary shadow-lg hover:-translate-y-1 transition-transform duration-300">
+              <div key={i} className="w-10 h-10 sm:w-12 sm:h-12 md:w-14 md:h-14 2xl:w-20 2xl:h-20 rounded-xl sm:rounded-2xl lg:rounded-3xl 2xl:rounded-[2rem] bg-card-secondary border border-card-border flex items-center justify-center text-xl sm:text-2xl 2xl:text-4xl text-primary shadow-lg hover:-translate-y-1 transition-transform duration-300">
                 <Icon />
               </div>
             ))}
           </div>
           <div className="text-center sm:text-left">
-            <p className="text-lg sm:text-xl font-bold text-slate-900 dark:text-white leading-tight">Universal Architecture</p>
-            <p className="text-xs sm:text-sm md:text-base text-slate-600 dark:text-slate-400">One solution for every screen, built to scale.</p>
+            <p className="text-lg sm:text-xl 2xl:text-3xl font-bold text-slate-900 dark:text-white leading-tight">Universal Architecture</p>
+            <p className="text-xs sm:text-sm md:text-base 2xl:text-xl text-slate-600 dark:text-slate-400">One solution for every screen, built to scale.</p>
           </div>
         </div>
 
-        <a
-          href="#contact"
-          className="w-full sm:w-auto group relative px-8 sm:px-10 py-3 sm:py-4 bg-primary text-white font-black rounded-xl sm:rounded-2xl shadow-[0_10px_30px_rgba(var(--primary-rgb),0.3)] hover:shadow-[0_15px_40px_rgba(var(--primary-rgb),0.4)] transition-all duration-300 hover:-translate-y-1 overflow-hidden flex items-center justify-center text-sm sm:text-base"
-        >
+          <a
+            href="#contact"
+            className="w-full sm:w-auto group relative px-8 sm:px-10 2xl:px-16 py-3 sm:py-4 2xl:py-8 bg-primary text-white font-black rounded-xl sm:rounded-2xl 2xl:rounded-3xl shadow-[0_10px_30px_rgba(var(--primary-rgb),0.3)] hover:shadow-[0_15px_40px_rgba(var(--primary-rgb),0.4)] transition-all duration-300 hover:-translate-y-1 overflow-hidden flex items-center justify-center text-sm sm:text-base 2xl:text-2xl"
+          >
           <span className="relative z-10 flex items-center gap-2">
             Let's Collaborate <FaCode className="group-hover:translate-x-1 transition-transform" />
           </span>

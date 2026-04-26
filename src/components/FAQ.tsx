@@ -52,10 +52,10 @@ const FAQ = () => {
           <GoDotFill className="text-primary animate-pulse" />
           <span className="text-xs font-bold tracking-widest uppercase text-primary">Got Questions?</span>
         </div>
-        <h2 className="text-2xl md:text-5xl font-black text-center mb-4">
+        <h2 className="text-2xl md:text-5xl 2xl:text-6xl font-black text-center mb-4 2xl:mb-8">
           Frequently Asked <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-emerald-400">Questions</span>
         </h2>
-        <p className="text-slate-500 dark:text-slate-400 text-center max-w-2xl text-sm sm:text-lg">
+        <p className="text-slate-500 dark:text-slate-400 text-center max-w-2xl 2xl:max-w-4xl text-sm sm:text-lg 2xl:text-2xl 2xl:leading-loose">
           Everything you need to know about working with me and the development process.
         </p>
       </div>
@@ -72,21 +72,21 @@ const FAQ = () => {
             {/* Question Trigger: Handles click to toggle expansion */}
             <button
               onClick={() => toggleFAQ(index)}
-              className="w-full flex items-center justify-between p-2 sm:p-4 md:p-8 text-left transition-colors"
+              className="w-full flex items-center justify-between p-2 sm:p-4 md:p-8 2xl:p-12 text-left transition-colors"
             >
               <div className="flex items-start gap-3 sm:gap-4">
-                <div className={`w-8 h-8 sm:w-10 sm:h-10 shrink-0 flex items-center justify-center rounded-xl sm:rounded-2xl lg:rounded-3xl border border-card-border mt-0.5 transition-all duration-300 ${
+                <div className={`w-8 h-8 sm:w-10 sm:h-10 2xl:w-16 2xl:h-16 shrink-0 flex items-center justify-center rounded-xl sm:rounded-2xl lg:rounded-3xl 2xl:rounded-[2rem] border border-card-border mt-0.5 transition-all duration-300 ${
                   openIndex === index ? "bg-primary text-white scale-110 shadow-lg shadow-primary/20" : "bg-card-secondary text-primary"
                 }`}>
-                  <FaQuestionCircle className="text-base sm:text-xl" />
+                  <FaQuestionCircle className="text-base sm:text-xl 2xl:text-3xl" />
                 </div>
-                <span className={`text-base md:text-xl font-bold transition-colors ${
+                <span className={`text-base md:text-xl 2xl:text-3xl font-bold transition-colors ${
                   openIndex === index ? "text-slate-900 dark:text-white" : "text-slate-600 dark:text-slate-300 group-hover:text-slate-900 dark:group-hover:text-white"
                 }`}>
                   {faq.question}
                 </span>
               </div>
-              <div className={`transition-transform duration-300 ${openIndex === index ? "rotate-180 text-primary" : "text-slate-500"}`}>
+              <div className={`transition-transform duration-300 2xl:text-2xl ${openIndex === index ? "rotate-180 text-primary" : "text-slate-500"}`}>
                 <FaChevronDown />
               </div>
             </button>
@@ -97,9 +97,9 @@ const FAQ = () => {
                 openIndex === index ? "max-h-[500px] opacity-100" : "max-h-0 opacity-0"
               }`}
             >
-              <div className="px-5 sm:px-8 pb-6 sm:pb-8 pt-2">
+              <div className="px-5 sm:px-8 2xl:px-12 pb-6 sm:pb-8 2xl:pb-12 pt-2">
                 <div className="h-[1px] w-full bg-card-border mb-4 sm:mb-6" />
-                <p className="text-slate-600 dark:text-slate-400 text-sm sm:text-lg leading-relaxed md:pl-14">
+                <p className="text-slate-600 dark:text-slate-400 text-sm sm:text-lg 2xl:text-2xl leading-relaxed 2xl:leading-loose md:pl-14 2xl:pl-20">
                   {faq.answer}
                 </p>
               </div>

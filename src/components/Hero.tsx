@@ -148,7 +148,7 @@ const Hero = () => {
 
   return (
     <div
-      className="w-full py-8 sm:py-9 sm:px-10 bg-card sm:bg-card/80 border border-card-border rounded-xl sm:rounded-2xl lg:rounded-3xl flex gap-8 md:gap-12 flex-col md:flex-row items-center shadow-2xl relative"
+      className="w-full py-8 sm:py-9 2xl:py-16 sm:px-10 2xl:px-16 bg-card sm:bg-card/80 border border-card-border rounded-xl sm:rounded-2xl lg:rounded-3xl 2xl:rounded-[2.5rem] flex gap-8 md:gap-12 2xl:gap-20 flex-col md:flex-row items-center shadow-2xl relative"
       style={{ contain: "layout" }}
     >
       {/* Decorative Glow Elements: Disabled on mobile for critical performance gains */}
@@ -157,12 +157,12 @@ const Hero = () => {
 
       {/* Left Column: Introduction and Professional Identity */}
       <div className="min-w-full md:min-w-1/2 flex flex-col justify-center relative z-10 px-6">
-        <p className="text-xs sm:text-lg md:text-xl lg:text-lg font-bold tracking-widest text-primary uppercase mb-2">
+        <p className="text-xs sm:text-lg md:text-xl lg:text-lg 2xl:text-2xl font-bold tracking-widest text-primary uppercase mb-2 2xl:mb-4">
           👋 Welcome to my universe
         </p>
 
         <div>
-          <h1 className="text-xl sm:text-4xl md:text-5xl lg:text-4xl xl:text-5xl font-black mt-1 leading-tight">
+          <h1 className="text-xl sm:text-4xl md:text-5xl lg:text-4xl xl:text-5xl 2xl:text-7xl font-black mt-1 leading-tight">
             I'm <span className="text-gradient">Palak Basak</span>
             <br />
             <span className="text-gradient">Digital Architect.</span>
@@ -175,14 +175,14 @@ const Hero = () => {
               <Typewriter
                 quotes={quotes}
                 className={
-                  "text-base sm:text-4xl md:text-5xl lg:text-3xl text-primary font-black uppercase tracking-widest"
+                  "text-base sm:text-4xl md:text-5xl lg:text-3xl 2xl:text-5xl text-primary font-black uppercase tracking-widest"
                 }
               />
             </span>
           </div>
         </div>
 
-        <p className="mt-4 sm:mt-6 text-xs sm:text-lg md:text-xl lg:text-lg leading-relaxed text-slate-500 dark:text-slate-400 max-w-xl font-medium sm:font-normal">
+        <p className="mt-4 sm:mt-6 2xl:mt-10 text-xs sm:text-lg md:text-xl lg:text-lg 2xl:text-2xl leading-relaxed text-slate-500 dark:text-slate-400 max-w-xl 2xl:max-w-2xl font-medium sm:font-normal">
           Engineering{" "}
           <span className="text-primary font-bold">
             high-performance ecosystems
@@ -193,16 +193,16 @@ const Hero = () => {
 
         {/* Horizontal Tech Stack Grid: Displays core technology proficiency */}
         <div className="mt-8 flex flex-col items-center md:items-start w-full">
-          <div className="flex gap-3 flex-wrap justify-center md:justify-start w-full min-w-0">
+          <div className="flex gap-3 2xl:gap-5 flex-wrap justify-center md:justify-start w-full min-w-0 [&>div>svg]:2xl:w-10 [&>div>svg]:2xl:h-10">
             {skillsIcon.map((item, index) => (
               <div
                 key={index}
                 title={item.name}
-                className={`p-1 flex justify-center items-center rounded-xl ${item.bg} ${item.text} h-11 w-11 hover:scale-125 transition-all duration-300 cursor-help shadow-lg shrink-0`}
+                className={`p-1 flex justify-center items-center rounded-xl sm:rounded-2xl 2xl:rounded-3xl ${item.bg} ${item.text} h-11 w-11 2xl:h-16 2xl:w-16 hover:scale-125 transition-all duration-300 cursor-help shadow-lg shrink-0`}
               >
                 {!item.customIcon && item.icon}
                 {item.customIcon && (
-                  <span className="text-xl font-black">{item.customIcon}</span>
+                  <span className="text-xl 2xl:text-3xl font-black">{item.customIcon}</span>
                 )}
               </div>
             ))}
@@ -222,7 +222,7 @@ const Hero = () => {
               href={item.to}
               target="_blank"
               rel="noopener noreferrer"
-              className="p-2 sm:p-3 border-2 border-primary text-primary hover:text-white hover:bg-primary rounded-full transition-all duration-300 hover:scale-110 shadow-lg shadow-primary/10"
+              className="p-2 sm:p-3 2xl:p-5 border-2 border-primary text-primary hover:text-white hover:bg-primary rounded-full transition-all duration-300 hover:scale-110 shadow-lg shadow-primary/10 2xl:text-3xl"
               aria-label={item.label}
             >
               {item.icon}

@@ -159,7 +159,7 @@ const Offer = () => {
   return (
     <section
       id="services"
-      className="w-full max-w-6xl lg:max-w-7xl xl:max-w-[1200px] 2xl:max-w-[1600px] mx-auto mt-5 py-8 md:py-10 p-6 bg-card border border-card-border rounded-xl sm:rounded-2xl lg:rounded-3xl relative overflow-hidden shadow-sm"
+      className="w-full max-w-6xl lg:max-w-7xl xl:max-w-[1200px] 2xl:max-w-[1600px] mx-auto mt-5 py-8 md:py-10 2xl:py-20 p-6 2xl:px-12 bg-card border border-card-border rounded-xl sm:rounded-2xl lg:rounded-3xl 2xl:rounded-[2.5rem] relative overflow-hidden shadow-sm"
     >
       {/* Ambient background glows: Dynamic color switching per active tab */}
       <div
@@ -173,26 +173,26 @@ const Offer = () => {
 
       {/* Header Section: Descriptive tagline and category heading */}
       <div className="relative flex flex-col items-center justify-center gap-3 text-center">
-        <p className="text-primary flex gap-0.5 justify-center items-center text-xs sm:text-sm md:text-base font-semibold">
+        <p className="text-primary flex gap-0.5 justify-center items-center text-xs sm:text-sm md:text-base 2xl:text-xl font-semibold">
           <GoDotFill className="animate-pulse" /> {c.tagline}
         </p>
-        <h2 className="text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-3xl 2xl:text-4xl font-bold leading-tight">
+        <h2 className="text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-3xl 2xl:text-6xl font-bold leading-tight 2xl:leading-tight">
           {c.heading}{" "}
           <span className="text-slate-500">{c.highlight}</span>
         </h2>
-        <p className="text-xs sm:text-sm text-slate-400 dark:text-slate-500 max-w-xl mx-auto">
+        <p className="text-xs sm:text-sm 2xl:text-2xl text-slate-400 dark:text-slate-500 max-w-xl 2xl:max-w-4xl mx-auto 2xl:leading-loose 2xl:mt-4">
           {c.sub}
         </p>
       </div>
 
       {/* Tab Controls: Segmented navigation for category selection */}
-      <div className="relative flex justify-center mt-10">
-        <div className="inline-flex gap-1 p-1 rounded-2xl bg-zinc-100 dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 shadow-inner">
+      <div className="relative flex justify-center mt-10 2xl:mt-16">
+        <div className="inline-flex gap-1 p-1 2xl:p-2 rounded-2xl 2xl:rounded-3xl bg-zinc-100 dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 shadow-inner">
           {tabs.map((tab) => (
             <button
               key={tab.id}
               onClick={() => setActive(tab.id)}
-              className={`flex items-center gap-2 px-6 py-2.5 rounded-xl text-sm font-bold transition-all duration-300 cursor-pointer
+              className={`flex items-center gap-2 2xl:gap-4 px-6 2xl:px-10 py-2.5 2xl:py-4 rounded-xl 2xl:rounded-2xl text-sm 2xl:text-xl font-bold transition-all duration-300 cursor-pointer
                 ${
                   active === tab.id
                     ? "bg-primary text-white shadow-lg shadow-primary/20 scale-105"
@@ -207,30 +207,30 @@ const Offer = () => {
       </div>
 
       {/* Platform Badges: Visual representation of supported technologies */}
-      <div className="relative flex flex-wrap justify-center gap-3 sm:gap-4 mt-10">
+      <div className="relative flex flex-wrap justify-center gap-3 sm:gap-4 2xl:gap-6 mt-10 2xl:mt-16">
         {c.platforms.map((p) => (
           <div
             key={p.label}
-            className={`flex items-center gap-2 px-4 py-2 rounded-2xl border ${p.bg} ${p.color} hover:scale-105 transition-transform duration-200`}
+            className={`flex items-center gap-2 2xl:gap-4 px-4 2xl:px-8 py-2 2xl:py-4 rounded-2xl 2xl:rounded-[2rem] border ${p.bg} ${p.color} hover:scale-105 transition-transform duration-200`}
           >
-            <span>{p.icon}</span>
-            <span className="font-bold text-sm sm:text-base">{p.label}</span>
+            <span className="2xl:scale-150 transform transition-transform origin-center">{p.icon}</span>
+            <span className="font-bold text-sm sm:text-base 2xl:text-2xl">{p.label}</span>
           </div>
         ))}
       </div>
 
       {/* Feature Grid: Detailed value propositions for the active category */}
-      <div className="relative grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 mt-10">
+      <div className="relative grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 2xl:gap-8 mt-10 2xl:mt-16">
         {c.features.map((feat, i) => (
           <div
             key={i}
-            className="flex flex-col gap-3 p-6 rounded-2xl border border-card-border bg-card/60 hover:border-primary/40 hover:bg-primary/5 transition-all duration-300 group shadow-sm hover:shadow-md"
+            className="flex flex-col gap-3 p-6 2xl:p-10 rounded-2xl 2xl:rounded-[2.5rem] border border-card-border bg-card/60 hover:border-primary/40 hover:bg-primary/5 transition-all duration-300 group shadow-sm hover:shadow-md"
           >
-            <div className="w-12 h-12 flex items-center justify-center rounded-xl bg-card border border-card-border group-hover:scale-110 group-hover:rotate-3 transition-all duration-300 shadow-inner">
-              {feat.icon}
+            <div className="w-12 h-12 2xl:w-20 2xl:h-20 flex items-center justify-center rounded-xl 2xl:rounded-2xl bg-card border border-card-border group-hover:scale-110 group-hover:rotate-3 transition-all duration-300 shadow-inner">
+              <span className="2xl:scale-150 origin-center">{feat.icon}</span>
             </div>
-            <h4 className="font-bold text-sm sm:text-base text-zinc-800 dark:text-zinc-100">{feat.title}</h4>
-            <p className="text-xs sm:text-sm text-slate-500 dark:text-slate-400 leading-relaxed">
+            <h4 className="font-bold text-sm sm:text-base 2xl:text-2xl text-zinc-800 dark:text-zinc-100">{feat.title}</h4>
+            <p className="text-xs sm:text-sm 2xl:text-xl text-slate-500 dark:text-slate-400 leading-relaxed 2xl:leading-loose">
               {feat.description}
             </p>
           </div>
@@ -238,16 +238,16 @@ const Offer = () => {
       </div>
 
       {/* Call to Action Strip: Direct link to start a project conversation */}
-      <div className="relative mt-10 flex flex-col sm:flex-row items-center justify-between gap-4 p-6 rounded-2xl border border-primary/20 bg-primary/5 shadow-inner">
-        <div className="flex items-center gap-4">
-          <div className="hidden sm:block p-3 rounded-full bg-white dark:bg-zinc-800 shadow-sm">
-            {c.cta.icon}
+      <div className="relative mt-10 2xl:mt-16 flex flex-col sm:flex-row items-center justify-between gap-4 p-6 2xl:p-12 rounded-2xl 2xl:rounded-[2.5rem] border border-primary/20 bg-primary/5 shadow-inner">
+        <div className="flex items-center gap-4 2xl:gap-8">
+          <div className="hidden sm:block p-3 2xl:p-5 rounded-full bg-white dark:bg-zinc-800 shadow-sm">
+            <span className="2xl:scale-150 inline-block origin-center">{c.cta.icon}</span>
           </div>
           <div>
-            <p className="font-bold text-sm sm:text-base text-zinc-800 dark:text-zinc-100">
+            <p className="font-bold text-sm sm:text-base 2xl:text-2xl text-zinc-800 dark:text-zinc-100">
               {c.cta.title}
             </p>
-            <p className="text-xs sm:text-sm text-slate-500 dark:text-slate-400">
+            <p className="text-xs sm:text-sm 2xl:text-xl text-slate-500 dark:text-slate-400">
               {c.cta.body}
             </p>
           </div>
@@ -256,7 +256,7 @@ const Offer = () => {
           href={c.cta.link}
           target="_blank"
           rel="noopener noreferrer"
-          className="flex-shrink-0 px-8 py-3 rounded-full bg-primary text-white font-black text-sm hover:bg-primary/90 transition-all duration-200 shadow-lg shadow-primary/20 hover:-translate-y-0.5 active:translate-y-0"
+          className="flex-shrink-0 px-8 2xl:px-12 py-3 2xl:py-5 rounded-full bg-primary text-white font-black text-sm 2xl:text-xl hover:bg-primary/90 transition-all duration-200 shadow-lg shadow-primary/20 hover:-translate-y-0.5 active:translate-y-0"
         >
           {c.cta.btn}
         </a>

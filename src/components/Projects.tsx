@@ -85,14 +85,14 @@ const Projects = () => {
     return (
         <div
             id='projects'
-            className="w-full max-w-6xl lg:max-w-7xl xl:max-w-[1200px] 2xl:max-w-[1600px] mx-auto mt-5 py-5 p-6 bg-card border border-card-border rounded-xl sm:rounded-2xl lg:rounded-3xl"
+            className="w-full max-w-6xl lg:max-w-7xl xl:max-w-[1200px] 2xl:max-w-[1600px] mx-auto mt-5 py-5 2xl:py-10 p-6 2xl:p-12 bg-card border border-card-border rounded-xl sm:rounded-2xl lg:rounded-3xl 2xl:rounded-[2.5rem]"
         >
             {/* Section Header: Context for the project showcase */}
             <div className='flex flex-col items-center justify-center gap-3'>
-                <p className='text-primary flex gap-0.5 justify-center items-center text-xs sm:text-sm md:text-base'>
+                <p className='text-primary flex gap-0.5 justify-center items-center text-xs sm:text-sm md:text-base 2xl:text-xl'>
                     <GoDotFill /> Projects
                 </p>
-                <h3 className='text-lg sm:text-2xl md:text-3xl lg:text-3xl xl:text-3xl 2xl:text-4xl font-bold'>
+                <h3 className='text-lg sm:text-2xl md:text-3xl lg:text-3xl xl:text-3xl 2xl:text-5xl font-bold'>
                     My Recent <span className='text-gradient'>Works</span>
                 </h3>
             </div>
