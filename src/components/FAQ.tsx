@@ -42,10 +42,10 @@ const FAQ = () => {
   };
 
   return (
-    <section className="w-full max-w-6xl lg:max-w-7xl xl:max-w-[1200px] 2xl:max-w-[1600px] mx-auto mt-4 mb-4 sm:mt-10 sm:mb-10 py-2 px-4  sm:p-6 bg-card/80 backdrop-blur-sm border border-card-border rounded-xl sm:rounded-2xl lg:rounded-3xl relative overflow-hidden">
+    <section className="w-full max-w-6xl lg:max-w-7xl xl:max-w-[1200px] 2xl:max-w-[1600px] mx-auto mt-4 mb-4 sm:mt-10 sm:mb-10 py-2 px-2  sm:p-6 bg-card/80 backdrop-blur-sm border border-card-border rounded-xl sm:rounded-2xl lg:rounded-3xl relative overflow-hidden">
       {/* Visual background element: Decorative Glow: Optimized for mobile */}
-      <div className="absolute top-0 left-0 w-40 h-40 sm:w-64 sm:h-64 bg-primary/5 blur-[40px] sm:blur-[100px] rounded-full pointer-events-none" />
-      
+      <div className="absolute top-0 left-0 w-40 h-40 sm:w-64 sm:h-64 bg-primary/15 blur-2xl sm:blur-[100px] rounded-full pointer-events-none" />
+
       {/* Header Section: Component context and visual title */}
       <div className="relative z-10 flex flex-col items-center mb-6 sm:mb-12">
         <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 border border-primary/20 mb-4 sm:mb-6">
@@ -63,11 +63,10 @@ const FAQ = () => {
       {/* Accordion List: Iterates through FAQ items */}
       <div className="max-w-4xl mx-auto space-y-4">
         {faqData.map((faq, index) => (
-          <div 
+          <div
             key={index}
-            className={`group border border-card-border rounded-xl sm:rounded-2xl lg:rounded-3xl overflow-hidden transition-all duration-300 ${
-              openIndex === index ? "bg-card shadow-2xl border-primary/30" : "bg-card/40 hover:border-primary/20"
-            }`}
+            className={`group border border-card-border rounded-xl sm:rounded-2xl lg:rounded-3xl overflow-hidden transition-all duration-300 ${openIndex === index ? "bg-card shadow-2xl border-primary/30" : "bg-card/40 hover:border-primary/20"
+              }`}
           >
             {/* Question Trigger: Handles click to toggle expansion */}
             <button
@@ -75,14 +74,12 @@ const FAQ = () => {
               className="w-full flex items-center justify-between p-2 sm:p-4 md:p-8 2xl:p-12 text-left transition-colors"
             >
               <div className="flex items-start gap-3 sm:gap-4">
-                <div className={`w-8 h-8 sm:w-10 sm:h-10 2xl:w-16 2xl:h-16 shrink-0 flex items-center justify-center rounded-xl sm:rounded-2xl lg:rounded-3xl 2xl:rounded-[2rem] border border-card-border mt-0.5 transition-all duration-300 ${
-                  openIndex === index ? "bg-primary text-white scale-110 shadow-lg shadow-primary/20" : "bg-card-secondary text-primary"
-                }`}>
+                <div className={`w-8 h-8 sm:w-10 sm:h-10 2xl:w-16 2xl:h-16 shrink-0 flex items-center justify-center rounded-xl sm:rounded-2xl lg:rounded-3xl 2xl:rounded-[2rem] border border-card-border mt-0.5 transition-all duration-300 ${openIndex === index ? "bg-primary text-white scale-110 shadow-lg shadow-primary/20" : "bg-card-secondary text-primary"
+                  }`}>
                   <FaQuestionCircle className="text-base sm:text-xl 2xl:text-3xl" />
                 </div>
-                <span className={`text-base md:text-xl 2xl:text-3xl font-bold transition-colors ${
-                  openIndex === index ? "text-slate-900 dark:text-white" : "text-slate-600 dark:text-slate-300 group-hover:text-slate-900 dark:group-hover:text-white"
-                }`}>
+                <span className={`text-base md:text-xl 2xl:text-3xl font-bold transition-colors ${openIndex === index ? "text-slate-900 dark:text-white" : "text-slate-600 dark:text-slate-300 group-hover:text-slate-900 dark:group-hover:text-white"
+                  }`}>
                   {faq.question}
                 </span>
               </div>
@@ -90,12 +87,11 @@ const FAQ = () => {
                 <FaChevronDown />
               </div>
             </button>
-            
+
             {/* Answer Panel: Collapsible content section */}
-            <div 
-              className={`transition-all duration-300 ease-in-out ${
-                openIndex === index ? "max-h-[500px] opacity-100" : "max-h-0 opacity-0"
-              }`}
+            <div
+              className={`transition-all duration-300 ease-in-out ${openIndex === index ? "max-h-[500px] opacity-100" : "max-h-0 opacity-0"
+                }`}
             >
               <div className="px-5 sm:px-8 2xl:px-12 pb-6 sm:pb-8 2xl:pb-12 pt-2">
                 <div className="h-[1px] w-full bg-card-border mb-4 sm:mb-6" />
@@ -111,8 +107,8 @@ const FAQ = () => {
       {/* Bottom CTA: Link to contact page for further inquiries */}
       <div className="mt-6 sm:mt-10 text-center">
         <p className="text-slate-500 dark:text-slate-400 mb-4">Still have questions?</p>
-        <a 
-          href="/contact" 
+        <a
+          href="/contact"
           className="text-primary font-bold hover:underline underline-offset-4 flex items-center justify-center gap-2 group"
         >
           Feel free to reach out directly
