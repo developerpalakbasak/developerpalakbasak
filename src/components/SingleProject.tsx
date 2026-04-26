@@ -1,5 +1,6 @@
 "use client";
 import React from "react";
+import Image from "next/image";
 
 /**
  * SingleProject Component
@@ -14,9 +15,12 @@ const SingleProject = ({ project, index, islast }) => {
 
         {/* Project Visual Showcase */}
         <div className="w-full md:w-[40%] flex items-center justify-center">
-          <img
+          <Image
             src={project.imageSrc}
             alt={project.title}
+            width={1200}
+            height={800}
+            quality={90}
             className="w-full h-auto max-h-[300px] 2xl:max-h-[500px] rounded-2xl 2xl:rounded-3xl object-cover shadow-lg"
           />
         </div>

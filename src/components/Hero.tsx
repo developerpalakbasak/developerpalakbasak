@@ -17,9 +17,15 @@ import {
   SiUpwork,
   SiElectron,
 } from "react-icons/si";
-import { TbBrandNextjs } from "react-icons/tb";
-import SplineScene from "./SplineScene";
+import dynamic from "next/dynamic";
 import Typewriter from "./TypeWriter";
+import { TbBrandNextjs } from "react-icons/tb";
+
+// Dynamically load SplineScene to improve initial page load performance
+const SplineScene = dynamic(() => import("./SplineScene"), {
+  ssr: false,
+  loading: () => <div className="w-full h-[300px] md:h-[400px] bg-transparent animate-pulse rounded-3xl" />,
+});
 
 /**
  * Hero Component
@@ -148,7 +154,7 @@ const Hero = () => {
 
   return (
     <div
-      className="w-full py-8 sm:py-9 2xl:py-16 sm:px-10 2xl:px-16 bg-card sm:bg-card/80 border border-card-border rounded-xl sm:rounded-2xl lg:rounded-3xl 2xl:rounded-[2.5rem] flex gap-8 md:gap-12 2xl:gap-20 flex-col md:flex-row items-center shadow-2xl relative"
+      className="w-full py-6 sm:py-3 md:py-4 lg:py-5 xl:py-6 2xl:py-8 sm:px-10 2xl:px-16 bg-card sm:bg-card/80 border border-card-border rounded-xl sm:rounded-2xl lg:rounded-3xl 2xl:rounded-[2.5rem] flex gap-8 md:gap-12 2xl:gap-20 flex-col md:flex-row items-center shadow-2xl relative"
       style={{ contain: "layout" }}
     >
       {/* Decorative Glow Elements: Disabled on mobile for critical performance gains */}
@@ -158,7 +164,7 @@ const Hero = () => {
       {/* Left Column: Introduction and Professional Identity */}
       <div className="min-w-full md:min-w-1/2 flex flex-col justify-center relative z-10 px-6">
         {/* Current Role Badge: Eye-catching indicator of professional status */}
-        <div className="inline-flex items-center gap-3 px-4 py-2 rounded-full bg-primary/10 border border-primary/20 mb-6 group cursor-default shadow-[0_0_20px_rgba(var(--primary-rgb),0.1)] hover:shadow-[0_0_25px_rgba(var(--primary-rgb),0.2)] transition-all duration-500">
+        <div className="inline-flex items-center gap-3 px-4 py-2 rounded-full bg-primary/10 border border-primary/20 mb-2 group cursor-default shadow-[0_0_20px_rgba(var(--primary-rgb),0.1)] hover:shadow-[0_0_25px_rgba(var(--primary-rgb),0.2)] transition-all duration-500">
           <div className="relative flex h-3 w-3">
             <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"></span>
             <span className="relative inline-flex rounded-full h-3 w-3 bg-primary"></span>
@@ -218,7 +224,7 @@ const Hero = () => {
       </div>
 
       {/* Right Column: Interactive 3D Spline scene and Social Links */}
-      <div className="hidden md:flex md:min-w-1/2 relative z-10 flex-col md:flex-row items-center justify-center gap-4">
+      <div className="hidden md:flex md:min-w-1/2 relative z-10 flex-col md:flex-row items-center justify-center gap-4 bg-transparent">
         {isDesktop && <SplineScene />}
 
         {/* Social Icons Strip: Professional network access - Hidden on mobile/tablet */}

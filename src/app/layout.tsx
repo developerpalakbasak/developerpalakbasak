@@ -14,9 +14,37 @@ const spaceGrotesk = Space_Grotesk({
 
 // SEO Metadata configuration
 export const metadata = {
-  title: "DeveloperPalak | Senior Full-Stack & Mobile Developer",
-  description: "Portfolio of Palak Basak, specialized in MERN, Next.js, and React Native development.",
-  icons: "/favicon.ico",
+  title: "Palak Basak | Fullstack JavaScript/TypeScript Developer",
+  description: "Senior Full-Stack & Mobile Developer specializing in React, Next.js, and React Native. Currently engineering high-performance systems at ITScholarBD.",
+  keywords: ["Palak Basak", "Fullstack Developer", "React Developer", "Next.js Expert", "React Native Developer", "ITScholarBD", "Software Engineer Bangladesh"],
+  authors: [{ name: "Palak Basak" }],
+  openGraph: {
+    title: "Palak Basak | Fullstack JavaScript/TypeScript Developer",
+    description: "Building scalable web and mobile solutions with precision. Currently at ITScholarBD.",
+    url: "https://developerpalakbasak.vercel.app",
+    siteName: "DeveloperPalak Portfolio",
+    images: [
+      {
+        url: "/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "Palak Basak Portfolio",
+      },
+    ],
+    locale: "en_US",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Palak Basak | Fullstack JavaScript/TypeScript Developer",
+    description: "Specialized in MERN, Next.js, and React Native development.",
+    images: ["/og-image.png"],
+  },
+  icons: {
+    icon: "/favicon.ico",
+    shortcut: "/favicon.ico",
+    apple: "/favicon.ico",
+  },
 };
 
 /**
@@ -48,6 +76,27 @@ export default function RootLayout({ children }) {
                 }
               })();
             `,
+          }}
+        />
+        {/* Structured Data: JSON-LD for enhanced search snippets */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Person",
+              "name": "Palak Basak",
+              "url": "https://developerpalakbasak.vercel.app",
+              "jobTitle": "Fullstack JavaScript/TypeScript Developer",
+              "worksFor": {
+                "@type": "Organization",
+                "name": "ITScholarBD"
+              },
+              "sameAs": [
+                "https://github.com/developerpalakbasak",
+                "https://www.linkedin.com/in/palak-basak-a05510208/"
+              ]
+            })
           }}
         />
       </head>

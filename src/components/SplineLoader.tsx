@@ -8,7 +8,7 @@ import React from "react";
  */
 const SplineLoader = () => {
   return (
-    <div className="w-full h-full flex flex-col items-center justify-center bg-transparent">
+    <div className="w-full h-full flex flex-col items-center justify-center">
       <div className="relative w-24 h-24">
         {/* Multi-layered Animated Rings: Creates a sophisticated loading effect */}
         <div className="absolute inset-0 rounded-full border-4 border-transparent border-t-cyan-500 border-b-violet-500 animate-spin" />
