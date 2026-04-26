@@ -222,7 +222,7 @@ const Hero = () => {
               href={item.to}
               target="_blank"
               rel="noopener noreferrer"
-              className="p-2 sm:p-3 2xl:p-5 border-2 border-primary text-primary hover:text-white hover:bg-primary rounded-full transition-all duration-300 hover:scale-110 shadow-lg shadow-primary/10 2xl:text-3xl"
+              className="p-2 sm:p-3 2xl:p-5 border-2 border-primary text-primary rounded-full transition-all duration-300 hover:scale-110 2xl:text-3xl"
               aria-label={item.label}
             >
               {item.icon}

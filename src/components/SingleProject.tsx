@@ -36,6 +36,10 @@ const SingleProject = ({ project, index, islast }) => {
 
           <div className="text-sm sm:text-base 2xl:text-xl space-y-1 2xl:space-y-4">
             <div className="flex justify-between border-b border-card-border py-2">
+              <p className="font-semibold">Project Type</p>
+              <p className="text-slate-500 dark:text-slate-400">{project.projectType}</p>
+            </div>
+            <div className="flex justify-between border-b border-card-border py-2">
               <p className="font-semibold">Completion Time</p>
               <p className="text-slate-500 dark:text-slate-400">{project.completionTime}</p>
             </div>
