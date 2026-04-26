@@ -18,7 +18,7 @@ export default function Home() {
         {/* Section Intro: Detailed professional summary */}
         <SectionIntro
           title="I Don't Just Write Code — I Build Products That Matter"
-          description="Senior Full-Stack & Mobile Developer with 4+ years of experience shipping web and mobile apps that users love. From scalable MERN backends to pixel-perfect React Native apps on Android & iOS — if you can imagine it, I can build it."
+          description="Fullstack JavaScript/TypeScript Developer at ITScholarbd.com with 4+ years of experience shipping web and mobile apps. Specializing in React, Next.js, and React Native to build pixel-perfect solutions for Android & iOS."
         />
 
         {/* Profile Section: Personal branding and social links */}

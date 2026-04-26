@@ -65,7 +65,7 @@ export default function ProfileCard() {
               {/* Professional Credentials & Platform Badges */}
               <div className="space-y-3 sm:space-y-4 w-full pt-2">
                 <p className="text-xs sm:text-lg lg:text-xl 2xl:text-3xl font-black text-foreground/80 tracking-widest uppercase pl-2">
-                  Senior Developer
+                  Fullstack JavaScript/TypeScript Developer @ ITScholarBD
                 </p>
                 <div className="flex flex-wrap gap-1.5 sm:gap-2 pl-2">
                   <span className="text-[9px] sm:text-xs 2xl:text-base font-bold uppercase tracking-widest px-2.5 py-1 2xl:px-4 2xl:py-2 rounded-full bg-primary/10 text-primary border border-primary/20">Web</span>

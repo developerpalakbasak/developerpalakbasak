@@ -157,9 +157,16 @@ const Hero = () => {
 
       {/* Left Column: Introduction and Professional Identity */}
       <div className="min-w-full md:min-w-1/2 flex flex-col justify-center relative z-10 px-6">
-        <p className="text-xs sm:text-lg md:text-xl lg:text-lg 2xl:text-2xl font-bold tracking-widest text-primary uppercase mb-2 2xl:mb-4">
-          👋 Welcome to my universe
-        </p>
+        {/* Current Role Badge: Eye-catching indicator of professional status */}
+        <div className="inline-flex items-center gap-3 px-4 py-2 rounded-full bg-primary/10 border border-primary/20 mb-6 group cursor-default shadow-[0_0_20px_rgba(var(--primary-rgb),0.1)] hover:shadow-[0_0_25px_rgba(var(--primary-rgb),0.2)] transition-all duration-500">
+          <div className="relative flex h-3 w-3">
+            <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"></span>
+            <span className="relative inline-flex rounded-full h-3 w-3 bg-primary"></span>
+          </div>
+          <p className="text-xs sm:text-sm 2xl:text-lg font-bold tracking-widest text-primary uppercase">
+            Working @ <span className="text-foreground">ITScholarbd.com</span>
+          </p>
+        </div>
 
         <div>
           <h1 className="text-xl sm:text-4xl md:text-5xl lg:text-4xl xl:text-5xl 2xl:text-7xl font-black mt-1 leading-tight">
@@ -183,12 +190,12 @@ const Hero = () => {
         </div>
 
         <p className="mt-4 sm:mt-6 2xl:mt-10 text-xs sm:text-lg md:text-xl lg:text-lg 2xl:text-2xl leading-relaxed text-slate-500 dark:text-slate-400 max-w-xl 2xl:max-w-2xl font-medium sm:font-normal">
-          Engineering{" "}
+          Currently engineering high-performance ecosystems as a{" "}
           <span className="text-primary font-bold">
-            high-performance ecosystems
+            Fullstack JavaScript/TypeScript Developer
           </span>{" "}
-          where design meets functionality. I specialize in building scalable
-          web and mobile solutions for Android & iOS.
+          at <span className="text-foreground font-bold">ITScholarBD</span>. I specialize in building scalable
+          web and mobile solutions using React, Next.js, and React Native.
         </p>
 
         {/* Horizontal Tech Stack Grid: Displays core technology proficiency */}
