@@ -75,7 +75,7 @@ export default function ProfileCard() {
                 <div className="flex flex-wrap gap-1.5 sm:gap-2 pl-2">
                   <span className="text-[9px] sm:text-xs 2xl:text-base font-bold uppercase tracking-widest px-2.5 py-1 2xl:px-4 2xl:py-2 rounded-full bg-primary/10 text-primary border border-primary/20">Web</span>
                   <span className="text-[9px] sm:text-xs 2xl:text-base font-bold uppercase tracking-widest px-2.5 py-1 2xl:px-4 2xl:py-2 rounded-full bg-cyan-500/10 text-cyan-400 border border-cyan-500/20">Android</span>
-                  <span className="text-[9px] sm:text-xs 2xl:text-base font-bold uppercase tracking-widest px-2.5 py-1 2xl:px-4 2xl:py-2 rounded-full bg-slate-500/10 text-slate-300 border border-slate-500/20">iOS</span>
+                  <span className="text-[9px] sm:text-xs 2xl:text-base font-bold uppercase tracking-widest px-2.5 py-1 2xl:px-4 2xl:py-2 rounded-full bg-slate-500/10 text-slate-700 dark:text-slate-300 border border-slate-500/20">iOS</span>
                   <span className="text-[9px] sm:text-xs 2xl:text-base font-bold uppercase tracking-widest px-2.5 py-1 2xl:px-4 2xl:py-2 rounded-full bg-amber-400/10 text-amber-400 border border-amber-400/20">React Native</span>
                 </div>
               </div>

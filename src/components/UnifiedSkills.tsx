@@ -99,7 +99,7 @@ const UnifiedSkills = () => {
           <button
             key={cat.id}
             onClick={() => setActiveTab(cat.id)}
-            className={`flex-1 sm:flex-initial flex items-center justify-center gap-2 md:gap-3 2xl:gap-5 px-4 md:px-10 2xl:px-16 py-2.5 md:py-4 2xl:py-6 rounded-full font-extrabold text-xs md:text-base 2xl:text-2xl transition-all duration-500 ${activeTab === cat.id
+            className={`flex-1 sm:flex-initial flex items-center justify-center gap-2 md:gap-3 2xl:gap-5 px-4 md:px-10 2xl:px-16 py-2.5 md:py-4 2xl:py-6 rounded-full font-extrabold text-xs md:text-base 2xl:text-2xl transition-all duration-500 cursor-pointer ${activeTab === cat.id
               ? "bg-primary text-white shadow-[0_8px_20px_rgba(var(--primary-rgb),0.3)] scale-105"
               : "text-slate-500 dark:text-slate-400 hover:text-slate-900 dark:hover:text-slate-200 hover:bg-white/5"
               }`}
