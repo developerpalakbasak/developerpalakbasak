@@ -20,7 +20,7 @@ export default function ProfileCard() {
           From the core of the server to the palm of your hand, I build integrated ecosystems that are fast, secure, and beautiful across every device.
         </p>
       </div>
-      <div className="w-full py-4 sm:py-4 2xl:py-12 bg-card/80 border border-card-border rounded-xl sm:rounded-2xl lg:rounded-3xl 2xl:rounded-[2.5rem] flex flex-col items-center gap-2 sm:gap-4 2xl:gap-8 overflow-hidden shadow-2xl relative">
+      <div className="w-full p-2 sm:p-4 md:p-6 lg:p-8 xl:p-10 2xl:p-12 py-6 sm:py-4 2xl:py-12 bg-card/80 border border-card-border rounded-xl sm:rounded-2xl lg:rounded-3xl 2xl:rounded-[2.5rem] flex flex-col items-center gap-2 sm:gap-4 2xl:gap-8 overflow-hidden shadow-2xl relative">
         {/* Top Badge: Featured identity label */}
         <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 border border-primary/20 group cursor-default">
           <GoDotFill className="text-primary animate-pulse group-hover:scale-125 transition-transform" />
@@ -39,7 +39,7 @@ export default function ProfileCard() {
           </div>
 
           {/* Right Column: Identity, Portrait, and Core Focus Areas */}
-          <div className="w-full md:w-3/5 flex  md:pr-20 md:pl-10 pl-10 pr-5 py-5 flex-col items-center md:items-start text-center md:text-left gap-4 relative z-10">
+          <div className="w-full md:w-3/5 flex p-2 sm:p-4 md:pr-20 md:pl-10 flex-col items-center md:items-start text-center md:text-left gap-4 relative z-10">
             <div className="w-full space-y-4 2xl:space-y-8 flex flex-col items-center md:items-start md:pl-10">
 
 

@@ -159,7 +159,7 @@ const Offer = () => {
   return (
     <section
       id="services"
-      className="w-full max-w-6xl lg:max-w-7xl xl:max-w-[1200px] 2xl:max-w-[1600px] mx-auto mt-5 py-8 md:py-10 2xl:py-20 p-6 2xl:px-12 bg-card border border-card-border rounded-xl sm:rounded-2xl lg:rounded-3xl 2xl:rounded-[2.5rem] relative overflow-hidden shadow-sm"
+      className="w-full max-w-6xl lg:max-w-7xl xl:max-w-[1200px] 2xl:max-w-[1600px] mx-auto mt-5 p-2 sm:p-4 md:p-6 lg:p-8 xl:p-10 2xl:p-12 py-8 md:py-10 2xl:py-20 bg-card border border-card-border rounded-xl sm:rounded-2xl lg:rounded-3xl 2xl:rounded-[2.5rem] relative overflow-hidden shadow-sm"
     >
       {/* Ambient background glows: Dynamic color switching per active tab */}
       <div
@@ -176,11 +176,11 @@ const Offer = () => {
         <p className="text-primary flex gap-0.5 justify-center items-center text-xs sm:text-sm md:text-base 2xl:text-xl font-semibold">
           <GoDotFill className="animate-pulse" /> {c.tagline}
         </p>
-        <h2 className="text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-3xl 2xl:text-6xl font-bold leading-tight 2xl:leading-tight">
+        <h2 className="text-2xl sm:text-4xl md:text-5xl lg:text-3xl xl:text-4xl 2xl:text-7xl font-bold leading-tight 2xl:leading-tight">
           {c.heading}{" "}
           <span className="text-slate-500">{c.highlight}</span>
         </h2>
-        <p className="text-xs sm:text-sm 2xl:text-2xl text-slate-400 dark:text-slate-500 max-w-xl 2xl:max-w-4xl mx-auto 2xl:leading-loose 2xl:mt-4">
+        <p className="text-sm sm:text-base md:text-lg 2xl:text-3xl text-slate-400 dark:text-slate-500 max-w-xl 2xl:max-w-5xl mx-auto 2xl:leading-loose 2xl:mt-4">
           {c.sub}
         </p>
       </div>
@@ -192,11 +192,10 @@ const Offer = () => {
             <button
               key={tab.id}
               onClick={() => setActive(tab.id)}
-              className={`flex items-center gap-2 2xl:gap-4 px-6 2xl:px-10 py-2.5 2xl:py-4 rounded-xl 2xl:rounded-2xl text-sm 2xl:text-xl font-bold transition-all duration-300 cursor-pointer
-                ${
-                  active === tab.id
-                    ? "bg-primary text-white shadow-lg shadow-primary/20 scale-105"
-                    : "text-zinc-500 dark:text-zinc-400 hover:text-zinc-800 dark:hover:text-zinc-100 hover:bg-zinc-200 dark:hover:bg-zinc-800"
+              className={`flex items-center gap-2 2xl:gap-4 px-4 sm:px-6 2xl:px-10 py-2.5 2xl:py-4 rounded-xl 2xl:rounded-2xl text-sm 2xl:text-xl font-bold transition-all duration-300 cursor-pointer
+                ${active === tab.id
+                  ? "bg-primary text-white shadow-lg shadow-primary/20 scale-105"
+                  : "text-zinc-500 dark:text-zinc-400 hover:text-zinc-800 dark:hover:text-zinc-100 hover:bg-zinc-200 dark:hover:bg-zinc-800"
                 }`}
             >
               {tab.icon}
@@ -224,7 +223,7 @@ const Offer = () => {
         {c.features.map((feat, i) => (
           <div
             key={i}
-            className="flex flex-col gap-3 p-6 2xl:p-10 rounded-2xl 2xl:rounded-[2.5rem] border border-card-border bg-card/60 hover:border-primary/40 hover:bg-primary/5 transition-all duration-300 group shadow-sm hover:shadow-md"
+            className="flex flex-col gap-3 p-4 sm:p-6 2xl:p-10 rounded-2xl 2xl:rounded-[2.5rem] border border-card-border bg-card/60 hover:border-primary/40 hover:bg-primary/5 transition-all duration-300 group shadow-sm hover:shadow-md"
           >
             <div className="w-12 h-12 2xl:w-20 2xl:h-20 flex items-center justify-center rounded-xl 2xl:rounded-2xl bg-card border border-card-border group-hover:scale-110 group-hover:rotate-3 transition-all duration-300 shadow-inner">
               <span className="2xl:scale-150 origin-center">{feat.icon}</span>

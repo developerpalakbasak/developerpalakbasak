@@ -154,7 +154,7 @@ const Hero = () => {
 
   return (
     <div
-      className="w-full py-6 sm:py-3 md:py-4 lg:py-5 xl:py-6 2xl:py-8 sm:px-10 2xl:px-16 bg-card sm:bg-card/80 border border-card-border rounded-xl sm:rounded-2xl lg:rounded-3xl 2xl:rounded-[2.5rem] flex gap-8 md:gap-12 2xl:gap-20 flex-col md:flex-row items-center shadow-2xl relative"
+      className="w-full p-2 sm:p-4 md:p-6 lg:p-8 xl:p-10 2xl:p-16 py-6 sm:py-3 md:py-4 lg:py-5 xl:py-6 2xl:py-8 bg-card sm:bg-card/80 border border-card-border rounded-xl sm:rounded-2xl lg:rounded-3xl 2xl:rounded-[2.5rem] flex gap-4 sm:gap-8 md:gap-12 2xl:gap-20 flex-col md:flex-row items-center shadow-2xl relative"
       style={{ contain: "layout" }}
     >
       {/* Decorative Glow Elements: Disabled on mobile for critical performance gains */}

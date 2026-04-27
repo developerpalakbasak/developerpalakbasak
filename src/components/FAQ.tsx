@@ -42,7 +42,7 @@ const FAQ = () => {
   };
 
   return (
-    <section className="w-full max-w-6xl lg:max-w-7xl xl:max-w-[1200px] 2xl:max-w-[1600px] mx-auto mt-4 mb-4 sm:mt-10 sm:mb-10 py-2 px-2  sm:p-6 bg-card/80 backdrop-blur-sm border border-card-border rounded-xl sm:rounded-2xl lg:rounded-3xl relative overflow-hidden">
+    <section className="w-full max-w-6xl lg:max-w-7xl xl:max-w-[1200px] 2xl:max-w-[1600px] mx-auto mt-4 mb-4 sm:mt-10 sm:mb-10 p-2 sm:p-4 md:p-6 lg:p-8 xl:p-10 2xl:p-12 py-8 sm:py-12 md:py-16 2xl:py-24 bg-card/80 backdrop-blur-sm border border-card-border rounded-xl sm:rounded-2xl lg:rounded-3xl 2xl:rounded-[2.5rem] relative overflow-hidden">
       {/* Visual background element: Decorative Glow: Optimized for mobile */}
       <div className="absolute top-0 left-0 w-40 h-40 sm:w-64 sm:h-64 bg-primary/15 blur-2xl sm:blur-[100px] rounded-full pointer-events-none" />
 
@@ -52,10 +52,10 @@ const FAQ = () => {
           <GoDotFill className="text-primary animate-pulse" />
           <span className="text-xs font-bold tracking-widest uppercase text-primary">Got Questions?</span>
         </div>
-        <h2 className="text-2xl md:text-5xl 2xl:text-6xl font-black text-center mb-4 2xl:mb-8">
+        <h2 className="text-2xl sm:text-4xl md:text-5xl 2xl:text-7xl font-black text-center mb-4 2xl:mb-8">
           Frequently Asked <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-emerald-400">Questions</span>
         </h2>
-        <p className="text-slate-500 dark:text-slate-400 text-center max-w-2xl 2xl:max-w-4xl text-sm sm:text-lg 2xl:text-2xl 2xl:leading-loose">
+        <p className="text-slate-500 dark:text-slate-400 text-center max-w-2xl 2xl:max-w-4xl text-sm sm:text-lg md:text-xl 2xl:text-3xl 2xl:leading-loose">
           Everything you need to know about working with me and the development process.
         </p>
       </div>
@@ -71,7 +71,7 @@ const FAQ = () => {
             {/* Question Trigger: Handles click to toggle expansion */}
             <button
               onClick={() => toggleFAQ(index)}
-              className="w-full flex items-center justify-between p-2 sm:p-4 md:p-8 2xl:p-12 text-left transition-colors"
+              className="w-full flex items-center justify-between p-3 sm:p-4 md:p-6 lg:p-8 2xl:p-12 text-left transition-colors"
             >
               <div className="flex items-start gap-3 sm:gap-4">
                 <div className={`w-8 h-8 sm:w-10 sm:h-10 2xl:w-16 2xl:h-16 shrink-0 flex items-center justify-center rounded-xl sm:rounded-2xl lg:rounded-3xl 2xl:rounded-[2rem] border border-card-border mt-0.5 transition-all duration-300 ${openIndex === index ? "bg-primary text-white scale-110 shadow-lg shadow-primary/20" : "bg-card-secondary text-primary"

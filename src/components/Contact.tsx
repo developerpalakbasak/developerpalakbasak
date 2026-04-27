@@ -46,7 +46,7 @@ const Contact = () => {
 
       {/* Primary Contact Channels: Email and WhatsApp */}
       <div className="flex justify-center gap-12 w-full mt-10 py-3 px-4">
-        <a 
+        <a
           href="mailto:devpalakbasak@gmail.com?subject=Contact%20from%20portfolio%20website&body=I%20want%20to%20contact%20you."
           className="hover:scale-110 transition-transform text-primary inline-block 2xl:scale-150 origin-center"
           title="Send an Email"
@@ -66,11 +66,11 @@ const Contact = () => {
 
       {/* Location Information Card */}
       <div className="w-full max-w-2xl 2xl:max-w-4xl mx-auto mt-10 2xl:mt-16 p-1 rounded-xl sm:rounded-2xl lg:rounded-3xl 2xl:rounded-[2.5rem]">
-        <div className="border border-card-border bg-card/50 backdrop-blur-sm px-6 2xl:px-12 py-8 2xl:py-16 rounded-xl sm:rounded-2xl lg:rounded-3xl 2xl:rounded-[2.5rem] flex flex-col gap-4 2xl:gap-8">
+        <div className="border border-card-border bg-card/50 backdrop-blur-sm px-4 sm:px-6 2xl:px-12 py-4 sm:py-6 2xl:py-16 rounded-xl sm:rounded-2xl lg:rounded-3xl 2xl:rounded-[2.5rem] flex flex-col gap-2 sm:gap-3 2xl:gap-6">
           {contactInfo.map((item) => (
             <div
               key={item.title}
-              className="flex items-center text-sm sm:text-base 2xl:text-2xl border-b border-card-border pb-4 2xl:pb-8 last:border-b-0 last:pb-0"
+              className="flex items-center text-sm sm:text-base 2xl:text-2xl border-b pb-2 sm:pb-4 2xl:pb-6 border-card-border last:border-b-0 last:pb-0"
             >
               <p className="font-bold w-24 2xl:w-40 text-primary">{item.title}:</p>
               <p className="text-slate-500 dark:text-slate-400 font-medium">

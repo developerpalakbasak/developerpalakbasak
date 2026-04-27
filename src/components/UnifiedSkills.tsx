@@ -70,7 +70,7 @@ const UnifiedSkills = () => {
   const [activeTab, setActiveTab] = useState("web");
 
   return (
-    <section className="w-full max-w-6xl lg:max-w-7xl xl:max-w-[1200px] 2xl:max-w-[1600px] mx-auto py-4 sm:py-2 lg:py-4 p-4 sm:p-2 lg:p-2 bg-card/80 backdrop-blur-none sm:backdrop-blur-xl border border-card-border rounded-xl sm:rounded-2xl lg:rounded-3xl relative overflow-hidden shadow-2xl transition-all duration-500 hover:shadow-primary/10">
+    <section className="w-full max-w-6xl lg:max-w-7xl xl:max-w-[1200px] 2xl:max-w-[1600px] mx-auto p-2 sm:p-4 md:p-6 lg:p-8 xl:p-10 2xl:p-12 py-8 sm:py-12 md:py-16 2xl:py-24 bg-card/80 backdrop-blur-none sm:backdrop-blur-xl border border-card-border rounded-xl sm:rounded-2xl lg:rounded-3xl 2xl:rounded-[2.5rem] relative overflow-hidden shadow-2xl transition-all duration-500 hover:shadow-primary/10">
       {/* Dynamic Background Gradients: Optimized for mobile performance */}
       <div className="absolute -top-24 -right-24 w-64 h-64 sm:w-[500px] sm:h-[500px] bg-primary/10 blur-[50px] sm:blur-[120px] rounded-full pointer-events-none" />
       {/* <div className="absolute -bottom-24 -left-24 w-64 h-64 sm:w-[500px] sm:h-[500px] bg-blue-600/10 blur-[50px] sm:blur-[120px] rounded-full pointer-events-none" />
@@ -84,10 +84,10 @@ const UnifiedSkills = () => {
           <GoDotFill className="text-primary animate-pulse group-hover:scale-125 transition-transform" />
           <span className="text-xs font-bold tracking-[0.2em] uppercase text-primary">Comprehensive Tech Stack</span>
         </div>
-        <h2 className="text-4xl md:text-6xl 2xl:text-7xl font-black text-center mb-6 2xl:mb-10 leading-tight">
+        <h2 className="text-2xl sm:text-4xl md:text-6xl 2xl:text-7xl font-black text-center mb-4 sm:mb-6 2xl:mb-10 leading-tight">
           Mastering the <span className="text-gradient">Digital Realm</span>
         </h2>
-        <p className="text-slate-600 dark:text-slate-400 text-center max-w-3xl 2xl:max-w-5xl text-lg md:text-xl 2xl:text-2xl 2xl:leading-loose leading-relaxed">
+        <p className="text-slate-600 dark:text-slate-400 text-center max-w-3xl 2xl:max-w-5xl text-sm sm:text-lg md:text-xl 2xl:text-3xl 2xl:leading-loose leading-relaxed">
           From the core of the server to the palm of your hand, I build integrated
           ecosystems that are fast, secure, and beautiful across every device.
         </p>

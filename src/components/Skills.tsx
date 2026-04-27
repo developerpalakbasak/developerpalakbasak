@@ -43,7 +43,7 @@ const Skills = () => {
   ];
 
   return (
-    <div className="w-full max-w-6xl lg:max-w-7xl xl:max-w-[1200px] 2xl:max-w-[1600px] mx-auto mt-5 py-6 md:py-8 lg:py-10 2xl:py-20 p-6 2xl:px-12 bg-card border border-card-border rounded-xl sm:rounded-2xl lg:rounded-3xl 2xl:rounded-[2.5rem] shadow-sm">
+    <div className="w-full max-w-6xl lg:max-w-7xl xl:max-w-[1200px] 2xl:max-w-[1600px] mx-auto mt-5 p-2 sm:px-4 md:px-6 lg:px-8 xl:px-10 2xl:px-12 py-6 md:py-8 lg:py-10 2xl:py-20 bg-card border border-card-border rounded-xl sm:rounded-2xl lg:rounded-3xl 2xl:rounded-[2.5rem] shadow-sm">
       {/* Header: Skill context and value proposition */}
       <div className="flex flex-col items-center justify-center gap-3">
         <p className="text-primary flex gap-0.5 justify-center items-center text-xs sm:text-sm md:text-base 2xl:text-2xl font-bold">
@@ -58,12 +58,12 @@ const Skills = () => {
       </div>
 
       {/* Skills Container: List of categorized skills with detailed descriptions */}
-      <div className="w-full max-w-2xl 2xl:max-w-4xl mx-auto mt-10 2xl:mt-16 py-5 2xl:py-10 px-4 2xl:px-8 rounded-xl sm:rounded-2xl lg:rounded-3xl 2xl:rounded-[2.5rem] bg-card/50 backdrop-blur-sm border border-card-border flex flex-col gap-5 2xl:gap-8">
+      <div className="w-full max-w-2xl 2xl:max-w-4xl mx-auto mt-10 2xl:mt-16 p-2 sm:px-4 md:px-5 lg:px-6 xl:px-7 2xl:px-8 py-5 md:py-7 lg:py-8 2xl:py-10 rounded-xl sm:rounded-2xl lg:rounded-3xl 2xl:rounded-[2.5rem] bg-card/50 backdrop-blur-sm border border-card-border flex flex-col gap-5 2xl:gap-8">
         <div className="w-full flex flex-col justify-center gap-4">
           {SkillsData.map((skill) => (
             <div
               key={skill.title}
-              className="flex items-start gap-4 2xl:gap-6 text-sm md:text-base 2xl:text-2xl border-b border-card-border pb-4 2xl:pb-8 last:border-b-0 last:pb-0"
+              className="flex items-start gap-2 sm:gap-3 md:gap-4 2xl:gap-6 text-sm md:text-base 2xl:text-2xl border-b border-card-border pb-2 sm:pb-3 md:pb-4 lg:pb-6 2xl:pb-8 last:border-b-0 last:pb-0"
             >
               <div className="mt-1 2xl:mt-2">{skill.icon}</div>
               <div className="flex flex-col sm:flex-row sm:gap-2">
