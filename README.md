@@ -17,8 +17,8 @@
 ---
 
 ## 🌐 Connect with Me
-- 💼 LinkedIn: https://www.linkedin.com/in/full-stack-palak-a05510208  
-- 💻 GitHub: https://github.com/developerpalakbasak  
+- 💼 LinkedIn: https://www.linkedin.com/in/developerpalakbasak
+- 💻 Personal Website: https://developerpalakbasak.vercel.app  
 
 ---
 
