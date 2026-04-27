@@ -1,36 +1,100 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+<h1 align="center">Hi 👋, I'm Palak Basak</h1>
+<h3 align="center">Full Stack Developer | MERN Stack Specialist | Next.js Expert</h3>
 
-## Getting Started
+<p align="center">
+  <img src="https://komarev.com/ghpvc/?username=developerpalakbasak&label=Profile%20views&color=0e75b6&style=flat" alt="profile views" />
+</p>
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## 🚀 About Me
+- 💻 Full-stack developer (MERN)
+- ⚡ Expert in **Next.js, React, Express.js, MongoDB**
+- 🎯 Build **scalable, real-world applications**
+- 📈 SEO Expert (Google Search Console & ranking)
+- 🧠 Focused on **performance + clean architecture**
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 🌐 Connect with Me
+- 💼 LinkedIn: https://www.linkedin.com/in/full-stack-palak-a05510208  
+- 💻 GitHub: https://github.com/developerpalakbasak  
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+---
 
-## Learn More
+## 🧠 Tech Stack
 
-To learn more about Next.js, take a look at the following resources:
+### Frontend
+- React.js
+- Next.js
+- Tailwind CSS
+- ShadCN UI
+- Material UI
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Backend
+- Node.js
+- Express.js
+- MongoDB
+- REST APIs
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### Tools
+- Git & GitHub
+- Postman
+- Vite
+- Cloudinary
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 🔥 Top Projects
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### ☁️ Cloud IDE
+> Browser-based development environment  
+- Code editor + file system  
+- Real-time execution  
+- Full-stack architecture  
+
+---
+
+### 🌐 Social Media Platform
+> Full-stack social app  
+- Authentication system  
+- Post creation & interactions  
+- Optimized data fetching  
+
+---
+
+### 🛒 E-commerce Platform
+> Production-ready shopping app  
+- Cart & checkout system  
+- MongoDB integration  
+- Responsive UI + performance optimized  
+
+---
+
+## 📊 GitHub Stats
+
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api?username=developerpalakbasak&show_icons=true&theme=tokyonight" />
+</p>
+
+<p align="center">
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=developerpalakbasak&theme=tokyonight" />
+</p>
+
+---
+
+## 📌 Goals
+- 🚀 Become Advanced MERN Developer  
+- 🌍 Land a Remote Developer Job  
+- 🧠 Master System Design  
+
+---
+
+## ⚡ Fun Fact
+I can build both **complex backend systems** and **clean modern UI** ⚡
+
+---
+
+<p align="center">
+  ⭐ Star my repositories if you find them useful!
+</p>
