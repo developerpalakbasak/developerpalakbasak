@@ -207,4 +207,26 @@ body {
 
 .text-gradient {
   @apply text-transparent bg-clip-text bg-gradient-to-r from-primary via-blue-500 to-emerald-400;
-}
+}
+
+
+
+.robot-image {
+  max-width: 80%;
+  max-height: 80vh;
+  object-fit: contain;
+  animation: float 4s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-40px);
+  }
+}
+
+.robot-image:hover {
+  animation-play-state: paused;
+}

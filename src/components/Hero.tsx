@@ -1,5 +1,5 @@
 "use client";
-import React, { useEffect, useState } from "react";
+import React from "react";
 import {
   FaNodeJs,
   FaCss3Alt,
@@ -20,11 +20,14 @@ import {
 import dynamic from "next/dynamic";
 import Typewriter from "./TypeWriter";
 import { TbBrandNextjs } from "react-icons/tb";
+import Image from "next/image";
 
 // Dynamically load SplineScene to improve initial page load performance
 const SplineScene = dynamic(() => import("./SplineScene"), {
   ssr: false,
-  loading: () => <div className="w-full h-[300px] md:h-[400px] bg-transparent animate-pulse rounded-3xl" />,
+  loading: () => (
+    <div className="w-full h-[300px] md:h-[400px] bg-transparent animate-pulse rounded-3xl" />
+  ),
 });
 
 /**
@@ -142,16 +145,6 @@ const Hero = () => {
 
   const quotes = ["Web Apps", "Android Apps", "iOS Apps", "Desktop Apps"];
 
-  // Only render Spline on desktop for performance
-  const [isDesktop, setIsDesktop] = useState(false);
-
-  useEffect(() => {
-    const checkScreenSize = () => setIsDesktop(window.innerWidth >= 1024);
-    checkScreenSize();
-    window.addEventListener("resize", checkScreenSize);
-    return () => window.removeEventListener("resize", checkScreenSize);
-  }, []);
-
   return (
     <div
       className="w-full p-2 sm:p-4 md:p-6 lg:p-8 xl:p-10 2xl:p-16 py-6 sm:py-3 md:py-4 lg:py-5 xl:py-6 2xl:py-8 bg-card sm:bg-card/80 border border-card-border rounded-xl sm:rounded-2xl lg:rounded-3xl 2xl:rounded-[2.5rem] flex gap-4 sm:gap-8 md:gap-12 2xl:gap-20 flex-col md:flex-row items-center shadow-2xl relative"
@@ -162,7 +155,7 @@ const Hero = () => {
       <div className="hidden sm:block absolute -bottom-20 -right-20 w-64 h-64 bg-emerald-500/10 rounded-full blur-[100px] pointer-events-none" />
 
       {/* Left Column: Introduction and Professional Identity */}
-      <div className="min-w-full md:min-w-1/2 flex flex-col justify-center relative z-10 px-6">
+      <div className="min-w-full lg:min-w-1/2 flex flex-col justify-center relative z-10 px-6">
         {/* Current Role Badge: Eye-catching indicator of professional status */}
         <div className="inline-flex items-center gap-3 px-4 py-2 rounded-full bg-primary/10 border border-primary/20 mb-2 group cursor-default shadow-[0_0_20px_rgba(var(--primary-rgb),0.1)] hover:shadow-[0_0_25px_rgba(var(--primary-rgb),0.2)] transition-all duration-500">
           <div className="relative flex h-3 w-3">
@@ -195,13 +188,39 @@ const Hero = () => {
           </div>
         </div>
 
+        <div className=" lg:hidden flex flex-col justify-center items-center pt-15 pb-3">
+          <Image
+            src="/robot.webp"
+            className="robot-image"
+            alt="Robot"
+            width={150}
+            height={150}
+          />
+
+          <div className="flex gap-3 2xl:gap-5 flex-wrap justify-center w-full min-w-0 [&>div>svg]:2xl:w-10 [&>div>svg]:2xl:h-10">
+            {socialLinks.map((item, index) => (
+              <a
+                key={index}
+                href={item.to}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="p-2 sm:p-3 2xl:p-5 border-2 border-primary text-primary rounded-full transition-all duration-300 hover:scale-110 2xl:text-3xl"
+                aria-label={item.label}
+              >
+                {item.icon}
+              </a>
+            ))}
+          </div>
+        </div>
+
         <p className="mt-4 sm:mt-6 2xl:mt-10 text-xs sm:text-lg md:text-xl lg:text-lg 2xl:text-2xl leading-relaxed text-slate-500 dark:text-slate-400 max-w-xl 2xl:max-w-2xl font-medium sm:font-normal">
           Currently engineering high-performance ecosystems as a{" "}
           <span className="text-primary font-bold">
             Fullstack JavaScript/TypeScript Developer
           </span>{" "}
-          at <span className="text-foreground font-bold">ITScholarBD</span>. I specialize in building scalable
-          web and mobile solutions using React, Next.js, and React Native.
+          at <span className="text-foreground font-bold">ITScholarBD</span>. I
+          specialize in building scalable web and mobile solutions using React,
+          Next.js, and React Native.
         </p>
 
         {/* Horizontal Tech Stack Grid: Displays core technology proficiency */}
@@ -215,7 +234,9 @@ const Hero = () => {
               >
                 {!item.customIcon && item.icon}
                 {item.customIcon && (
-                  <span className="text-xl 2xl:text-3xl font-black">{item.customIcon}</span>
+                  <span className="text-xl 2xl:text-3xl font-black">
+                    {item.customIcon}
+                  </span>
                 )}
               </div>
             ))}
@@ -225,10 +246,13 @@ const Hero = () => {
 
       {/* Right Column: Interactive 3D Spline scene and Social Links */}
       <div className="hidden md:flex md:min-w-1/2 relative z-10 flex-col md:flex-row items-center justify-center gap-4 bg-transparent">
-        {isDesktop && <SplineScene />}
+        {/* 3D Scene: Hidden on screens smaller than xl (1280px) for performance and layout optimization */}
+        <div className="hidden lg:block w-full">
+          <SplineScene />
+        </div>
 
         {/* Social Icons Strip: Professional network access - Hidden on mobile/tablet */}
-        <div className="hidden lg:flex flex-col gap-4 text-xl absolute right-5 top-1/2 -translate-y-1/2">
+        <div className="hidden lg:flex flex-col gap-4 text-xl absolute right-5 2xl:right-10 top-1/2 -translate-y-1/2">
           {socialLinks.map((item, index) => (
             <a
               key={index}

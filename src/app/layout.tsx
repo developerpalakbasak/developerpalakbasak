@@ -15,12 +15,22 @@ const spaceGrotesk = Space_Grotesk({
 // SEO Metadata configuration
 export const metadata = {
   title: "Palak Basak | Fullstack JavaScript/TypeScript Developer",
-  description: "Senior Full-Stack & Mobile Developer specializing in React, Next.js, and React Native. Currently engineering high-performance systems at ITScholarBD.",
-  keywords: ["Palak Basak", "Fullstack Developer", "React Developer", "Next.js Expert", "React Native Developer", "ITScholarBD", "Software Engineer Bangladesh"],
+  description:
+    "Senior Full-Stack & Mobile Developer specializing in React, Next.js, and React Native. Currently engineering high-performance systems at ITScholarBD.",
+  keywords: [
+    "Palak Basak",
+    "Fullstack Developer",
+    "React Developer",
+    "Next.js Expert",
+    "React Native Developer",
+    "ITScholarBD",
+    "Software Engineer Bangladesh",
+  ],
   authors: [{ name: "Palak Basak" }],
   openGraph: {
     title: "Palak Basak | Fullstack JavaScript/TypeScript Developer",
-    description: "Building scalable web and mobile solutions with precision. Currently at ITScholarBD.",
+    description:
+      "Building scalable web and mobile solutions with precision. Currently at ITScholarBD.",
     url: "https://developerpalakbasak.vercel.app",
     siteName: "DeveloperPalak Portfolio",
     images: [
@@ -85,36 +95,35 @@ export default function RootLayout({ children }) {
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "Person",
-              "name": "Palak Basak",
-              "url": "https://developerpalakbasak.vercel.app",
-              "jobTitle": "Fullstack JavaScript/TypeScript Developer",
-              "worksFor": {
+              name: "Palak Basak",
+              url: "https://developerpalakbasak.vercel.app",
+              jobTitle: "Fullstack JavaScript/TypeScript Developer",
+              worksFor: {
                 "@type": "Organization",
-                "name": "ITScholarBD"
+                name: "ITScholarBD",
               },
-              "sameAs": [
+              sameAs: [
                 "https://github.com/developerpalakbasak",
-                "https://www.linkedin.com/in/palak-basak-a05510208/"
-              ]
-            })
+                "https://www.linkedin.com/in/palak-basak-a05510208/",
+              ],
+            }),
           }}
         />
       </head>
 
       <body
         className={`${spaceGrotesk.variable} font-sans antialiased bg-background text-foreground`}
-
       >
         <Providers>
           {/* Background Animated Stars Effect (Global) */}
           <Stars />
-          
+
           {/* Main Navigation Header */}
           <Navbar />
-          
+
           {/* Page Content with horizontal margin for global layout */}
-          <main className="px-3">{children}</main>
-          
+          <main className="px-1 md:px-3">{children}</main>
+
           {/* Global Site Footer */}
           <Footer />
         </Providers>
