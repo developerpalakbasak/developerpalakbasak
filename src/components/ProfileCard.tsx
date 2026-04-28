@@ -50,7 +50,7 @@ export default function ProfileCard() {
 
               <div className="relative w-full flex justify-center">
                 {/* Visual connector: Glowing vertical line for structural flow */}
-                <div className="absolute -left-5 sm:left-2 top-0 bottom-0 w-1 rounded-full block opacity-90 animate-glow-cycle" />
+                <div className="absolute -left-2 sm:left-2 top-0 bottom-0 w-1 rounded-full block opacity-90 animate-glow-cycle" />
 
                 {/* Profile Portrait with interactive glow effect */}
                 <div className="relative group w-full md:ml-10">
