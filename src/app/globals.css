@@ -226,7 +226,3 @@ body {
     transform: translateY(-40px);
   }
 }
-
-.robot-image:hover {
-  animation-play-state: paused;
-}
