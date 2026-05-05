@@ -47,7 +47,7 @@ export default function Portfolio() {
           {expertiseData.map((item, index) => (
             <div
               key={index}
-              className="bg-card border border-card-border p-4 sm:p-6 md:p-8 lg:p-10 2xl:p-12 rounded-xl sm:rounded-2xl lg:rounded-3xl 2xl:rounded-[2.5rem] shadow-sm hover:shadow-xl transition-shadow duration-300"
+              className="bg-card border border-card-border p-4 sm:p-6 md:p-8 lg:p-10 2xl:p-12 rounded-xl sm:rounded-2xl lg:rounded-3xl 2xl:rounded-[2.5rem] shadow-sm hover:shadow-xl transition-shadow duration-300 cursor-pointer"
             >
               <h3 className="text-lg sm:text-xl md:text-2xl 2xl:text-4xl font-bold mb-3 text-primary">
                 {item.title}

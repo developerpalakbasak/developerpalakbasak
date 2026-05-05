@@ -85,7 +85,7 @@ const Spiner = () => {
                 }}
               >
                 {/* Individual Icon Wrapper: Counter-rotates to stay upright */}
-                <div className="w-[60px] h-[60px] sm:w-[65px] sm:h-[65px] p-2 rounded-xl sm:rounded-2xl lg:rounded-3xl spiner-icon-bg shadow-xl hover:scale-125 transition-transform duration-300 flex items-center justify-center border border-card-border">
+                <div className="w-[60px] h-[60px] sm:w-[65px] sm:h-[65px] p-2 rounded-xl sm:rounded-2xl lg:rounded-3xl spiner-icon-bg shadow-xl hover:scale-125 transition-transform duration-300 flex items-center justify-center border border-card-border cursor-pointer">
                   {item.icon}
                 </div>
               </div>

@@ -86,7 +86,7 @@ const ReviewPage = () => {
           {reviews.map((review) => (
             <div
               key={review.id}
-              className="group relative bg-card border border-card-border p-2 sm:p-4 md:p-6 lg:p-8 2xl:p-12 rounded-xl sm:rounded-2xl lg:rounded-3xl 2xl:rounded-[2.5rem] hover:border-primary/40 transition-all duration-500 hover:-translate-y-2 hover:shadow-2xl hover:shadow-primary/5 flex flex-col justify-between overflow-hidden shadow-sm"
+              className="group relative bg-card border border-card-border p-2 sm:p-4 md:p-6 lg:p-8 2xl:p-12 rounded-xl sm:rounded-2xl lg:rounded-3xl 2xl:rounded-[2.5rem] hover:border-primary/40 transition-all duration-500 hover:-translate-y-2 hover:shadow-2xl hover:shadow-primary/5 flex flex-col justify-between overflow-hidden shadow-sm cursor-pointer"
             >
               {/* Visual background accent for depth */}
               <div className="absolute -top-10 -right-10 w-32 h-32 bg-primary/5 rounded-full blur-3xl group-hover:bg-primary/10 transition-colors" />

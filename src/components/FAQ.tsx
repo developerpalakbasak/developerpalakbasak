@@ -71,7 +71,7 @@ const FAQ = () => {
             {/* Question Trigger: Handles click to toggle expansion */}
             <button
               onClick={() => toggleFAQ(index)}
-              className="w-full flex items-center justify-between p-3 sm:p-4 md:p-6 lg:p-8 2xl:p-12 text-left transition-colors"
+              className="w-full flex items-center justify-between p-3 sm:p-4 md:p-6 lg:p-8 2xl:p-12 text-left transition-colors cursor-pointer"
             >
               <div className="flex items-start gap-3 sm:gap-4">
                 <div className={`w-8 h-8 sm:w-10 sm:h-10 2xl:w-16 2xl:h-16 shrink-0 flex items-center justify-center rounded-xl sm:rounded-2xl lg:rounded-3xl 2xl:rounded-[2rem] border border-card-border mt-0.5 transition-all duration-300 ${openIndex === index ? "bg-primary text-white scale-110 shadow-lg shadow-primary/20" : "bg-card-secondary text-primary"

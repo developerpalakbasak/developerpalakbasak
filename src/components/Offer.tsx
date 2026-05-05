@@ -223,7 +223,7 @@ const Offer = () => {
         {c.features.map((feat, i) => (
           <div
             key={i}
-            className="flex flex-col gap-3 p-4 sm:p-6 2xl:p-10 rounded-2xl 2xl:rounded-[2.5rem] border border-card-border bg-card/60 hover:border-primary/40 hover:bg-primary/5 transition-all duration-300 group shadow-sm hover:shadow-md"
+            className="flex flex-col gap-3 p-4 sm:p-6 2xl:p-10 rounded-2xl 2xl:rounded-[2.5rem] border border-card-border bg-card/60 hover:border-primary/40 hover:bg-primary/5 transition-all duration-300 group shadow-sm hover:shadow-md cursor-pointer"
           >
             <div className="w-12 h-12 2xl:w-20 2xl:h-20 flex items-center justify-center rounded-xl 2xl:rounded-2xl bg-card border border-card-border group-hover:scale-110 group-hover:rotate-3 transition-all duration-300 shadow-inner">
               <span className="2xl:scale-150 origin-center">{feat.icon}</span>

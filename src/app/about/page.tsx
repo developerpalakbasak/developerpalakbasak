@@ -20,7 +20,7 @@ export default function About() {
         </div>
 
         {/* Biography Section: Detailed professional journey and specialization */}
-        <div className="bg-card border border-card-border p-2 sm:p-4 md:p-6 lg:p-8 xl:p-10 2xl:p-12 py-8 sm:py-12 md:py-16 2xl:py-24 rounded-xl sm:rounded-2xl lg:rounded-3xl 2xl:rounded-[2.5rem] space-y-6 shadow-sm">
+        <div className="bg-card border border-card-border p-4 sm:p-6 md:p-6 lg:p-8 xl:p-10 2xl:p-12 py-4 sm:py-12 md:py-16 2xl:py-24 rounded-xl sm:rounded-2xl lg:rounded-3xl 2xl:rounded-[2.5rem] space-y-6 shadow-sm">
           <p className="text-sm sm:text-base lg:text-lg 2xl:text-2xl leading-relaxed">
             I am a <span className="text-primary font-semibold">Senior Full-Stack & Mobile Developer</span> with 4+ years of experience building production-grade web and mobile applications. My journey began with a curiosity about how the digital world operates — and evolved into mastering the entire product stack: from complex database schemas to pixel-perfect mobile UIs.
           </p>

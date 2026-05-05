@@ -73,7 +73,7 @@ const MobileMenu = ({ links, toggleTheme, theme, pathname, mounted }: any) => {
                             <span className="text-sm font-bold text-foreground/60 uppercase tracking-tighter">Theme</span>
                             <button
                                 onClick={toggleTheme}
-                                className="relative flex items-center w-12 h-7 px-1 bg-muted rounded-full transition-colors hover:bg-muted/80 border border-card-border"
+                                className="relative flex items-center w-12 h-7 px-1 bg-muted rounded-full transition-colors hover:bg-muted/80 border border-card-border cursor-pointer"
                                 aria-label="Toggle Theme"
                             >
                                 <div className={`flex items-center justify-center w-5 h-5 bg-primary rounded-full shadow-md transition-transform duration-300 ${theme === 'dark' ? 'translate-x-5' : 'translate-x-0'}`}>
