@@ -9,7 +9,7 @@ interface SectionIntroProps {
  */
 export default function SectionIntro({ title, description }: SectionIntroProps) {
   return (
-    <div className="w-full bg-card/80 border border-card-border rounded-xl sm:rounded-2xl lg:rounded-3xl 2xl:rounded-[2.5rem] py-6 px-6 sm:py-10 md:py-12 2xl:py-20 2xl:px-12 text-center shadow-sm">
+    <div className="w-full bg-card border border-card-border rounded-xl sm:rounded-2xl lg:rounded-3xl 2xl:rounded-[2.5rem] p-2 sm:p-4 md:p-6 lg:p-8 xl:p-10 2xl:p-12 py-8 sm:py-12 md:py-16 2xl:py-24 text-center shadow-sm">
       {/* Dynamic Section Title */}
       <h2 className="text-lg sm:text-2xl md:text-3xl lg:text-3xl xl:text-3xl 2xl:text-5xl font-bold mb-3 sm:mb-4 2xl:mb-8 text-gradient">{title}</h2>
       

@@ -42,7 +42,7 @@ const FAQ = () => {
   };
 
   return (
-    <section className="w-full max-w-6xl lg:max-w-7xl xl:max-w-[1200px] 2xl:max-w-[1600px] mx-auto mt-4 mb-4 sm:mt-10 sm:mb-10 p-2 sm:p-4 md:p-6 lg:p-8 xl:p-10 2xl:p-12 py-8 sm:py-12 md:py-16 2xl:py-24 bg-card/80 backdrop-blur-sm border border-card-border rounded-xl sm:rounded-2xl lg:rounded-3xl 2xl:rounded-[2.5rem] relative overflow-hidden">
+    <section className="w-full max-w-6xl lg:max-w-7xl xl:max-w-[1200px] 2xl:max-w-[1600px] mx-auto p-2 sm:p-4 md:p-6 lg:p-8 xl:p-10 2xl:p-12 py-8 sm:py-12 md:py-16 2xl:py-24 bg-card/80 backdrop-blur-sm border border-card-border rounded-xl sm:rounded-2xl lg:rounded-3xl 2xl:rounded-[2.5rem] relative overflow-hidden shadow-sm">
       {/* Visual background element: Decorative Glow: Optimized for mobile */}
       <div className="absolute top-0 left-0 w-40 h-40 sm:w-64 sm:h-64 bg-primary/15 blur-2xl sm:blur-[100px] rounded-full pointer-events-none" />
 

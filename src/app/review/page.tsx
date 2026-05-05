@@ -68,70 +68,72 @@ const reviews = [
 
 const ReviewPage = () => {
   return (
-    <div className="page-fade-in space-y-8 min-h-screen pb-20">
-      {/* Header Section: Standardized across all top-level pages */}
-      <div className="max-w-4xl 2xl:max-w-6xl mx-auto p-2 sm:px-6 pt-8 sm:pt-12 md:pt-16 2xl:pt-24">
-        <h1 className="text-2xl sm:text-3xl md:text-4xl 2xl:text-6xl font-bold mb-4 sm:mb-6 italic border-b-4 border-primary inline-block text-center text-gradient">
-          Client Reviews
-        </h1>
-        <p className="text-sm sm:text-base md:text-lg lg:text-xl 2xl:text-3xl text-muted-foreground leading-relaxed">
-          Don't just take my word for it. Here's what my clients and partners have 
-          to say about our collaboration and the results we achieved.
-        </p>
-      </div>
+    <div className="page-fade-in">
+      <div className="w-full max-w-6xl lg:max-w-7xl xl:max-w-[1200px] 2xl:max-w-[1600px] mx-auto flex flex-col gap-4 sm:gap-6 md:gap-8 lg:gap-10 2xl:gap-16 p-2 sm:px-4 md:px-6 lg:px-8 xl:px-12 py-1 pb-20">
+        {/* Header Section: Standardized across all top-level pages */}
+        <div className="pt-8 sm:pt-12 md:pt-16 2xl:pt-24">
+          <h1 className="text-2xl sm:text-3xl md:text-4xl 2xl:text-6xl font-bold mb-4 sm:mb-6 italic border-b-4 border-primary inline-block text-center text-gradient">
+            Client Reviews
+          </h1>
+          <p className="text-sm sm:text-base md:text-lg lg:text-xl 2xl:text-3xl text-muted-foreground leading-relaxed">
+            Don't just take my word for it. Here's what my clients and partners have
+            to say about our collaboration and the results we achieved.
+          </p>
+        </div>
 
-      {/* Reviews Grid: Interactive cards featuring client testimonials */}
-      <div className="max-w-[1400px] 2xl:max-w-[1800px] mx-auto p-2 sm:px-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 md:gap-8 mt-8 sm:mt-12">
-        {reviews.map((review) => (
-          <div 
-            key={review.id} 
-            className="group relative bg-card border border-card-border p-2 sm:p-4 md:p-6 lg:p-8 2xl:p-12 rounded-xl sm:rounded-2xl lg:rounded-3xl 2xl:rounded-[2.5rem] hover:border-primary/40 transition-all duration-500 hover:-translate-y-2 hover:shadow-2xl hover:shadow-primary/5 flex flex-col justify-between overflow-hidden shadow-sm"
-          >
-            {/* Visual background accent for depth */}
-            <div className="absolute -top-10 -right-10 w-32 h-32 bg-primary/5 rounded-full blur-3xl group-hover:bg-primary/10 transition-colors" />
-            
-            <div className="relative z-10">
-              <div className="flex justify-between items-start mb-6">
-                {/* Rating Display: Visual representation of satisfaction */}
-                <div className="flex gap-1 text-yellow-500">
-                  {[...Array(5)].map((_, i) => (
-                    <FaStar key={i} className={i < review.rating ? "fill-current" : "text-slate-600/30"} />
-                  ))}
+        {/* Reviews Grid: Interactive cards featuring client testimonials */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 md:gap-8 mt-8 sm:mt-12">
+          {reviews.map((review) => (
+            <div
+              key={review.id}
+              className="group relative bg-card border border-card-border p-2 sm:p-4 md:p-6 lg:p-8 2xl:p-12 rounded-xl sm:rounded-2xl lg:rounded-3xl 2xl:rounded-[2.5rem] hover:border-primary/40 transition-all duration-500 hover:-translate-y-2 hover:shadow-2xl hover:shadow-primary/5 flex flex-col justify-between overflow-hidden shadow-sm"
+            >
+              {/* Visual background accent for depth */}
+              <div className="absolute -top-10 -right-10 w-32 h-32 bg-primary/5 rounded-full blur-3xl group-hover:bg-primary/10 transition-colors" />
+
+              <div className="relative z-10">
+                <div className="flex justify-between items-start mb-6">
+                  {/* Rating Display: Visual representation of satisfaction */}
+                  <div className="flex gap-1 text-yellow-500">
+                    {[...Array(5)].map((_, i) => (
+                      <FaStar key={i} className={i < review.rating ? "fill-current" : "text-slate-600/30"} />
+                    ))}
+                  </div>
+                  <FaQuoteLeft className="text-3xl text-primary/20 group-hover:text-primary/40 transition-colors" />
                 </div>
-                <FaQuoteLeft className="text-3xl text-primary/20 group-hover:text-primary/40 transition-colors" />
+
+                <p className="text-slate-700 dark:text-slate-300 text-sm sm:text-base lg:text-lg 2xl:text-2xl leading-relaxed mb-6 sm:mb-8 italic">
+                  "{review.message}"
+                </p>
               </div>
 
-              <p className="text-slate-700 dark:text-slate-300 text-sm sm:text-base lg:text-lg 2xl:text-2xl leading-relaxed mb-6 sm:mb-8 italic">
-                "{review.message}"
-              </p>
+              {/* Reviewer Meta: Identity and role details */}
+              <div className="relative z-10 flex items-center gap-4 pt-6 border-t border-card-border">
+                <div className="w-12 h-12 rounded-full bg-gradient-to-br from-primary to-emerald-600 flex items-center justify-center text-white font-bold text-lg shadow-lg">
+                  {review.avatar}
+                </div>
+                <div>
+                  <h4 className="font-bold text-slate-900 dark:text-white group-hover:text-primary transition-colors">{review.name}</h4>
+                  <p className="text-xs text-slate-500 font-medium uppercase tracking-wider">{review.role}</p>
+                </div>
+              </div>
             </div>
+          ))}
+        </div>
 
-            {/* Reviewer Meta: Identity and role details */}
-            <div className="relative z-10 flex items-center gap-4 pt-6 border-t border-card-border">
-              <div className="w-12 h-12 rounded-full bg-gradient-to-br from-primary to-emerald-600 flex items-center justify-center text-white font-bold text-lg shadow-lg">
-                {review.avatar}
-              </div>
-              <div>
-                <h4 className="font-bold text-slate-900 dark:text-white group-hover:text-primary transition-colors">{review.name}</h4>
-                <p className="text-xs text-slate-500 font-medium uppercase tracking-wider">{review.role}</p>
-              </div>
-            </div>
+        {/* Trust Badge Section: Conversion-focused call to action */}
+        <div className="mt-16 sm:mt-24 text-center">
+          <div className="p-4 sm:p-6 md:p-8 lg:p-10 2xl:p-16 rounded-xl sm:rounded-2xl lg:rounded-3xl 2xl:rounded-[2.5rem] bg-card border border-card-border relative overflow-hidden shadow-sm">
+            <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-transparent pointer-events-none" />
+            <h3 className="text-lg sm:text-xl md:text-2xl lg:text-3xl 2xl:text-5xl font-bold mb-4">Ready to start your next project?</h3>
+            <p className="text-slate-600 dark:text-slate-400 mb-8">Join these satisfied clients and let's build something extraordinary together.</p>
+            <a
+              href="/contact"
+              className="inline-flex items-center gap-3 px-10 py-4 rounded-full bg-primary text-white font-black hover:bg-primary/80 transition-all shadow-xl shadow-primary/20 hover:scale-105 active:scale-95"
+            >
+              Get In Touch Now
+            </a>
           </div>
-        ))}
-      </div>
-
-      {/* Trust Badge Section: Conversion-focused call to action */}
-      <div className="max-w-4xl 2xl:max-w-6xl mx-auto p-2 sm:px-6 mt-16 sm:mt-24 text-center">
-        <div className="p-4 sm:p-6 md:p-8 lg:p-10 2xl:p-16 rounded-xl sm:rounded-2xl lg:rounded-3xl 2xl:rounded-[2.5rem] bg-card border border-card-border relative overflow-hidden shadow-sm">
-          <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-transparent pointer-events-none" />
-          <h3 className="text-lg sm:text-xl md:text-2xl lg:text-3xl 2xl:text-5xl font-bold mb-4">Ready to start your next project?</h3>
-          <p className="text-slate-600 dark:text-slate-400 mb-8">Join these satisfied clients and let's build something extraordinary together.</p>
-          <a 
-            href="/contact" 
-            className="inline-flex items-center gap-3 px-10 py-4 rounded-full bg-primary text-white font-black hover:bg-primary/80 transition-all shadow-xl shadow-primary/20 hover:scale-105 active:scale-95"
-          >
-            Get In Touch Now
-          </a>
         </div>
       </div>
     </div>
