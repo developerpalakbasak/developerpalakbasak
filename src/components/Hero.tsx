@@ -147,7 +147,7 @@ const Hero = () => {
 
   return (
     <div
-      className="w-full p-2 sm:p-4 md:p-6 lg:p-8 xl:p-10 2xl:p-12 py-8 sm:py-12 md:py-16 2xl:py-24 bg-card border border-card-border rounded-xl sm:rounded-2xl lg:rounded-3xl 2xl:rounded-[2.5rem] flex gap-4 sm:gap-8 md:gap-12 2xl:gap-20 flex-col md:flex-row items-center shadow-sm relative"
+      className="w-full p-2 sm:p-4 md:p-6 lg:p-8 xl:p-10 2xl:p-8 py-8 sm:py-12 md:py-16 2xl:py-12 bg-card border border-card-border rounded-xl sm:rounded-2xl lg:rounded-3xl 2xl:rounded-3xl flex gap-4 sm:gap-8 md:gap-12 2xl:gap-10 flex-col md:flex-row items-center shadow-sm relative"
       style={{ contain: "layout" }}
     >
       {/* Decorative Glow Elements: Disabled on mobile for critical performance gains */}
@@ -162,13 +162,13 @@ const Hero = () => {
             <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"></span>
             <span className="relative inline-flex rounded-full h-3 w-3 bg-primary"></span>
           </div>
-          <p className="text-xs sm:text-sm 2xl:text-lg font-bold tracking-widest text-primary uppercase">
+          <p className="text-xs sm:text-sm 2xl:text-base font-bold tracking-widest text-primary uppercase">
             Working @ <span className="text-foreground">ITScholarbd.com</span>
           </p>
         </div>
 
         <div>
-          <h1 className="text-xl sm:text-4xl md:text-5xl lg:text-4xl xl:text-5xl 2xl:text-7xl font-black mt-1 leading-tight">
+          <h1 className="text-xl sm:text-3xl md:text-4xl lg:text-4xl xl:text-4xl 2xl:text-5xl font-black mt-1 leading-tight">
             I'm <span className="text-gradient">Palak Basak</span>
             <br />
             <span className="text-gradient">Digital Architect.</span>
@@ -181,7 +181,7 @@ const Hero = () => {
               <Typewriter
                 quotes={quotes}
                 className={
-                  "text-base sm:text-4xl md:text-5xl lg:text-3xl 2xl:text-5xl text-primary font-black uppercase tracking-widest"
+                  "text-base sm:text-3xl md:text-4xl lg:text-3xl 2xl:text-3xl text-primary font-black uppercase tracking-widest"
                 }
               />
             </span>
@@ -197,14 +197,14 @@ const Hero = () => {
             height={150}
           />
 
-          <div className="flex gap-3 2xl:gap-5 flex-wrap justify-center w-full min-w-0 [&>div>svg]:2xl:w-10 [&>div>svg]:2xl:h-10">
+          <div className="flex gap-3 2xl:gap-4 flex-wrap justify-center w-full min-w-0 [&>div>svg]:2xl:w-8 [&>div>svg]:2xl:h-8">
             {socialLinks.map((item, index) => (
               <a
                 key={index}
                 href={item.to}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="p-2 sm:p-3 2xl:p-5 border-2 border-primary text-primary rounded-full transition-all duration-300 hover:scale-110 2xl:text-3xl"
+                className="p-2 sm:p-3 2xl:p-4 border-2 border-primary text-primary rounded-full transition-all duration-300 hover:scale-110 2xl:text-2xl"
                 aria-label={item.label}
               >
                 {item.icon}
@@ -213,7 +213,7 @@ const Hero = () => {
           </div>
         </div>
 
-        <p className="mt-4 sm:mt-6 2xl:mt-10 text-xs sm:text-lg md:text-xl lg:text-lg 2xl:text-2xl leading-relaxed text-slate-500 dark:text-slate-400 max-w-xl 2xl:max-w-2xl font-medium sm:font-normal">
+        <p className="mt-4 sm:mt-6 2xl:mt-6 text-xs sm:text-lg md:text-xl lg:text-lg 2xl:text-lg leading-relaxed text-slate-500 dark:text-slate-400 max-w-xl 2xl:max-w-lg font-medium sm:font-normal">
           Currently engineering high-performance ecosystems as a{" "}
           <span className="text-primary font-bold">
             Fullstack JavaScript/TypeScript Developer
@@ -225,12 +225,12 @@ const Hero = () => {
 
         {/* Horizontal Tech Stack Grid: Displays core technology proficiency */}
         <div className="mt-8 flex flex-col items-center md:items-start w-full">
-          <div className="flex gap-3 2xl:gap-5 flex-wrap justify-center md:justify-start w-full min-w-0 [&>div>svg]:2xl:w-10 [&>div>svg]:2xl:h-10">
+          <div className="flex gap-3 2xl:gap-4 flex-wrap justify-center md:justify-start w-full min-w-0 [&>div>svg]:2xl:w-8 [&>div>svg]:2xl:h-8">
             {skillsIcon.map((item, index) => (
               <div
                 key={index}
                 title={item.name}
-                className={`p-1 flex justify-center items-center rounded-xl sm:rounded-2xl 2xl:rounded-3xl ${item.bg} ${item.text} h-11 w-11 2xl:h-16 2xl:w-16 hover:scale-125 transition-all duration-300 cursor-help shadow-lg shrink-0`}
+                className={`p-1 flex justify-center items-center rounded-xl sm:rounded-2xl 2xl:rounded-3xl ${item.bg} ${item.text} h-11 w-11 2xl:h-12 2xl:w-12 hover:scale-125 transition-all duration-300 cursor-help shadow-lg shrink-0`}
               >
                 {!item.customIcon && item.icon}
                 {item.customIcon && (
@@ -252,14 +252,14 @@ const Hero = () => {
         </div>
 
         {/* Social Icons Strip: Professional network access - Hidden on mobile/tablet */}
-        <div className="hidden lg:flex flex-col gap-4 text-xl absolute right-5 2xl:right-10 top-1/2 -translate-y-1/2">
+        <div className="hidden lg:flex flex-col gap-4 text-xl absolute right-5 2xl:right-8 top-1/2 -translate-y-1/2">
           {socialLinks.map((item, index) => (
             <a
               key={index}
               href={item.to}
               target="_blank"
               rel="noopener noreferrer"
-              className="p-2 sm:p-3 2xl:p-5 border-2 border-primary text-primary rounded-full transition-all duration-300 hover:scale-110 2xl:text-3xl"
+              className="p-2 sm:p-3 2xl:p-4 border-2 border-primary text-primary rounded-full transition-all duration-300 hover:scale-110 2xl:text-2xl"
               aria-label={item.label}
             >
               {item.icon}
