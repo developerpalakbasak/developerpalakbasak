@@ -52,7 +52,7 @@ const FAQ = () => {
           <GoDotFill className="text-primary animate-pulse" />
           <span className="text-xs font-bold tracking-widest uppercase text-primary">Got Questions?</span>
         </div>
-        <h2 className="text-2xl sm:text-4xl md:text-5xl 2xl:text-4xl font-black text-center mb-4 2xl:mb-4">
+        <h2 className="text-2xl sm:text-4xl md:text-4xl 2xl:text-4xl font-black text-center mb-4 2xl:mb-4">
           Frequently Asked <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-emerald-400">Questions</span>
         </h2>
         <p className="text-slate-500 dark:text-slate-400 text-center max-w-2xl 2xl:max-w-4xl text-sm sm:text-lg md:text-xl 2xl:text-lg 2xl:leading-loose">

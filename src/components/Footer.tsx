@@ -8,7 +8,7 @@ import React from "react";
 const Footer = () => {
   return (
     <div className="px-2">
-      <div className="w-full max-w-6xl lg:max-w-7xl xl:max-w-[1200px] 2xl:max-w-[1600px] mx-auto mb-5 p-2 sm:p-4 md:p-5 lg:p-6 border border-card-border rounded-xl sm:rounded-2xl lg:rounded-3xl flex flex-col justify-center items-center gap-1 bg-card/80">
+      <div className="w-full max-w-6xl lg:max-w-7xl xl:max-w-6xl 2xl:max-w-7xl mx-auto mb-5 p-2 sm:p-4 md:p-5 lg:p-6 border border-card-border rounded-xl sm:rounded-2xl lg:rounded-3xl flex flex-col justify-center items-center gap-1 bg-card/80">
 
         {/* Brand Tagline: Professional commitment statement with a gradient effect */}
         <p className="text-sm sm:text-base md:text-lg font-semibold bg-gradient-to-r from-primary via-emerald-500 to-cyan-500 bg-clip-text text-transparent italic tracking-wide text-center">

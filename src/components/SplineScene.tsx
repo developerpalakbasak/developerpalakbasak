@@ -12,7 +12,6 @@ export default function SplineScene() {
   useEffect(() => {
     const timer = setTimeout(() => {
       if (isLoading) {
-        console.warn("Spline loading timed out, forcing loader hidden.");
         setIsLoading(false);
       }
     }, 15000); // 15 seconds timeout
@@ -35,12 +34,10 @@ export default function SplineScene() {
 
       <Spline
         scene="/scene.splinecode"
-        onLoad={() => {
-          console.log("Spline loaded successfully");
+        onLoad={(_splineApp) => {
           setIsLoading(false);
         }}
         onError={() => {
-          console.error("Spline failed to load");
           setError(true);
           setIsLoading(false);
         }}

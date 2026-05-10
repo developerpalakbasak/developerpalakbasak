@@ -84,7 +84,7 @@ const UnifiedSkills = () => {
           <GoDotFill className="text-primary animate-pulse group-hover:scale-125 transition-transform" />
           <span className="text-xs font-bold tracking-[0.2em] uppercase text-primary">Comprehensive Tech Stack</span>
         </div>
-        <h2 className="text-2xl sm:text-4xl md:text-6xl 2xl:text-4xl font-black text-center mb-4 sm:mb-6 2xl:mb-6 leading-tight">
+        <h2 className="text-2xl sm:text-4xl md:text-4xl 2xl:text-4xl font-black text-center mb-4 sm:mb-6 2xl:mb-6 leading-tight">
           Mastering the <span className="text-gradient">Digital Realm</span>
         </h2>
         <p className="text-slate-600 dark:text-slate-400 text-center max-w-3xl 2xl:max-w-4xl text-sm sm:text-lg md:text-xl 2xl:text-lg 2xl:leading-loose leading-relaxed">

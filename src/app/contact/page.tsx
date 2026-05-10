@@ -24,11 +24,11 @@ const infoCards = [
 export default function ContactPage() {
   return (
     <div className="page-fade-in">
-      <div className="w-full max-w-6xl lg:max-w-7xl xl:max-w-[1200px] 2xl:max-w-[1600px] mx-auto flex flex-col gap-4 sm:gap-6 md:gap-8 lg:gap-10 2xl:gap-16 p-2 sm:px-4 md:px-6 lg:px-8 xl:px-12 py-1 pb-12">
-        <div className="pt-8 sm:pt-12 md:pt-16 2xl:pt-24">
+      <div className="w-full max-w-6xl lg:max-w-7xl xl:max-w-6xl 2xl:max-w-7xl mx-auto flex flex-col gap-4 sm:gap-6 md:gap-8 lg:gap-10 2xl:gap-10 p-2 sm:px-4 md:px-6 lg:px-8 xl:px-12 py-1 pb-12">
+        <div className="pt-8 sm:pt-12 md:pt-16 2xl:pt-12">
           {/* Header Section: Encouragement for outreach */}
-          <h1 className="text-2xl sm:text-3xl md:text-4xl 2xl:text-6xl font-bold mb-4 sm:mb-6 italic border-b-4 border-primary inline-block text-center text-gradient">Get In Touch</h1>
-          <p className="text-sm sm:text-base md:text-lg lg:text-xl 2xl:text-3xl text-muted-foreground leading-relaxed">
+          <h1 className="text-xl sm:text-3xl md:text-4xl lg:text-4xl xl:text-4xl 2xl:text-3xl font-bold mb-4 sm:mb-6 italic border-b-4 border-primary inline-block text-center text-gradient">Get In Touch</h1>
+          <p className="text-sm sm:text-base md:text-lg lg:text-xl 2xl:text-lg text-muted-foreground leading-relaxed">
             Ready to start your next project? Fill out the form below or reach out via email.
             I typically respond within 24 hours.
           </p>
@@ -42,9 +42,9 @@ export default function ContactPage() {
           {infoCards.map((card, index) => (
             <div
               key={index}
-              className="bg-card border border-card-border p-4 sm:p-6 md:p-8 lg:p-10 2xl:p-12 rounded-xl sm:rounded-2xl lg:rounded-3xl 2xl:rounded-[2.5rem] shadow-sm hover:shadow-xl transition-shadow duration-300 cursor-pointer"
+              className="bg-card border border-card-border p-4 sm:p-6 md:p-8 lg:p-10 2xl:p-8 rounded-xl sm:rounded-2xl lg:rounded-3xl 2xl:rounded-3xl shadow-sm hover:shadow-xl transition-shadow duration-300 cursor-pointer"
             >
-              <h3 className="text-lg sm:text-xl 2xl:text-3xl font-bold mb-4 text-primary">{card.title}</h3>
+              <h3 className="text-lg sm:text-xl 2xl:text-2xl font-bold mb-4 text-primary">{card.title}</h3>
               {card.details.map((detail, i) => (
                 <p
                   key={i}
