@@ -122,7 +122,7 @@ export default function RootLayout({ children }) {
           <Navbar />
 
           {/* Page Content with horizontal margin for global layout */}
-          <main className="px-1 md:px-3">{children}</main>
+          <main className="px-1 md:px-3 2xl:px-8">{children}</main>
 
           {/* Global Site Footer */}
           <Footer />

@@ -19,7 +19,7 @@ export default function Stars() {
   }, []);
 
   return (
-    <div className="star-section fixed opacity-20 top-0 left-0 w-full h-full overflow-hidden -z-10">
+    <div className="star-section fixed opacity-15 top-0 left-0 w-full h-full overflow-hidden -z-10">
       {stars.map((star, i) => (
         <span
           key={i}
