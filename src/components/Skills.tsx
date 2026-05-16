@@ -43,18 +43,18 @@ const Skills = () => {
   ];
 
   return (
-    <div className="w-full max-w-6xl lg:max-w-7xl xl:max-w-[1200px] 2xl:max-w-[1600px] mx-auto bg-card border border-card-border p-2 sm:p-4 md:p-6 lg:p-8 xl:p-10 2xl:p-12 py-3 md:py-4 lg:py-5 2xl:py-8 rounded-xl sm:rounded-2xl lg:rounded-3xl 2xl:rounded-[2.5rem] shadow-sm">
+    <div className="w-full max-w-6xl lg:max-w-7xl xl:max-w-[1200px] 2xl:max-w-7xl mx-auto bg-card border border-card-border p-2 sm:p-4 md:p-6 lg:p-8 xl:p-10 2xl:p-8 py-3 md:py-4 lg:py-5 2xl:py-10 rounded-xl sm:rounded-2xl lg:rounded-3xl 2xl:rounded-3xl shadow-sm">
         <div>
 
           {/* Header: Skill context and value proposition */}
           <div className="flex flex-col items-center justify-center gap-3 p-2 sm:px-4 md:px-6 lg:px-8 xl:px-12">
-            <p className="text-primary flex gap-0.5 justify-center items-center text-xs sm:text-sm md:text-base 2xl:text-2xl font-bold">
+            <p className="text-primary flex gap-0.5 justify-center items-center text-xs sm:text-sm md:text-base 2xl:text-base font-bold">
               <GoDotFill className="animate-pulse" /> My Expertise
             </p>
-            <h3 className="text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-3xl 2xl:text-6xl text-center font-black">
+            <h3 className="text-lg sm:text-2xl md:text-3xl lg:text-3xl xl:text-3xl 2xl:text-3xl text-center font-black">
               Battle-Tested <span className="text-slate-500">Skills That Ship</span>
             </h3>
-            <p className="text-xs sm:text-sm 2xl:text-xl text-slate-400 text-center max-w-lg 2xl:max-w-3xl">
+            <p className="text-xs sm:text-sm 2xl:text-base text-slate-400 text-center max-w-lg 2xl:max-w-3xl">
               From server to screen — web & mobile — I cover the full spectrum of modern application development.
             </p>
           </div>
@@ -65,7 +65,7 @@ const Skills = () => {
             {SkillsData.map((skill) => (
               <div
                 key={skill.title}
-                className="flex items-start gap-2 sm:gap-3 md:gap-4 2xl:gap-6 text-sm md:text-base 2xl:text-2xl border-b border-card-border pb-2 sm:pb-3 md:pb-4 lg:pb-6 2xl:pb-8 last:border-b-0 last:pb-0"
+                className="flex items-start gap-2 sm:gap-3 md:gap-4 2xl:gap-4 text-sm md:text-base 2xl:text-base border-b border-card-border pb-2 sm:pb-3 md:pb-4 lg:pb-6 2xl:pb-6 last:border-b-0 last:pb-0"
               >
                 <div className="mt-1 2xl:mt-2">{skill.icon}</div>
                 <div className="flex flex-col sm:flex-row sm:gap-2">

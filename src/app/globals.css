@@ -91,21 +91,36 @@ body {
 }
 
 @keyframes fadeIn {
-  from { opacity: 0; }
-  to   { opacity: 1; }
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
 }
 
 /* ─── Spinner ─────────────────────────────────────────────── */
 /* rotate is 100% GPU composited — no changes needed here */
 
 @keyframes rotateCircle {
-  0%   { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 @keyframes counterRotate {
-  0%   { transform: rotate(0deg); }
-  100% { transform: rotate(-360deg); }
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(-360deg);
+  }
 }
 
 .spiner {
@@ -113,7 +128,7 @@ body {
   will-change: transform;
 }
 
-.spiner > div > div {
+.spiner>div>div {
   animation: counterRotate 40s linear infinite;
   will-change: transform;
 }
@@ -143,15 +158,16 @@ body {
   - Animate opacity at end instead of abrupt cut
 */
 
-.star-section > span {
+.star-section>span {
   box-shadow:
-    0 0 0 2px rgba(255, 255, 255, 0.06),
-    0 0 6px rgba(255, 255, 255, 0.35);
+    0 0 0 4px rgba(255, 255, 255, 0.1),
+    0 0 0 8px rgba(255, 255, 255, 0.1),
+    0 0 20px rgb(255, 255, 255);
   will-change: transform, opacity;
   animation: animateStar linear infinite;
 }
 
-.star-section > span::before {
+.star-section>span::before {
   content: "";
   position: absolute;
   top: 50%;
@@ -162,9 +178,19 @@ body {
 }
 
 @keyframes animateStar {
-  0%   { transform: rotate(90deg) translateX(0);      opacity: 1; }
-  85%  { opacity: 1; }
-  100% { transform: rotate(90deg) translateX(-100vw); opacity: 0; }
+  0% {
+    transform: rotate(90deg) translateX(0);
+    opacity: 1;
+  }
+
+  85% {
+    opacity: 1;
+  }
+
+  100% {
+    transform: rotate(90deg) translateX(-100vw);
+    opacity: 0;
+  }
 }
 
 /* ─── Glow Cycle ──────────────────────────────────────────── */
@@ -176,10 +202,13 @@ body {
 */
 
 @keyframes glowCycle {
-  0%, 100% {
+
+  0%,
+  100% {
     background-color: var(--logo);
     opacity: 1;
   }
+
   50% {
     background-color: #06b6d4;
     opacity: 0.85;
@@ -219,9 +248,12 @@ body {
 }
 
 @keyframes float {
-  0%, 100% {
+
+  0%,
+  100% {
     transform: translateY(0);
   }
+
   50% {
     transform: translateY(-40px);
   }

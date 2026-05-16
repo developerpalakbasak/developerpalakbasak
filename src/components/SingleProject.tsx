@@ -27,14 +27,14 @@ const SingleProject = ({ project, index, islast }) => {
 
         {/* Project Content & Details */}
         <div className="w-full md:w-[60%] flex flex-col justify-center">
-          <h2 className="text-lg sm:text-2xl md:text-2xl lg:text-3xl xl:text-3xl 2xl:text-5xl font-bold leading-tight">
+          <h2 className="text-lg sm:text-2xl md:text-2xl lg:text-3xl xl:text-3xl 2xl:text-3xl font-bold leading-tight">
             {project.title}{" - "} <span className="text-primary">{project.titleQute}</span>
           </h2>
-          <p className="my-4 2xl:my-8 text-xs sm:text-base lg:text-base xl:text-base 2xl:text-2xl text-slate-500 dark:text-slate-400 leading-relaxed 2xl:leading-loose font-medium">
+          <p className="my-4 2xl:my-6 text-xs sm:text-base lg:text-base xl:text-base 2xl:text-base text-slate-500 dark:text-slate-400 leading-relaxed 2xl:leading-loose font-medium">
             {project.description}
           </p>
 
-          <p className="mt-2 mb-2 2xl:mt-4 2xl:mb-6 text-primary text-xs sm:text-sm 2xl:text-xl font-bold uppercase tracking-widest">
+          <p className="mt-2 mb-2 2xl:mt-4 2xl:mb-6 text-primary text-xs sm:text-sm 2xl:text-base font-bold uppercase tracking-widest">
             Project Highlights
           </p>
 
