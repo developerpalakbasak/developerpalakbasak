@@ -29,7 +29,7 @@ const Contact = () => {
   return (
     <div
       id="contact"
-      className="w-full max-w-6xl lg:max-w-7xl xl:max-w-[1200px] mx-auto bg-card border border-card-border p-2 sm:p-4 md:p-6 lg:p-8 xl:p-10 py-8 sm:py-12 md:py-16 rounded-xl sm:rounded-2xl lg:rounded-3xl shadow-sm relative overflow-hidden"
+      className="w-full md:w-full max-w-6xl lg:max-w-7xl xl:max-w-[1200px] 2xl:max-w-[1560px] mx-auto bg-card border border-card-border p-2 sm:p-4 md:p-6 lg:p-8 xl:p-10 py-8 sm:py-12 md:py-16 rounded-xl sm:rounded-2xl lg:rounded-3xl shadow-sm relative overflow-hidden"
     >
       {/* Header: Call to action for building projects */}
       <div className="flex flex-col items-center justify-center gap-3">
