@@ -195,6 +195,7 @@ const Hero = () => {
             alt="Robot"
             width={150}
             height={150}
+            priority
           />
 
           <div className="flex gap-3 flex-wrap justify-center w-full min-w-0">
