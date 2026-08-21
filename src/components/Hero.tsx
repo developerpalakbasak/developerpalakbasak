@@ -163,7 +163,7 @@ const Hero = () => {
             <span className="relative inline-flex rounded-full h-3 w-3 bg-primary"></span>
           </div>
           <p className="text-xs sm:text-sm font-bold tracking-widest text-primary uppercase">
-            Working @ <span className="text-foreground">ITScholarbd.com</span>
+            Founder of @ <span className="text-foreground"><a href="https://www.thetasofts.com" target="_blank">Thetasofts.com</a></span>
           </p>
         </div>
 
@@ -215,11 +215,11 @@ const Hero = () => {
         </div>
 
         <p className="mt-4 sm:mt-6 text-xs sm:text-lg md:text-xl lg:text-lg leading-relaxed text-slate-500 dark:text-slate-400 max-w-xl font-medium sm:font-normal">
-          Currently engineering high-performance ecosystems as a{" "}
+          Worked at <span className="text-primary font-bold">Itscholerbd</span>. Now engineering high-performance ecosystems as a{" "}
           <span className="text-primary font-bold">
             Fullstack JavaScript/TypeScript Developer
           </span>{" "}
-          at <span className="text-foreground font-bold">ITScholarBD</span>. I
+          at <span className="text-foreground font-bold">ThetaSofts</span>. I
           specialize in building scalable web and mobile solutions using React,
           Next.js, and React Native.
         </p>

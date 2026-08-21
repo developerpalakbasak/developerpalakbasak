@@ -18,7 +18,7 @@ export default function Home() {
         {/* Section Intro: Detailed professional summary */}
         <SectionIntro
           title="I Don't Just Write Code — I Build Products That Matter"
-          description="Fullstack JavaScript/TypeScript Developer at ITScholarbd.com with 4+ years of experience shipping web and mobile apps. Specializing in React, Next.js, and React Native to build pixel-perfect solutions for Android & iOS."
+          description="Founder and Fullstack Software Engineer at ThetaSofts with 4+ years of experience shipping web and mobile apps. Specializing in React, Next.js, and React Native to build pixel-perfect solutions for Android & iOS."
         />
 
         {/* Profile Section: Personal branding and social links */}

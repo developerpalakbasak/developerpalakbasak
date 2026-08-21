@@ -13,32 +13,42 @@ const spaceGrotesk = Space_Grotesk({
 });
 
 // SEO Metadata configuration
+// SEO Metadata configuration
 export const metadata = {
-  title: "Palak Basak | Fullstack JavaScript/TypeScript Developer",
+  title: "Palak Basak | Full-Stack Developer & Founder of ThetaSofts",
   description:
-    "Senior Full-Stack & Mobile Developer specializing in React, Next.js, and React Native. Currently engineering high-performance systems at ITScholarBD.",
+    "Palak Basak is a Full-Stack JavaScript/TypeScript Developer and Founder of ThetaSofts, specializing in React, Next.js, Node.js, and React Native for web, mobile, and software development.",
   keywords: [
     "Palak Basak",
-    "Fullstack Developer",
+    "Full-Stack Developer",
+    "JavaScript Developer",
+    "TypeScript Developer",
     "React Developer",
-    "Next.js Expert",
+    "Next.js Developer",
+    "Node.js Developer",
     "React Native Developer",
-    "ITScholarBD",
+    "Software Developer Bangladesh",
     "Software Engineer Bangladesh",
+    "ThetaSofts",
+    "Founder of ThetaSofts",
+    "ITScholarBD",
+    "Web Development",
+    "Mobile App Development",
+    "Software Development",
   ],
   authors: [{ name: "Palak Basak" }],
   openGraph: {
-    title: "Palak Basak | Fullstack JavaScript/TypeScript Developer",
+    title: "Palak Basak | Full-Stack Developer & Founder of ThetaSofts",
     description:
-      "Building scalable web and mobile solutions with precision. Currently at ITScholarBD.",
+      "Full-Stack JavaScript/TypeScript Developer and Founder of ThetaSofts, building modern web, mobile, and software solutions.",
     url: "https://developerpalakbasak.vercel.app",
-    siteName: "DeveloperPalak Portfolio",
+    siteName: "Palak Basak Portfolio",
     images: [
       {
         url: "/og-image.png",
         width: 1200,
         height: 630,
-        alt: "Palak Basak Portfolio",
+        alt: "Palak Basak - Full-Stack Developer & Founder of ThetaSofts",
       },
     ],
     locale: "en_US",
@@ -46,8 +56,9 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Palak Basak | Fullstack JavaScript/TypeScript Developer",
-    description: "Specialized in MERN, Next.js, and React Native development.",
+    title: "Palak Basak | Full-Stack Developer & Founder of ThetaSofts",
+    description:
+      "Full-Stack JavaScript/TypeScript Developer and Founder of ThetaSofts, specializing in web, mobile, and software development.",
     images: ["/og-image.png"],
   },
   icons: {
@@ -56,7 +67,6 @@ export const metadata = {
     apple: "/favicon.svg",
   },
 };
-
 /**
  * Root Layout Component
  * Defines the global structure of the application, including fonts, theme providers, and navigation.
@@ -97,8 +107,16 @@ export default function RootLayout({ children }) {
               "@type": "Person",
               name: "Palak Basak",
               url: "https://developerpalakbasak.vercel.app",
-              jobTitle: "Fullstack JavaScript/TypeScript Developer",
+              jobTitle: "Full-Stack JavaScript/TypeScript Developer & Founder",
               worksFor: {
+                "@type": "Organization",
+                name: "ThetaSofts",
+              },
+              founder: {
+                "@type": "Organization",
+                name: "ThetaSofts",
+              },
+              alumniOf: {
                 "@type": "Organization",
                 name: "ITScholarBD",
               },
