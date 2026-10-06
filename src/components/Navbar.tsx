@@ -61,7 +61,7 @@ const Navbar = () => {
             {/* Action Area: Theme Toggle & CV Download */}
             <div className="flex items-center justify-center gap-1 sm:gap-4 text-xl relative">
               <a
-                href="https://drive.google.com/file/d/1e3JzwI-CtBYWtn_4AAAl-LvdBizX8WRv/view?usp=sharing"
+                href="https://drive.google.com/file/d/1iPuqR7XWxI6I0vxt5LILHkFqMwaK886-/view"
                 className="glass-button-yellow px-5 py-2 rounded-full font-bold text-xs sm:text-sm shadow-sm transition-all hover:scale-105"
                 target="_blank"
                 rel="noopener noreferrer"
