@@ -1,5 +1,5 @@
-import Skills from "@/components/Skills";
-import Progress from "@/components/Progress";
+import Skills from "@/components/about/Skills";
+import Progress from "@/components/about/Progress";
 
 /**
  * About Page Component

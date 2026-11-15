@@ -1,5 +1,5 @@
 import Image from "next/image";
-import Spiner from "@/components/Spiner";
+import Spiner from "./Spiner";
 import { GoDotFill } from "react-icons/go";
 
 /**

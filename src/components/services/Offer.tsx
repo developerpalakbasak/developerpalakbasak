@@ -16,7 +16,6 @@ import {
 } from "react-icons/fa";
 import {
   SiMongodb,
-  SiExpress,
   SiTailwindcss,
   SiNextdotjs,
   SiExpo,
@@ -180,7 +179,7 @@ const Offer = () => {
           {c.heading}{" "}
           <span className="text-slate-500">{c.highlight}</span>
         </h2>
-        <p className="text-sm sm:text-base md:text-lg text-slate-400 dark:text-slate-500 max-w-xl mx-auto">
+        <p className="text-sm sm:text-base md:text-lg text-slate-400 dark:text-slate-500 max-w-xl mx-auto min-h-[5rem] sm:min-h-[4.5rem] md:min-h-[5.25rem]">
           {c.sub}
         </p>
       </div>

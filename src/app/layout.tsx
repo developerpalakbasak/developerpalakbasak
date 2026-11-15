@@ -1,10 +1,10 @@
 // layout.tsx
 import { Space_Grotesk } from "next/font/google";
 import "./globals.css";
-import { Providers } from "@/components/theme";
-import Navbar from "@/components/Navbar";
-import Footer from "@/components/Footer";
-import Stars from "@/components/Stars";
+import { Providers } from "@/components/layout/theme";
+import Navbar from "@/components/layout/Navbar";
+import Footer from "@/components/layout/Footer";
+import Stars from "@/components/layout/Stars";
 
 // Configure the primary font for the application
 const spaceGrotesk = Space_Grotesk({

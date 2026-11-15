@@ -1,8 +1,8 @@
-import Hero from "@/components/Hero";
-import ProfileCard from "@/components/ProfileCard";
-import SectionIntro from "@/components/SectionIntro";
-import UnifiedSkills from "@/components/UnifiedSkills";
-import FAQ from "@/components/FAQ";
+import Hero from "@/components/home/Hero";
+import ProfileCard from "@/components/home/ProfileCard";
+import SectionIntro from "@/components/home/SectionIntro";
+import UnifiedSkills from "@/components/home/UnifiedSkills";
+import FAQ from "@/components/home/FAQ";
 
 /**
  * Main Home Page Component

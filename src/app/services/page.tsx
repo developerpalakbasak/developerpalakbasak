@@ -1,4 +1,4 @@
-import Offer from "@/components/Offer";
+import Offer from "@/components/services/Offer";
 
 /**
  * Services Page Component

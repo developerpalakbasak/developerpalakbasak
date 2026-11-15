@@ -1,5 +1,5 @@
-import Contact from "@/components/Contact";
-import ContactForm from "@/components/ContactForm";
+import Contact from "@/components/contact/Contact";
+import ContactForm from "@/components/contact/ContactForm";
 
 const infoCards = [
   {

@@ -60,7 +60,7 @@ const SingleProject = ({ project, index, islast }) => {
                 href={project.liveDemo}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-primary hover:underline underline-offset-4 flex items-center gap-1"
+                className="text-primary hover:text-primary/80 underline flex items-center gap-1"
               >
                 Live Preview
               </a>
@@ -70,7 +70,7 @@ const SingleProject = ({ project, index, islast }) => {
                 href={project.github}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-slate-600 dark:text-slate-300 hover:underline underline-offset-4"
+                className="text-slate-600 dark:text-slate-300 hover:text-primary/80 underline"
               >
                 Github Source
               </a>
