@@ -1,5 +1,4 @@
 import Contact from "@/components/contact/Contact";
-import ContactForm from "@/components/contact/ContactForm";
 
 const infoCards = [
   {
@@ -35,13 +34,8 @@ export default function ContactPage() {
           </p>
         </div>
 
-        {/* Main Contact Form Component */}
-        {/* <div className="mt-8 sm:mt-12">
-          <ContactForm />
-        </div> */}
-
-        {/* Alternative Contact Methods & Location */}
-        <div className="mt-16 sm:mt-20">
+        {/* Main Contact Section with Form & Channels */}
+        <div className="mt-6 sm:mt-8">
           <Contact />
         </div>
 
