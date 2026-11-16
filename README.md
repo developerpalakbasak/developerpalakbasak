@@ -1,100 +1,78 @@
-<h1 align="center">Hi 👋, I'm Palak Basak</h1>
-<h3 align="center">Full Stack Developer | MERN Stack Specialist | Next.js Expert</h3>
+# Hi 👋, I'm Palak Basak
+
+### Full Stack Developer | 4+ Years Experience | MERN | Next.js | NestJS | Exploring Go
 
 <p align="center">
-  <img src="https://komarev.com/ghpvc/?username=developerpalakbasak&label=Profile%20views&color=0e75b6&style=flat" alt="profile views" />
+  <img src="https://komarev.com/ghpvc/?username=developerpalakbasak&label=Profile%20views&color=0e75b6&style=flat" alt="Profile Views" />
 </p>
 
----
-
 ## 🚀 About Me
-- 💻 Full-stack developer (MERN)
-- ⚡ Expert in **Next.js, React, Express.js, MongoDB**
-- 🎯 Build **scalable, real-world applications**
-- 📈 SEO Expert (Google Search Console & ranking)
-- 🧠 Focused on **performance + clean architecture**
 
----
+Full Stack Developer with **4+ years of experience** building scalable, modern web applications.
 
-## 🌐 Connect with Me
-- 💼 LinkedIn: https://www.linkedin.com/in/developerpalakbasak
-- 💻 Personal Website: https://developerpalakbasak.vercel.app  
+- 💻 Experienced in React.js, Next.js, Node.js, Express.js & NestJS.
+- 🗄️ Database expertise in MongoDB & PostgreSQL.
+- 🏗️ Focused on backend architecture, performance & clean code.
+- 🐹 Currently exploring Go (Golang) and high-performance backend systems.
 
----
+## 🌐 Connect With Me
+
+- **Portfolio:** [developerpalakbasak.vercel.app](https://developerpalakbasak.vercel.app)
+- **LinkedIn:** [linkedin.com/in/developerpalakbasak](https://www.linkedin.com/in/developerpalakbasak)
+- **GitHub:** [github.com/developerpalakbasak](https://github.com/developerpalakbasak)
 
 ## 🧠 Tech Stack
 
-### Frontend
-- React.js
-- Next.js
-- Tailwind CSS
-- ShadCN UI
-- Material UI
+**Frontend:** React.js, Next.js, JavaScript, Tailwind CSS, ShadCN UI
 
-### Backend
-- Node.js
-- Express.js
-- MongoDB
-- REST APIs
+**Backend:** Node.js, Express.js, NestJS, REST APIs
 
-### Tools
-- Git & GitHub
-- Postman
-- Vite
-- Cloudinary
+**Databases:** MongoDB, PostgreSQL
 
----
+**Tools:** Git, GitHub, Docker, Linux, Postman, Cloudinary, Vercel
 
-## 🔥 Top Projects
+**Currently Exploring:** Go, Concurrency, Backend Systems
 
-### ☁️ Cloud IDE
-> Browser-based development environment  
-- Code editor + file system  
-- Real-time execution  
-- Full-stack architecture  
+## 🔥 Featured Projects
 
----
+### 💼 Professional Projects
 
-### 🌐 Social Media Platform
-> Full-stack social app  
-- Authentication system  
-- Post creation & interactions  
-- Optimized data fetching  
+- **[Hutchinson APAC](https://hutchinsonapac.com)** – HR Management System.
+- **[Templeton Trustees Ltd](https://templetontrusteesltd.com)** – Workforce & HR Management System.
 
----
+### 🚀 Personal Projects
 
-### 🛒 E-commerce Platform
-> Production-ready shopping app  
-- Cart & checkout system  
-- MongoDB integration  
-- Responsive UI + performance optimized  
+- **Cloud IDE** – Browser-based code editor with collaborative coding and Docker execution.
+- **Social Media Platform** – Social feeds, authentication, follows, likes & comments.
+- **[E-commerce Platform](https://pizzahut-pi.vercel.app)** – Full-stack shopping platform with admin dashboard and OAuth.
+- **[Personal Blog](https://dev-blog-frontend-tailwind-test.vercel.app)** – Dynamic blogging and content management.
+- **[Studio Landing Page](https://stinkfilms.vercel.app)** – Modern cinematic website.
 
----
+**Explore all projects:** [My Portfolio](https://developerpalakbasak.vercel.app/portfolio)
 
-## 📊 GitHub Stats
+## 📊 GitHub Statistics
 
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=developerpalakbasak&show_icons=true&theme=tokyonight" />
+  <img src="https://github-readme-stats.vercel.app/api?username=developerpalakbasak&show_icons=true&theme=tokyonight" alt="GitHub Stats" />
 </p>
 
 <p align="center">
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=developerpalakbasak&theme=tokyonight" />
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=developerpalakbasak&theme=tokyonight" alt="GitHub Streak" />
 </p>
 
----
+## 🎯 Current Focus
 
-## 📌 Goals
-- 🚀 Become Advanced MERN Developer  
-- 🌍 Land a Remote Developer Job  
-- 🧠 Master System Design  
-
----
-
-## ⚡ Fun Fact
-I can build both **complex backend systems** and **clean modern UI** ⚡
+- 🐹 Mastering Go (Golang).
+- 🏗️ Advanced backend engineering & system design.
+- ⚡ High-performance and concurrent systems.
+- 🌍 Building scalable software solutions.
 
 ---
 
 <p align="center">
-  ⭐ Star my repositories if you find them useful!
+  <b>Building scalable software, one line of code at a time. 🚀</b>
+</p>
+
+<p align="center">
+  ⭐ Feel free to explore and star my repositories!
 </p>
