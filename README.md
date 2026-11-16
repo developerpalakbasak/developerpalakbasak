@@ -27,6 +27,8 @@ Full Stack Developer with **4+ years of experience** building scalable, modern w
 
 **Backend:** Node.js, Express.js, NestJS, REST APIs
 
+**Mobile:**: React Native, Expo
+
 **Databases:** MongoDB, PostgreSQL
 
 **Tools:** Git, GitHub, Docker, Linux, Postman, Cloudinary, Vercel
