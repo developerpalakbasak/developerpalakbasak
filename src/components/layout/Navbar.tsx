@@ -1,7 +1,6 @@
 "use client";
 import React, { useEffect, useState } from "react";
 import { FaSun, FaMoon } from "react-icons/fa";
-import { IoMdCode } from "react-icons/io";
 import MobileMenu from "./MobileMenu";
 import { useTheme } from "next-themes";
 import Link from "next/link";
@@ -38,7 +37,20 @@ const Navbar = () => {
           <div className="flex items-center justify-between">
             {/* Logo and Brand Name */}
             <Link href="/" className="text-xl select-none cursor-pointer font-bold flex gap-1 items-center justify-center">
-              <IoMdCode className="text-primary" size={25} />
+              <span
+                className="w-[35px] h-[35px] bg-primary inline-block shrink-0"
+                style={{
+                  maskImage: "url(/dev-logo.svg)",
+                  WebkitMaskImage: "url(/dev-logo.svg)",
+                  maskRepeat: "no-repeat",
+                  WebkitMaskRepeat: "no-repeat",
+                  maskPosition: "center",
+                  WebkitMaskPosition: "center",
+                  maskSize: "contain",
+                  WebkitMaskSize: "contain",
+                }}
+                aria-hidden="true"
+              />
               <p className="text-sm sm:text-base md:text-lg lg:text-xl font-black tracking-tight">
                 Developer <span className="text-primary">Palak</span>
               </p>
